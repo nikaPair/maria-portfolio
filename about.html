@@ -38,9 +38,41 @@
                   <a href="about.html">Обо мне</a>
                 </li>
                 <li>
-                  <div class="select-container">
-                    <img src="assets/images/flag-rus.png" class="flag" />
-                    <p>Rus</p>
+                  <div class="lang-switcher" data-lang-switcher="mobile">
+                    <button class="lang-current" type="button">
+                      <img
+                        src="assets/images/flag-rus.png"
+                        alt="RU"
+                        class="lang-flag"
+                      />
+                      <span class="lang-code">RU</span>
+                    </button>
+                    <div class="lang-dropdown">
+                      <button
+                        class="lang-option"
+                        type="button"
+                        data-locale="ru"
+                      >
+                        <img
+                          src="assets/images/flag-rus.png"
+                          alt="RU"
+                          class="lang-flag"
+                        />
+                        <span class="lang-code">RU</span>
+                      </button>
+                      <button
+                        class="lang-option"
+                        type="button"
+                        data-locale="en"
+                      >
+                        <img
+                          src="assets/images/flag-eng.png"
+                          alt="EN"
+                          class="lang-flag"
+                        />
+                        <span class="lang-code">EN</span>
+                      </button>
+                    </div>
                   </div>
                 </li>
               </ul>
@@ -68,9 +100,33 @@
         </div>
 
         <div class="header-right">
-          <div class="select-container">
-            <img src="assets/images/flag-rus.png" class="flag" />
-            <p>Rus</p>
+          <div class="lang-switcher" data-lang-switcher="header">
+            <button class="lang-current" type="button">
+              <img
+                src="assets/images/flag-rus.png"
+                alt="RU"
+                class="lang-flag"
+              />
+              <span class="lang-code">RU</span>
+            </button>
+            <div class="lang-dropdown">
+              <button class="lang-option" type="button" data-locale="ru">
+                <img
+                  src="assets/images/flag-rus.png"
+                  alt="RU"
+                  class="lang-flag"
+                />
+                <span class="lang-code">RU</span>
+              </button>
+              <button class="lang-option" type="button" data-locale="en">
+                <img
+                  src="assets/images/flag-eng.png"
+                  alt="EN"
+                  class="lang-flag"
+                />
+                <span class="lang-code">EN</span>
+              </button>
+            </div>
           </div>
         </div>
       </div>

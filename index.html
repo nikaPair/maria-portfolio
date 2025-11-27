@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio - Maria Lubimova</title>
     <link rel="icon" type="image/png" href="assets/images/avatar.png" />
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="assets/styles/style.css" />
   </head>
 
@@ -37,9 +40,41 @@
                   <a href="about.html">Обо мне</a>
                 </li>
                 <li>
-                  <div class="select-container">
-                    <img src="assets/images/flag-rus.png" class="flag" />
-                    <p>Rus</p>
+                  <div class="lang-switcher" data-lang-switcher="mobile">
+                    <button class="lang-current" type="button">
+                      <img
+                        src="assets/images/flag-rus.png"
+                        alt="RU"
+                        class="lang-flag"
+                      />
+                      <span class="lang-code">RU</span>
+                    </button>
+                    <div class="lang-dropdown">
+                      <button
+                        class="lang-option"
+                        type="button"
+                        data-locale="ru"
+                      >
+                        <img
+                          src="assets/images/flag-rus.png"
+                          alt="RU"
+                          class="lang-flag"
+                        />
+                        <span class="lang-code">RU</span>
+                      </button>
+                      <button
+                        class="lang-option"
+                        type="button"
+                        data-locale="en"
+                      >
+                        <img
+                          src="assets/images/flag-eng.png"
+                          alt="EN"
+                          class="lang-flag"
+                        />
+                        <span class="lang-code">EN</span>
+                      </button>
+                    </div>
                   </div>
                 </li>
               </ul>
@@ -67,9 +102,33 @@
         </div>
 
         <div class="header-right">
-          <div class="select-container">
-            <img src="assets/images/flag-rus.png" class="flag" />
-            <p>Rus</p>
+          <div class="lang-switcher" data-lang-switcher="header">
+            <button class="lang-current" type="button">
+              <img
+                src="assets/images/flag-rus.png"
+                alt="RU"
+                class="lang-flag"
+              />
+              <span class="lang-code">RU</span>
+            </button>
+            <div class="lang-dropdown">
+              <button class="lang-option" type="button" data-locale="ru">
+                <img
+                  src="assets/images/flag-rus.png"
+                  alt="RU"
+                  class="lang-flag"
+                />
+                <span class="lang-code">RU</span>
+              </button>
+              <button class="lang-option" type="button" data-locale="en">
+                <img
+                  src="assets/images/flag-eng.png"
+                  alt="EN"
+                  class="lang-flag"
+                />
+                <span class="lang-code">EN</span>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -79,34 +138,36 @@
       <section class="hero">
         <div class="container">
           <img src="assets/images/screen_tg.png" />
-          <div class="hero-text">
-            <h2>Hi, I’m Maria<br />— Product UX/UI Designer</h2>
-            <p>
-              3 года занимаюсь продуктовым дизайном: создаю и улучшаю
-              дизайн-системы; проектирую, тестирую и совершенствую UX;
-              разрабатываю и поддерживаю красивый UI; верстаю на HTML/CSS;
-              анимирую прототипы в Figma Prototyping и After Effects
-            </p>
-          </div>
-
-          <div class="hero-bottom">
-            <div class="counters-container">
-              <div class="counter-left">
-                <b>3 года</b>
-                <span>в дизайне</span>
-              </div>
-
-              <div class="divider"></div>
-
-              <div class="counter-right">
-                <b>8 лет</b>
-                <span>в digital</span>
-              </div>
+          <div class="hero-text-container">
+            <div class="hero-text">
+              <h2>Hi, I’m Maria<br />— Product UX/UI Designer</h2>
+              <p>
+                3 года занимаюсь продуктовым дизайном: создаю и улучшаю
+                дизайн-системы; проектирую, тестирую и совершенствую UX;
+                разрабатываю и поддерживаю красивый UI; верстаю на HTML/CSS;
+                анимирую прототипы в Figma Prototyping и After Effects
+              </p>
             </div>
 
-            <div class="cv-container">
-              <img class="cv-emoji" src="assets/images/emoji.png" />
-              <a class="cv-button" href="Резюме.pdf">Резюме.pdf</a>
+            <div class="hero-bottom">
+              <div class="counters-container">
+                <div class="counter-left">
+                  <b>3 года</b>
+                  <span>в дизайне</span>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="counter-right">
+                  <b>8 лет</b>
+                  <span>в digital</span>
+                </div>
+              </div>
+
+              <div class="cv-container">
+                <img class="cv-emoji" src="assets/images/emoji.png" />
+                <a class="cv-button" href="Резюме.pdf">Резюме.pdf</a>
+              </div>
             </div>
           </div>
         </div>
@@ -120,9 +181,12 @@
           </hgroup>
 
           <ol class="projects">
+            <li class="case-mobile-image">
+              <div class="img-container"></div>
+            </li>
             <li class="project">
               <div class="content">
-                <h3>Middle Product Designer</h3>
+                <a href="#">Middle Product Designer</a>
                 <h4>Berlin, Germany • 2024-2025</h4>
 
                 <div class="company">
@@ -138,7 +202,7 @@
                   медицинских анализов. Помогает партнерам бережно поговорить о
                   здоровье
                 </p>
-
+                <a href="#" class="case-link">Читать</a>
                 <ul class="tags">
                   <li>Design System</li>
                   <li>UX Research</li>
@@ -154,7 +218,7 @@
 
             <li class="project">
               <div class="content">
-                <h3>Junior Product Designer</h3>
+                <a href="#">Junior Product Designer</a>
                 <h4>Moscow, Russia • 2023-2024</h4>
 
                 <div class="company">
@@ -167,6 +231,7 @@
                   проектами и командной работой. Помогает бизнесу в сферах
                   проектного управления, разработки ПО и маркетинга
                 </p>
+                <a href="#" class="case-link">Читать</a>
               </div>
 
               <aside>
@@ -181,7 +246,7 @@
 
             <li class="project">
               <div class="content">
-                <h3>Junior Product Designer</h3>
+                <a href="#">Junior Product Designer</a>
                 <h4>Dubai, UAE • 2022-2023</h4>
 
                 <div class="company">
@@ -197,6 +262,7 @@
                   промоушн застройщикам и новым объектам, имеет крупный
                   онлайн-портал и множество посадочных страниц
                 </p>
+                <a href="#" class="case-link">Читать</a>
               </div>
 
               <aside>
@@ -229,6 +295,7 @@
                 Профессиональный трекер психического состояния для людей с БАР и
                 ПРЛ
               </p>
+              <a href="#" class="pet-project-link">Читать</a>
             </li>
 
             <li class="pet-project">
@@ -241,6 +308,7 @@
               <p>
                 Унифицированная платформа для мониторинга работы асик-майнеров
               </p>
+              <a href="#" class="pet-project-link">Читать</a>
             </li>
 
             <li class="pet-project horizontal">
@@ -254,6 +322,7 @@
               </div>
               <img src="assets/images/mockup-irida.png" />
               <img src="assets/images/mockup-irida.png" />
+              <a href="#" class="pet-project-link">Читать</a>
             </li>
           </ul>
         </div>
@@ -266,23 +335,77 @@
         </hgroup>
 
         <div class="shots">
-          <div>
-            <img src="assets/images/mockup-mobile01.png" />
+          <div class="first-two">
+            <div class="double">
+              <img src="assets/images/mockup-mobile01.png" />
+            </div>
+            <div class="double">
+              <img src="assets/images/mockup-desktoplight.png" />
+            </div>
           </div>
-          <div>
-            <img src="assets/images/mockup-desktoplight.png" />
+          <div class="second-one">
+            <div class="single">
+              <img src="assets/images/mockup-desktopdark.png" />
+            </div>
           </div>
-          <div>
-            <img src="assets/images/mockup-desktopdark.png" />
+          <div class="third-three">
+            <div class="three">
+              <img src="assets/images/mockup-mobile02.png" />
+            </div>
+            <div class="three">
+              <img src="assets/images/mockup-mobile03.png" />
+            </div>
+            <div class="three">
+              <img src="assets/images/mockup-mobile04.png" />
+            </div>
           </div>
-          <div>
-            <img src="assets/images/mockup-mobile02.png" />
+        </div>
+
+        <div class="shots-adaptive">
+          <div class="first-two">
+            <div class="double">
+              <img src="assets/images/ui-1.png" />
+            </div>
+            <div class="double">
+              <img src="assets/images/ui-2.png" />
+            </div>
           </div>
-          <div>
-            <img src="assets/images/mockup-mobile03.png" />
+          <div class="second-one">
+            <div class="single">
+              <img src="assets/images/ui-3.png" />
+            </div>
           </div>
-          <div>
-            <img src="assets/images/mockup-mobile04.png" />
+          <div class="third-three">
+            <div class="three">
+              <img src="assets/images/ui-4.png" />
+            </div>
+            <div class="three">
+              <img src="assets/images/ui-5.png" />
+            </div>
+            <div class="three center">
+              <img src="assets/images/ui-6.png" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="assets/images/slide-1.png" alt="Slide 1" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/slide-2.png" alt="Slide 2" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/slide-3.png" alt="Slide 3" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/slide-4.png" alt="Slide 4" />
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/slide-5.png" alt="Slide 5" />
+            </div>
           </div>
         </div>
       </section>
@@ -295,6 +418,7 @@
       </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="assets/scripts/index.js"></script>
   </body>
 </html>
