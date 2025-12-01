@@ -30,13 +30,12 @@ if (mobileNavButton && headerMobile) {
   });
 }
 
-/* Language switcher logic */
 const LANG_STORAGE_KEY = "siteLocale";
 
 const LANGUAGES = [
   {
     code: "ru",
-    label: "RU",
+    label: "Rus",
     flag: "assets/images/flag-rus.png",
   },
   {
@@ -92,10 +91,8 @@ function initLanguageSwitchers() {
     const dropdown = switcher.querySelector(".lang-dropdown");
     if (!dropdown) return;
 
-    // Очищаем список опций
     dropdown.innerHTML = "";
 
-    // Добавляем только альтернативные языки
     LANGUAGES.forEach((lang) => {
       if (lang.code === currentLocale) return;
 
@@ -165,7 +162,6 @@ function initLanguageSwitchers() {
       const currentBtn = switcher.querySelector(".lang-current");
       if (!currentBtn) return;
 
-      // Сбрасываем возможные старые обработчики
       const cloned = currentBtn.cloneNode(true);
       currentBtn.parentNode.replaceChild(cloned, currentBtn);
       const btn = cloned;
