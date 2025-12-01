@@ -39,6 +39,7 @@ html {
 body {
   margin: 0;
   font-family: "Inter", sans-serif !important;
+  overscroll-behavior: none;
 }
 @media screen and (max-width: 1200px) {
   header {
