@@ -205,21 +205,37 @@ if (document.readyState === "loading") {
   initLanguageSwitchers();
 }
 
-/* Swiper initialization */
-if (document.querySelector(".mySwiper")) {
-  new Swiper(".mySwiper", {
-    effect: "coverflow",
-    grabCursor: true,
-    centeredSlides: true,
-    slidesPerView: "auto",
-    coverflowEffect: {
-      rotate: 0,
-      stretch: 0,
-      depth: 100,
-      modifier: 2.5,
-      slideShadows: false,
-    },
-    loop: true,
-    spaceBetween: 30,
-  });
+// Slider
+
+const wrapper = document.querySelector(".slider-wrapper");
+const slides = document.querySelectorAll(".slider-slide");
+const width = wrapper.offsetWidth;
+let index = 0; // номер текущего слайда
+let startX = 0;
+
+function update() {
+  wrapper.style.transform = `translateX(-${index * width + index * 20}px)`;
 }
+
+wrapper.addEventListener("touchstart", (e) => {
+  startX = e.touches[0].clientX;
+});
+
+wrapper.addEventListener("touchend", (e) => {
+  const endX = e.changedTouches[0].clientX;
+  const diff = endX - startX;
+
+  if (diff > 50) {
+    if (index > 0) {
+      index--;
+    }
+  }
+
+  if (diff < -50) {
+    if (index < slides.length - 1) {
+      index++;
+    }
+  }
+
+  update();
+});
