@@ -20,7 +20,9 @@
     <header>
       <div class="header-container">
         <div class="profile">
-          <img src="assets/images/avatar.png" />
+          <a href="index.html">
+            <img src="assets/images/avatar.png" />
+          </a>
           <a href="https://t.me/lyubimova_dsgn" target="_blank"
             >t.me/lyubimova_dsgn</a
           >
@@ -221,5 +223,14 @@
     </footer>
 
     <script src="assets/scripts/index.js"></script>
+    <script type="module">
+      import { animate } from "https://cdn.jsdelivr.net/npm/motion@latest/+esm";
+
+      animate(
+        ".header-container",
+        { y: [-50, 0], opacity: [0, 1] },
+        { duration: 0.4 }
+      );
+    </script>
   </body>
 </html>

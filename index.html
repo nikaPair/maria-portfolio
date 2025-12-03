@@ -19,10 +19,10 @@
   </head>
 
   <body>
-    <header>
+    <header class="header">
       <div class="header-container">
         <div class="profile">
-          <img src="assets/images/avatar.png" />
+          <a href="index.html"><img src="assets/images/avatar.png" /></a>
           <a href="https://t.me/lyubimova_dsgn" target="_blank"
             >t.me/lyubimova_dsgn</a
           >
@@ -181,7 +181,7 @@
 
       <section class="cases" id="cases">
         <div class="container">
-          <hgroup>
+          <hgroup class="cases-title">
             <h2>Кейсы</h2>
             <p>3 компании — 3 кейса</p>
           </hgroup>
@@ -191,7 +191,7 @@
               <div class="img-container"></div>
             </li>
             <li class="project">
-              <div class="content">
+              <div class="content project-content">
                 <a href="#">Middle Product Designer</a>
                 <h4>Berlin, Germany • 2024-2025</h4>
 
@@ -217,13 +217,13 @@
                 </ul>
               </div>
 
-              <aside>
+              <aside class="project-image">
                 <img src="assets/images/mockup-mobile02.png" />
               </aside>
             </li>
 
             <li class="project">
-              <div class="content">
+              <div class="content project-content">
                 <a href="#">Junior Product Designer</a>
                 <h4>Moscow, Russia • 2023-2024</h4>
 
@@ -240,7 +240,7 @@
                 <a href="#" class="case-link">Читать</a>
               </div>
 
-              <aside>
+              <aside class="project-image">
                 <ul class="points">
                   <li>Product Design</li>
                   <li>User Testing</li>
@@ -251,7 +251,7 @@
             </li>
 
             <li class="project">
-              <div class="content">
+              <div class="content project-content">
                 <a href="#">Junior Product Designer</a>
                 <h4>Dubai, UAE • 2022-2023</h4>
 
@@ -271,7 +271,7 @@
                 <a href="#" class="case-link">Читать</a>
               </div>
 
-              <aside>
+              <aside class="project-image">
                 <ul class="points">
                   <li>Product Design</li>
                   <li>User Testing</li>
@@ -286,11 +286,13 @@
 
       <section class="pet-projects" id="pet-projects">
         <div class="container">
-          <h2>Pet-проекты</h2>
-          <p>Проектирую для души и могу показывать без ограничений</p>
+          <h2 class="cases-title">Pet-проекты</h2>
+          <p class="cases-title">
+            Проектирую для души и могу показывать без ограничений
+          </p>
 
           <ul class="projects-list">
-            <li class="pet-project">
+            <li class="pet-project first">
               <div class="name">
                 <img src="assets/images/logo-emoview.png" alt="logo" />
                 <h3>Emoview</h3>
@@ -304,7 +306,7 @@
               <a href="#" class="pet-project-link">Читать</a>
             </li>
 
-            <li class="pet-project">
+            <li class="pet-project second">
               <div class="name">
                 <img src="assets/images/logo-hushHub.png" alt="logo" />
                 <h3>HushHub</h3>
@@ -317,7 +319,7 @@
               <a href="#" class="pet-project-link">Читать</a>
             </li>
 
-            <li class="pet-project horizontal">
+            <li class="pet-project horizontal third">
               <div class="title">
                 <div class="name">
                   <img src="assets/images/logo-irida.png" alt="logo" />
@@ -394,7 +396,6 @@
           </div>
         </div>
 
-        <!-- Swiper -->
         <div class="slider">
           <div class="slider-wrapper">
             <div class="slider-slide">
@@ -422,8 +423,76 @@
         <h3>© 2025. Мария Любимова</h3>
       </div>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="assets/scripts/index.js"></script>
+
+    <script type="module">
+      import {
+        animate,
+        inView,
+      } from "https://cdn.jsdelivr.net/npm/motion@latest/+esm";
+
+      animate(
+        ".header-container",
+        { y: [-50, 0], opacity: [0, 1] },
+        { duration: 0.5 }
+      );
+      animate(
+        ".hero",
+        { y: [50, 0], opacity: [0, 1] },
+        { duration: 0.6, delay: 0.2 }
+      );
+      animate(
+        ".cases-title",
+        { y: [50, 0], opacity: [0, 1] },
+        { duration: 0.6, delay: 0.4 }
+      );
+      inView(".project-image", (target) => {
+        animate(
+          target,
+          { x: [150, 0], opacity: [0, 1] },
+          { duration: 0.5, delay: 0.1 }
+        );
+      });
+      inView(".project-content", (target) => {
+        animate(target, { x: [-150, 0], opacity: [0, 1] }, { duration: 0.5 });
+      });
+
+      inView(".cases-title", (target) => {
+        animate(target, { y: [50, 0], opacity: [0, 1] }, { duration: 0.5 });
+      });
+      inView(".first", (target) => {
+        animate(
+          target,
+          { x: [-450, 0], opacity: [0, 0.25, 1] },
+          { duration: 0.6, easing: "ease-out" }
+        );
+      });
+      inView(".second", (target) => {
+        animate(
+          target,
+          { x: [450, 0], opacity: [0, 0.25, 1] },
+          { duration: 0.6, easing: "ease-out" }
+        );
+      });
+      inView(".third", (target) => {
+        animate(
+          target,
+          { y: [150, 0], opacity: [0, 0.25, 1] },
+          { duration: 0.6, easing: "ease-out" }
+        );
+      });
+      inView(".first-two", (target) => {
+        animate(target, { opacity: [0, 1], y: [50, 0] }, { duration: 0.6 });
+      });
+      inView(".second-one", (target) => {
+        animate(target, { opacity: [0, 1], y: [50, 0] }, { duration: 0.6 });
+      });
+      inView(".third-three", (target) => {
+        animate(target, { opacity: [0, 1], y: [50, 0] }, { duration: 0.6 });
+      });
+      inView(".slider", (target) => {
+        animate(target, { opacity: [0, 1], y: [250, 0] }, { duration: 0.6 });
+      });
+    </script>
   </body>
 </html>

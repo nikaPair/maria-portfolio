@@ -207,34 +207,37 @@ if (document.readyState === "loading") {
 
 // Slider
 const slider = document.querySelector(".slider");
-const wrapper = document.querySelector(".slider-wrapper");
-const slides = document.querySelectorAll(".slider-slide");
 
-let index = 0;
-let startX = 0;
+if (slider) {
+  console.log(slider);
 
-function update() {
-  const slideWidth = slides[0].offsetWidth + 20; // + gap
-  wrapper.style.transform = `translateX(-${index * slideWidth}px)`;
+  const wrapper = document.querySelector(".slider-wrapper");
+  const slides = document.querySelectorAll(".slider-slide");
+
+  let index = 0;
+  let startX = 0;
+
+  function update() {
+    const slideWidth = slides[0].offsetWidth + 20;
+    wrapper.style.transform = `translateX(-${index * slideWidth}px)`;
+  }
+
+  slider.addEventListener("touchstart", (e) => {
+    startX = e.touches[0].clientX;
+  });
+
+  slider.addEventListener("touchend", (e) => {
+    const endX = e.changedTouches[0].clientX;
+    const diff = endX - startX;
+
+    if (diff > 50 && index > 0) {
+      index--;
+    }
+
+    if (diff < -50 && index < slides.length - 1) {
+      index++;
+    }
+
+    update();
+  });
 }
-
-slider.addEventListener("touchstart", (e) => {
-  startX = e.touches[0].clientX;
-});
-
-slider.addEventListener("touchend", (e) => {
-  const endX = e.changedTouches[0].clientX;
-  const diff = endX - startX;
-
-  // свайп вправо
-  if (diff > 50 && index > 0) {
-    index--;
-  }
-
-  // свайп влево
-  if (diff < -50 && index < slides.length - 1) {
-    index++;
-  }
-
-  update();
-});
