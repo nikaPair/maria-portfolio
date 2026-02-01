@@ -1,0 +1,103 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Business Section */
+.businessSection {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.subtitle {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--black);
+  margin: 0;
+}
+
+.descriptionBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.description {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: var(--black);
+  max-width: 700px;
+}
+
+/* Slider */
+.sliderWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 24px;
+}
+
+.sliderTrack {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+.slide {
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--white);
+}
+
+.slideImage {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: none;
+  @media screen and (max-width: 1100px) {
+    object-fit: cover;
+  }
+}
+
+/* Navigation Buttons */
+.navButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--bg-secondary);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.navButton:hover {
+  background: var(--bg-secondary);
+}
+
+.navButtonPrev {
+  left: -60px;
+  @media screen and (max-width: 1100px) {
+    display: none;
+  }
+}
+
+.navButtonNext {
+  right: -60px;
+  @media screen and (max-width: 1100px) {
+    display: none;
+  }
+}

@@ -1,0 +1,187 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  color: var(--black);
+}
+
+/* Slider */
+.sliderWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 24px;
+}
+
+.sliderTrack {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+/* Desktop: название и описание слева, картинка справа */
+.slide {
+  min-width: 100%;
+  width: 100%;
+  flex-shrink: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr auto;
+  grid-template-areas:
+    "name image"
+    "desc image";
+  gap: 40px;
+  padding: 40px;
+  border-radius: 24px;
+  text-decoration: none;
+  box-sizing: border-box;
+  min-height: 400px;
+}
+
+/* Tablet: заголовок сверху, картинка посередине, описание снизу */
+@media screen and (max-width: 900px) {
+  .slide {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "name"
+      "image"
+      "desc";
+    text-align: center;
+    padding: 32px;
+    min-height: auto;
+  }
+}
+
+/* Mobile: без заголовка, картинка сверху, описание снизу */
+@media screen and (max-width: 480px) {
+  .slide {
+    grid-template-areas:
+      "image"
+      "desc";
+    grid-template-rows: auto auto;
+    padding: 24px;
+    gap: 40px;
+  }
+}
+
+/* Background Colors */
+.orange {
+  background: var(--orange-50);
+}
+
+.blue {
+  background: var(--blue-50);
+}
+
+.purple {
+  background: #f3e8ff;
+}
+
+/* Project Name */
+.projectName {
+  grid-area: name;
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--black);
+  margin: 0;
+  align-self: start;
+}
+
+@media screen and (max-width: 480px) {
+  .projectName {
+    display: none;
+  }
+}
+
+/* Project Description */
+.projectDescription {
+  grid-area: desc;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--black);
+  margin: 0;
+  max-width: 300px;
+  align-self: end;
+}
+
+@media screen and (max-width: 900px) {
+  .projectDescription {
+    max-width: 100%;
+  }
+}
+
+/* Image */
+.imageWrapper {
+  grid-area: image;
+  height: 330px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectImage {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 350px;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 900px) {
+  .projectImage {
+    max-height: 330px;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .imageWrapper {
+    height: 100%;
+  }
+
+  .imageWrapper img {
+    height: 100%;
+  }
+}
+
+/* Navigation Buttons */
+.navButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--bg-secondary);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.navButtonPrev {
+  left: -60px;
+}
+
+.navButtonNext {
+  right: -60px;
+}
+
+@media screen and (max-width: 1100px) {
+  .navButton {
+    display: none;
+  }
+}

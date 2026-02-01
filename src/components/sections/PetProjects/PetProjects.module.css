@@ -1,0 +1,89 @@
+.petProjects {
+  background-color: var(--white);
+  text-align: center;
+  padding-block: 0 120px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.sectionHeader {
+  margin-bottom: 56px;
+}
+
+.sectionHeader h2 {
+  margin: 0 0 8px 0;
+  color: var(--black);
+  font-size: 44px;
+  font-weight: 700;
+}
+
+.sectionHeader p {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--black);
+}
+
+/* Projects grid layout */
+.projectsGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Top row - two mobile projects side by side */
+.topRow {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+}
+
+/* Bottom row - full width laptop project */
+.bottomRow {
+  width: 100%;
+}
+
+/* Responsive */
+@media screen and (max-width: 1210px) {
+  .topRow {
+    flex-direction: row;
+    gap: 16px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .topRow {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .petProjects {
+    padding-block: 0 60px;
+  }
+
+  .sectionHeader {
+    margin-bottom: 32px;
+  }
+
+  .sectionHeader h2 {
+    font-size: 32px;
+  }
+
+  .sectionHeader p {
+    font-size: 14px;
+  }
+
+  .projectsGrid {
+    gap: 24px;
+  }
+
+  .topRow {
+    gap: 16px;
+  }
+}

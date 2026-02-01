@@ -1,0 +1,132 @@
+.petProject {
+  border-radius: 32px;
+  list-style: none;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* Mobile phone card styles (first and second) */
+.first,
+.second {
+  width: calc(50% - 8px);
+  padding: 40px;
+  flex-shrink: 0;
+}
+
+/* First card - pink/blue gradient */
+.first {
+  background: #f8f9ff;
+}
+
+/* Second card - orange/warm gradient */
+.second {
+  background: var(--orange-50);
+}
+
+/* Phone container */
+.phoneContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex: 1;
+}
+
+.phoneImage {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 600px;
+  object-fit: contain;
+}
+
+/* Description under the card */
+.description {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--black);
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Horizontal layout for laptop/desktop project */
+.horizontal {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  background: #f7f7f7;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px;
+}
+
+.horizontalDescription {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--black);
+  margin: 0 0 0 0;
+  padding: 24px 0;
+  line-height: 1.4;
+  text-align: left;
+  max-width: 300px;
+}
+
+.laptopContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.laptopImage {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Responsive */
+@media screen and (max-width: 950px) {
+  .first,
+  .second {
+    width: 100%;
+  }
+
+  .phoneImage {
+    max-height: 500px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .first,
+  .second {
+    width: 100%;
+  }
+
+  .phoneContainer {
+    padding: 24px 24px 0;
+  }
+
+  .phoneImage {
+    max-height: 400px;
+  }
+
+  .description {
+    font-size: 14px;
+    padding: 16px 20px;
+  }
+
+  .horizontalDescription {
+    font-size: 14px;
+    padding: 16px 20px;
+    max-width: 100%;
+  }
+
+  .laptopImage {
+    max-width: 100%;
+  }
+}
