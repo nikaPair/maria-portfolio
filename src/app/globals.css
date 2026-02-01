@@ -1,0 +1,97 @@
+@font-face {
+  font-family: "Vela Sans";
+  src: url("/fonts/VelaSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Vela Sans";
+  src: url("/fonts/VelaSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  -webkit-user-drag: none;
+  -webkit-touch-callout: none;
+}
+
+:root {
+  --black: #171717;
+  --accent: #6a8cff;
+  --button-secondary: #30353d;
+  --fg-tabs: #8588a2;
+  --fg-secondary: #a5a6ac;
+  --border: #f1f1f2;
+  --bg-secondary: #f6f6f6;
+  --white: #ffffff;
+  --orange-50: #fff8f0;
+  --blue-50: #f8f9ff;
+  --blue-500: #2563eb;
+  --blue-600: #1d4ed8;
+  --line: #e6e6e7;
+  --hover: #cfcfcf;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Vela Sans", "Inter", sans-serif !important;
+  overscroll-behavior: none;
+  touch-action: pan-x pan-y;
+  overflow-x: hidden;
+  background-color: var(--white);
+}
+
+h1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+h2 {
+  margin: 0 0 8px 0;
+  color: var(--black);
+  font-size: 44px;
+  font-weight: 700;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+b {
+  font-size: 32px;
+}
+
+span {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

@@ -1,0 +1,95 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  color: var(--black);
+}
+
+/* Highlight Block */
+.highlightBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 40px 32px;
+  background: var(--orange-50);
+  border-radius: 24px;
+  text-align: center;
+}
+
+.icon {
+  font-size: 40px;
+}
+
+.highlightTitle {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--black);
+  max-width: 700px;
+  margin: 0;
+}
+
+.highlightText {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--fg-secondary);
+  max-width: 600px;
+}
+
+/* Cards Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  padding: 40px;
+  border: 1px solid #f1f1f2;
+  border-radius: 40px;
+  @media screen and (max-width: 900px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cardImage {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.cardInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cardTitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--black);
+  margin: 0;
+}
+
+.cardSubtitle {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--fg-secondary);
+  margin: 0;
+}

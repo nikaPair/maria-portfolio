@@ -1,0 +1,89 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  color: var(--black);
+}
+
+/* Shared Block Styles */
+.icon {
+  font-size: 40px;
+}
+
+/* Achievements Block */
+.achievementsBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 40px;
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  text-align: center;
+}
+
+.blockTitle {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--black);
+  margin: 0;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-left: 20px;
+  margin: 0;
+  text-align: left;
+  max-width: 700px;
+}
+
+.listItem {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--black);
+  list-style: disc;
+}
+
+.listItem::marker {
+  color: var(--black);
+}
+
+/* Challenge Block */
+.challengeBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 40px 32px;
+  background: var(--blue-50);
+  border-radius: 24px;
+  text-align: center;
+}
+
+.challengeTitle {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  color: var(--black);
+  max-width: 710px;
+  margin: 0;
+}
+
+.challengeText {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #8588a2;
+  max-width: 710px;
+  margin: 0;
+}

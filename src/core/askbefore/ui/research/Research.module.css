@@ -1,0 +1,89 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  color: var(--black);
+}
+
+/* Description */
+.descriptionBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.description {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: var(--black);
+  max-width: 700px;
+}
+
+/* Highlight Block */
+.highlightBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 40px 32px;
+  background: var(--blue-50);
+  border-radius: 24px;
+  text-align: center;
+}
+
+.rocketIcon {
+  font-size: 32px;
+}
+
+.highlightText {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--black);
+  max-width: 700px;
+}
+
+/* Insights Block */
+.insightsBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 32px;
+  background: var(--white);
+  border-radius: 24px;
+  border: 1px solid #f1f1f2;
+}
+
+.insightsTitle {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--black);
+  margin: 0;
+}
+
+.insightsList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.insightItem {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: var(--black);
+  list-style: disc;
+}
+
+.insightItem::marker {
+  color: var(--black);
+}
