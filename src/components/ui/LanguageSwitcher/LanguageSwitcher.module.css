@@ -2,7 +2,7 @@
   position: relative;
   display: inline-flex;
   align-items: center;
-  font-family: "Vela Sans", sans-serif;
+  font-family: var(--font-manrope), sans-serif;
 }
 
 /* Desktop language button - always visible */
