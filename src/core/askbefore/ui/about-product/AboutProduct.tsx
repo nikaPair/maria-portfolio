@@ -1,5 +1,5 @@
 "use client";
-import { useState, useRef } from "react";
+
 import Image from "next/image";
 import styles from "./AboutProduct.module.css";
 import Link from "next/link";
@@ -16,39 +16,6 @@ const slides = [
 ];
 
 export default function AboutProduct() {
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const touchStartX = useRef(0);
-  const touchEndX = useRef(0);
-
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % slides.length);
-  };
-
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
-  };
-
-  const handleTouchStart = (e: React.TouchEvent) => {
-    touchStartX.current = e.touches[0].clientX;
-  };
-
-  const handleTouchMove = (e: React.TouchEvent) => {
-    touchEndX.current = e.touches[0].clientX;
-  };
-
-  const handleTouchEnd = () => {
-    const diff = touchStartX.current - touchEndX.current;
-    const minSwipeDistance = 50;
-
-    if (Math.abs(diff) > minSwipeDistance) {
-      if (diff > 0) {
-        nextSlide();
-      } else {
-        prevSlide();
-      }
-    }
-  };
-
   return (
     <section id="О продукте" className={styles.section}>
       {/* Header */}
@@ -109,57 +76,17 @@ export default function AboutProduct() {
         </p>
       </div>
 
-      {/* Slider */}
-      <div className={styles.sliderWrapper}>
-        <div
-          className={styles.slider}
-          onTouchStart={handleTouchStart}
-          onTouchMove={handleTouchMove}
-          onTouchEnd={handleTouchEnd}
-        >
-          <div
-            className={styles.sliderTrack}
-            style={{ transform: `translateX(-${currentSlide * 100}%)` }}
-          >
-            {slides.map((slide, index) => (
-              <div key={index} className={styles.slide}>
-                <Image
-                  src={slide.image}
-                  alt={slide.caption}
-                  width={800}
-                  height={500}
-                  className={styles.slideImage}
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Navigation */}
-        <button
-          className={`${styles.navButton} ${styles.navButtonPrev}`}
-          onClick={prevSlide}
-          aria-label="Previous slide"
-        >
-          <Image
-            src="/icons/chevron-right.svg"
-            alt=""
-            width={20}
-            height={20}
-            style={{ transform: "rotate(180deg)" }}
-          />
-        </button>
-        <button
-          className={`${styles.navButton} ${styles.navButtonNext}`}
-          onClick={nextSlide}
-          aria-label="Next slide"
-        >
-          <Image src="/icons/chevron-right.svg" alt="" width={20} height={20} />
-        </button>
+      {/* Single Image */}
+      <div className={styles.imageWrapper}>
+        <Image
+          src="/images/askbefore/1.png"
+          alt="Сайт для пользователей"
+          width={800}
+          height={500}
+          className={styles.image}
+        />
+        <p className={styles.caption}>Сайт для пользователей</p>
       </div>
-
-      {/* Caption */}
-      <p className={styles.caption}>{slides[currentSlide].caption}</p>
     </section>
   );
 }

@@ -16,10 +16,6 @@ export default function MobileApp() {
   const touchStartX = useRef(0);
   const touchEndX = useRef(0);
 
-  // Определяем количество слайдов в зависимости от устройства
-  const slidesPerView = isMobile ? 1 : 2;
-  const totalSlides = Math.ceil(mobileImages.length / slidesPerView);
-
   useEffect(() => {
     const checkMobile = () => {
       setIsMobile(window.innerWidth <= 768);
@@ -30,12 +26,18 @@ export default function MobileApp() {
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
+  const slidesPerView = isMobile ? 1 : 2;
+  const groups = [];
+  for (let i = 0; i < mobileImages.length; i += slidesPerView) {
+    groups.push(mobileImages.slice(i, i + slidesPerView));
+  }
+
   const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % totalSlides);
+    setCurrentSlide((prev) => (prev + 1) % groups.length);
   };
 
   const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + totalSlides) % totalSlides);
+    setCurrentSlide((prev) => (prev - 1 + groups.length) % groups.length);
   };
 
   const handleTouchStart = (e: React.TouchEvent) => {
@@ -58,17 +60,6 @@ export default function MobileApp() {
       }
     }
   };
-
-  // Группируем изображения по слайдам
-  const getSlideImages = () => {
-    const slides = [];
-    for (let i = 0; i < mobileImages.length; i += slidesPerView) {
-      slides.push(mobileImages.slice(i, i + slidesPerView));
-    }
-    return slides;
-  };
-
-  const slides = getSlideImages();
 
   return (
     <div className={styles.wrapper}>
@@ -93,13 +84,13 @@ export default function MobileApp() {
             className={styles.sliderTrack}
             style={{ transform: `translateX(-${currentSlide * 100}%)` }}
           >
-            {slides.map((slideImages, slideIndex) => (
-              <div key={slideIndex} className={styles.slide}>
-                {slideImages.map((image, imgIndex) => (
+            {groups.map((group, groupIndex) => (
+              <div key={groupIndex} className={styles.slide}>
+                {group.map((image, imgIndex) => (
                   <Image
                     key={imgIndex}
                     src={image}
-                    alt={`Mobile App экран ${slideIndex * slidesPerView + imgIndex + 1}`}
+                    alt={`Mobile App экран ${groupIndex * 2 + imgIndex + 1}`}
                     width={387}
                     height={400}
                     className={styles.slideImage}

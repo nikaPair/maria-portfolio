@@ -5,27 +5,27 @@ import styles from "./ContextAndTask.module.css";
 
 const memberPortalSlides = [
   {
-    image: "/images/askbefore/3.png",
+    image: "/images/askbefore/03.png",
     caption: "Загрузка анализов",
   },
   {
-    image: "/images/askbefore/4.png",
+    image: "/images/askbefore/Frame 2085661872.png",
     caption: "Визуальное оформление",
   },
   {
-    image: "/images/askbefore/5.png",
+    image: "/images/askbefore/Frame 2085661873.png",
     caption: "Генерация QR-кода",
   },
   {
-    image: "/images/askbefore/6.png",
+    image: "/images/askbefore/06.png",
     caption: "Страница обмена",
   },
   {
-    image: "/images/askbefore/7.png",
+    image: "/images/askbefore/Frame 2085661874.png",
     caption: "Уведомления",
   },
   {
-    image: "/images/askbefore/8.png",
+    image: "/images/askbefore/Frame 2085661875.png",
     caption: "Результат",
   },
 ];

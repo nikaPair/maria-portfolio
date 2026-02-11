@@ -64,16 +64,15 @@
   align-items: center;
   justify-content: center;
   background: var(--white);
+  flex-direction: column;
+  gap: 16px;
 }
 
 .slideImage {
   width: 100%;
   height: auto;
   border-radius: 12px;
-  object-fit: none;
-  @media screen and (max-width: 1100px) {
-    object-fit: cover;
-  }
+  object-fit: cover;
 }
 
 /* Navigation Buttons */
@@ -117,4 +116,29 @@
   font-weight: 600;
   color: var(--fg-secondary);
   text-align: center;
+}
+
+/* Desktop Grid (No Slider) */
+@media screen and (min-width: 1025px) {
+  .sliderTrack {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    transform: none !important;
+  }
+
+  .slide {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .slider {
+    overflow: visible;
+  }
+
+  .navButton,
+  .navButtonPrev,
+  .navButtonNext {
+    display: none;
+  }
 }
