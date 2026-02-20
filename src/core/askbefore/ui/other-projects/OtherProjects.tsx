@@ -25,11 +25,11 @@ const otherProjects = [
   },
   {
     id: 3,
-    name: "HushHub",
+    name: "HashuHub",
     description:
       "Унифицированная платформа для мониторинга работы ASIC-майнеров",
     image: "/images/asic.png",
-    href: "/hushhub",
+    href: "/hashuhub",
     bgColor: "purple",
   },
 ];
