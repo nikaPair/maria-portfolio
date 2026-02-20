@@ -1,0 +1,221 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 100%;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.title {
+  font-family: var(--font-manrope);
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  color: var(--black);
+  margin: 0;
+}
+
+.description {
+  font-family: var(--font-manrope);
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--black);
+  max-width: 900px;
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.subtitle {
+  font-family: var(--font-manrope);
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--black);
+  margin: 0;
+  margin-top: 24px;
+}
+
+.functionBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.functionTitle {
+  font-family: var(--font-manrope);
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--black);
+  margin: 0;
+}
+
+.functionDescription {
+  font-family: var(--font-manrope);
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--black);
+  margin: 0;
+  max-width: 900px;
+}
+
+.functionImageCard {
+  background-color: var(--bg-secondary);
+  border-radius: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+  overflow: hidden;
+  height: 492px;
+  width: 100%;
+  img {
+    object-fit: cover;
+  }
+}
+
+.functionImage {
+  width: auto;
+  height: 100%;
+  display: block;
+  border-radius: 32px;
+}
+
+@media (max-width: 768px) {
+  .functionImageCard {
+    height: 400px;
+  }
+}
+
+.functionCaption {
+  font-family: var(--font-manrope);
+  font-size: 16px;
+  color: var(--fg-secondary);
+  text-align: center;
+  margin: 0;
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.card {
+  background-color: var(--bg-secondary);
+  border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0;
+  height: auto;
+}
+
+.image {
+  width: 100%;
+  height: 492px;
+  object-fit: cover;
+  display: block;
+  border-radius: 32px;
+}
+
+/* Slider Styles (Mobile) */
+.sliderWrapper {
+  position: relative;
+  width: 100%;
+  display: none;
+}
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 24px;
+}
+
+.sliderTrack {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+.slide {
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.infoBlock {
+  background-color: var(--blue-50);
+  border-radius: 32px;
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.iconWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.emoji {
+  font-size: 32px;
+}
+
+.infoTitle {
+  font-family: var(--font-manrope);
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+  color: var(--black);
+  margin: 0;
+  max-width: 700px;
+}
+
+.infoText {
+  font-family: var(--font-manrope);
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--fg-secondary);
+  margin: 0;
+  max-width: 600px;
+}
+
+@media (max-width: 1024px) {
+  .cardsGrid {
+    display: none;
+  }
+
+  .sliderWrapper {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .infoBlock {
+    padding: 32px 24px;
+  }
+
+  .infoTitle {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}

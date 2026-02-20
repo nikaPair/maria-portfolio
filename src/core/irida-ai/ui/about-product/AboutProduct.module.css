@@ -1,0 +1,130 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  max-width: 100%;
+}
+
+.topBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoWrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logoIcon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+
+.title {
+  font-family: var(--font-manrope);
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0;
+  color: var(--black);
+  line-height: 40px;
+}
+
+.textBlock {
+  max-width: 800px;
+}
+
+.description {
+  font-family: var(--font-manrope);
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--black);
+  margin: 0;
+}
+
+/* Context Block */
+.contextBlock {
+  display: flex;
+  gap: 32px;
+  align-items: stretch;
+}
+
+.contextContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contextTitle {
+  font-family: var(--font-manrope);
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  color: var(--black);
+  margin: 0;
+}
+
+.contextText {
+  font-family: var(--font-manrope);
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--black);
+  margin: 0;
+  white-space: pre-line;
+}
+
+/* Image Card */
+.imageCard {
+  background-color: var(--orange-50);
+  border-radius: 32px;
+  width: 304px;
+  min-height: 352px;
+  height: auto;
+  flex-shrink: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+  padding: 40px 0 0 0;
+}
+
+.imageContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+@media (max-width: 1024px) {
+  .contextBlock {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .imageCard {
+    width: 100%;
+    min-height: 400px;
+    height: auto;
+    align-items: center;
+  }
+
+  .imageContainer {
+    padding-top: 0;
+    max-width: 400px;
+  }
+}

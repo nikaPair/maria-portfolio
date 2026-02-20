@@ -1,5 +1,5 @@
 "use client";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./OtherProjects.module.css";
@@ -69,6 +69,14 @@ export default function OtherProjects() {
       }
     }
   };
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % otherProjects.length);
+    }, 3000);
+
+    return () => clearInterval(timer);
+  }, []);
 
   return (
     <section className={styles.section}>

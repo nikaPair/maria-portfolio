@@ -1,0 +1,160 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.title {
+  font-family: var(--font-manrope);
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  color: var(--black);
+  margin: 0;
+}
+
+/* Slider */
+.sliderWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 24px;
+}
+
+.sliderTrack {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+/* Desktop: название и описание слева, картинка справа */
+.slide {
+  min-width: 100%;
+  width: 100%;
+  flex-shrink: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr auto;
+  grid-template-areas:
+    "name image"
+    "desc image";
+  gap: 40px;
+  padding: 40px;
+  border-radius: 24px;
+  text-decoration: none;
+  box-sizing: border-box;
+  min-height: 400px;
+}
+
+/* Tablet: заголовок сверху, картинка посередине, описание снизу */
+@media screen and (max-width: 900px) {
+  .slide {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "name"
+      "image"
+      "desc";
+    text-align: center;
+    padding: 32px;
+    min-height: auto;
+  }
+}
+
+/* Mobile: без заголовка, картинка сверху, описание снизу */
+@media screen and (max-width: 480px) {
+  .slide {
+    grid-template-areas:
+      "image"
+      "desc";
+    grid-template-rows: auto auto;
+    padding: 24px;
+    gap: 40px;
+  }
+}
+
+/* Background Colors */
+.orange {
+  background: var(--orange-50);
+}
+
+.blue {
+  background: var(--blue-50);
+}
+
+.pink {
+  background: var(--pink-50);
+}
+
+/* Project Name */
+.projectName {
+  grid-area: name;
+  font-family: var(--font-manrope);
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--black);
+  margin: 0;
+  align-self: start;
+}
+
+@media screen and (max-width: 480px) {
+  .projectName {
+    display: none;
+  }
+}
+
+/* Project Description */
+.projectDescription {
+  grid-area: desc;
+  font-family: var(--font-manrope);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--black);
+  margin: 0;
+  max-width: 300px;
+  align-self: end;
+}
+
+@media screen and (max-width: 900px) {
+  .projectDescription {
+    max-width: 100%;
+  }
+}
+
+/* Image */
+.imageWrapper {
+  grid-area: image;
+  height: 330px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectImage {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 350px;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 900px) {
+  .projectImage {
+    max-height: 330px;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .imageWrapper {
+    height: 100%;
+  }
+
+  .imageWrapper img {
+    height: 100%;
+  }
+}

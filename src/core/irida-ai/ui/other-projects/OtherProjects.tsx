@@ -7,30 +7,29 @@ import styles from "./OtherProjects.module.css";
 const otherProjects = [
   {
     id: 1,
-    name: "Irida-AI",
-    description:
-      "Медицинский AI-ассистент на технической базе некоммерческого проекта DxGPT",
-    image: "/images/chat.png",
-    href: "/irida-ai",
+    name: "HashuHub",
+    description: "Унифицированная платформа для мониторинга работы ASIC-майнеров",
+    image: "/images/asic.png",
+    href: "/hashuhub",
     bgColor: "orange",
   },
   {
     id: 2,
+    name: "AskBefore",
+    description:
+      "Сервис для безопасного обмена результатами тестов на ИППП",
+    image: "/images/hashuhub/askbefore.png",
+    href: "/askbefore",
+    bgColor: "pink",
+  },
+  {
+    id: 3,
     name: "Emoview",
     description:
       "Профессиональный трекер психического состояния для людей с БАР и ПРЛ",
     image: "/images/bar.png",
     href: "/emoview",
     bgColor: "blue",
-  },
-  {
-    id: 3,
-    name: "HashuHub",
-    description:
-      "Унифицированная платформа для мониторинга работы ASIC-майнеров",
-    image: "/images/asic.png",
-    href: "/hashuhub",
-    bgColor: "purple",
   },
 ];
 
@@ -118,27 +117,6 @@ export default function OtherProjects() {
           </div>
         </div>
 
-        {/* Navigation */}
-        <button
-          className={`${styles.navButton} ${styles.navButtonPrev}`}
-          onClick={prevSlide}
-          aria-label="Previous slide"
-        >
-          <Image
-            src="/icons/chevron-right.svg"
-            alt=""
-            width={20}
-            height={20}
-            style={{ transform: "rotate(180deg)" }}
-          />
-        </button>
-        <button
-          className={`${styles.navButton} ${styles.navButtonNext}`}
-          onClick={nextSlide}
-          aria-label="Next slide"
-        >
-          <Image src="/icons/chevron-right.svg" alt="" width={20} height={20} />
-        </button>
       </div>
     </section>
   );
