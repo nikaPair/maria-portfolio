@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import { useTranslations } from "next-intl";
 import Aside from "@/core/askbefore/ui/aside/aside";
 import styles from "./hashuhub.module.css";
 import Footer from "@/components/Footer/Footer";
@@ -12,13 +13,15 @@ import Impact from "./ui/impact/Impact";
 import OtherProjects from "./ui/other-projects/OtherProjects";
 
 export default function HashuHub() {
+  const t = useTranslations("hashuhub.sidebarItems");
+
   const list = [
-    "Контекст",
-    "Проблема",
-    "Стратегия",
-    "Исходный дизайн",
-    "Решение",
-    "Перспективы проекта",
+    t("context"),
+    t("challenge"),
+    t("strategy"),
+    t("originalDesign"),
+    t("solution"),
+    t("impact"),
   ];
 
   return (

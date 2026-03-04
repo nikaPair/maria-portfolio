@@ -1,40 +1,41 @@
 "use client";
-import { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
 import styles from "./OtherProjects.module.css";
 
-const otherProjects = [
-  {
-    id: 1,
-    name: "Irida-AI",
-    description:
-      "Медицинский AI-ассистент на технической базе некоммерческого проекта DxGPT",
-    image: "/images/chat.png",
-    href: "/irida-ai",
-    bgColor: "orange",
-  },
-  {
-    id: 2,
-    name: "Emoview",
-    description:
-      "Профессиональный трекер психического состояния для людей с БАР и ПРЛ",
-    image: "/images/bar.png",
-    href: "/emoview",
-    bgColor: "blue",
-  },
-  {
-    id: 3,
-    name: "HashuHub",
-    description:
-      "Унифицированная платформа для мониторинга работы ASIC-майнеров",
-    image: "/images/asic.png",
-    href: "/hashuhub",
-    bgColor: "purple",
-  },
-];
-
 export default function OtherProjects() {
+  const tCommon = useTranslations("common");
+  const tPetProjects = useTranslations("petProjects.items");
+
+  const otherProjects = [
+    {
+      id: 1,
+      name: "Irida-AI",
+      description: tPetProjects("iridaAi.description"),
+      image: "/images/chat.png",
+      href: "/irida-ai",
+      bgColor: "orange",
+    },
+    {
+      id: 2,
+      name: "Emoview",
+      description: tPetProjects("emoview.description"),
+      image: "/images/bar.png",
+      href: "/emoview",
+      bgColor: "blue",
+    },
+    {
+      id: 3,
+      name: "HashuHub",
+      description: tPetProjects("hashuhub.description"),
+      image: "/images/asic.png",
+      href: "/hashuhub",
+      bgColor: "purple",
+    },
+  ];
+
   const [currentSlide, setCurrentSlide] = useState(0);
   const touchStartX = useRef(0);
   const touchEndX = useRef(0);
@@ -76,11 +77,11 @@ export default function OtherProjects() {
     }, 3000);
 
     return () => clearInterval(timer);
-  }, []);
+  }, [otherProjects.length]);
 
   return (
     <section className={styles.section}>
-      <h4 className={styles.title}>Другие проекты</h4>
+      <h4 className={styles.title}>{tCommon("others")}</h4>
 
       {/* Slider */}
       <div className={styles.sliderWrapper}>
@@ -96,6 +97,7 @@ export default function OtherProjects() {
           >
             {otherProjects.map((project) => (
               <Link
+                // @ts-ignore
                 key={project.id}
                 href={project.href}
                 className={`${styles.slide} ${styles[project.bgColor]}`}

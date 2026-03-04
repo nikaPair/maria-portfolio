@@ -7,6 +7,7 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
+  text-decoration: none;
 }
 
 /* Mobile phone card styles (first and second) */
@@ -91,6 +92,7 @@
 
 /* Responsive */
 @media screen and (max-width: 950px) {
+
   .first,
   .second {
     width: 100%;
@@ -102,6 +104,7 @@
 }
 
 @media screen and (max-width: 750px) {
+
   .first,
   .second {
     width: 100%;

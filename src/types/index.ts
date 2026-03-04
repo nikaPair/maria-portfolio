@@ -27,6 +27,7 @@ export type CaseData = {
 
 export type PetProjectData = {
   id: number;
+  slug: string;
   logo: string;
   name: string;
   description: string;

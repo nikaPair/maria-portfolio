@@ -1,21 +1,25 @@
 "use client";
 import React from "react";
+import { useTranslations } from "next-intl";
 import Aside from "@/core/askbefore/ui/aside/aside";
 import styles from "./irida-ai.module.css";
 import Footer from "@/components/Footer/Footer";
 import AboutProduct from "./ui/about-product/AboutProduct";
 import Research from "./ui/research/Research";
 import Solution from "./ui/solution/Solution";
+import VisualStrategy from "./ui/visual-strategy/VisualStrategy";
 import Impact from "./ui/impact/Impact";
 import OtherProjects from "./ui/other-projects/OtherProjects";
 
 export default function IridaAI() {
+  const t = useTranslations("irida.sidebarItems");
+
   const list = [
-    "Как появилась идея",
-    "Исследование и инсайты",
-    "Решение",
-    "Визуальная стратегия",
-    "Перспективы проекта",
+    t("idea"),
+    t("research"),
+    t("solution"),
+    t("visualStrategy"),
+    t("impact"),
   ];
 
   return (
@@ -26,6 +30,7 @@ export default function IridaAI() {
           <AboutProduct />
           <Research />
           <Solution />
+          <VisualStrategy />
           <Impact />
           <OtherProjects />
         </div>

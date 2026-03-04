@@ -3,11 +3,13 @@
 import { useEffect, useRef } from "react";
 import Image from "next/image";
 import { animate } from "motion";
+import { useTranslations } from "next-intl";
 import { SOCIAL_LINKS } from "@/constants";
 import styles from "./Hero.module.css";
 
 export default function Hero() {
   const heroRef = useRef<HTMLElement>(null);
+  const t = useTranslations("hero");
 
   useEffect(() => {
     if (heroRef.current) {
@@ -34,17 +36,13 @@ export default function Hero() {
         <div className={styles.heroTextContainer}>
           <div className={styles.heroText}>
             <h2>
-              Hi, I'm Maria
-              <br />— Product UX/UI Designer
+              {t("greeting")}
+              <br />{t("role")}
             </h2>
+            <p>{t("description")}</p>
             <p>
-              Работаю в берлинском medtech стартапе AskBefore на позиции
-              старшего дизайнера. Вместе с командой строю международный
-              кроссплатформенный продукт, у которого крупные амбиции на
-              европейском IT-рынке и он успешно их реализовывает.
-            </p>
-            <p>
-              Кейс о работе в AskBefore <a href="">по ссылке</a>
+              {t("caseLinkPrefix")}{" "}
+              <a href="">{t("caseLinkText")}</a>
             </p>
           </div>
 
@@ -59,22 +57,26 @@ export default function Hero() {
 }
 
 function StatsCard() {
+  const t = useTranslations("hero");
+
   return (
     <div className={styles.countersContainer}>
       <div className={styles.counter}>
-        <b>3 года</b>
-        <span>в дизайне</span>
+        <b>{t("yearsDesign")}</b>
+        <span>{t("inDesign")}</span>
       </div>
       <div className={styles.divider} />
       <div className={styles.counter}>
-        <b>8 лет</b>
-        <span>в digital</span>
+        <b>{t("yearsDigital")}</b>
+        <span>{t("inDigital")}</span>
       </div>
     </div>
   );
 }
 
 function CVCard() {
+  const t = useTranslations("hero");
+
   return (
     <div className={styles.cvContainer}>
       <Image
@@ -84,14 +86,14 @@ function CVCard() {
         width={44}
         height={44}
       />
-      <a className={styles.cvButton} href="/Резюме.pdf" download>
+      <a className={styles.cvButton} href={t("resumePath")} download>
         <Image
           src="/images/tablet/download.svg"
           alt="download"
           width={20}
           height={20}
         />
-        резюме.pdf
+        {t("resumeFile")}
       </a>
     </div>
   );

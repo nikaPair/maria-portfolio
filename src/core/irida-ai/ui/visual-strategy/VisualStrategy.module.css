@@ -1,0 +1,145 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 100%;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.title {
+    font-family: var(--font-manrope);
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    color: var(--black);
+    margin: 0;
+}
+
+.description {
+    font-family: var(--font-manrope);
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--black);
+    max-width: 900px;
+    margin: 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* ===== Desktop grid ===== */
+.desktopGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.topRow {
+    display: grid;
+    grid-template-columns: 242fr 414fr;
+    gap: 24px;
+}
+
+.topCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.mockupImage {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.bottomCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.bottomMockupImage {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+/* ===== Mobile slider (hidden on desktop) ===== */
+.sliderWrapper {
+    display: none;
+    position: relative;
+    width: 100%;
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.sliderTrack {
+    display: flex;
+    transition: transform 0.4s ease;
+}
+
+.slide {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.slideImage {
+    width: 316px;
+    height: 550px;
+    object-fit: contain;
+    display: block;
+}
+
+/* Footnote text */
+.footnote {
+    font-family: var(--font-manrope);
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--black);
+    margin: 0;
+    max-width: 900px;
+}
+
+/* ===== Tablet breakpoint ===== */
+@media (max-width: 1024px) {
+    .topRow {
+        gap: 16px;
+    }
+}
+
+/* ===== Mobile breakpoint ===== */
+@media (max-width: 768px) {
+    .section {
+        gap: 32px;
+    }
+
+    .desktopGrid {
+        display: none;
+    }
+
+    .sliderWrapper {
+        display: block;
+    }
+
+    .footnote {
+        display: none;
+    }
+}

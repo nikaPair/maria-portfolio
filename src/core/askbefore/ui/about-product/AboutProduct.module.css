@@ -17,6 +17,41 @@
   width: auto;
 }
 
+.infoGrid {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.infoCol {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.infoLabel {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--fg-secondary);
+}
+
+.infoLink {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--blue-500);
+  transition: color 0.3s ease;
+}
+
+.infoLink:hover {
+  color: var(--blue-600);
+}
+
+.infoValue {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--black);
+}
+
 .tags {
   display: flex;
   gap: 40px;
@@ -65,10 +100,17 @@
 }
 
 /* Marketing Section */
-.marketingSection {
+.marketingSection,
+.marketingBlock {
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+.marketingContent {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .subtitle {
@@ -119,9 +161,34 @@
   object-fit: cover;
 }
 
-.caption {
+.mainImage {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 24px;
+  object-fit: cover;
+}
+
+.caption,
+.imageCaption {
   font-size: 14px;
   font-weight: 600;
   color: var(--fg-secondary);
   text-align: center;
+}
+
+/* Slider */
+.sliderBlock {
+  width: 100%;
+}
+
+.swiper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slideItem {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
 }

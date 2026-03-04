@@ -1,14 +1,18 @@
 "use client";
+
 import React from "react";
+import { useTranslations } from "next-intl";
 import styles from "./Impact.module.css";
 
 export default function Impact() {
+  const t = useTranslations("irida.impact");
+  const navT = useTranslations("irida.sidebarItems");
+
   return (
-    <section id="Перспективы проекта" className={styles.section}>
-      <h4 className={styles.title}>Перспективы проекта</h4>
+    <section id={navT("impact")} className={styles.section}>
+      <h4 className={styles.title}>{t("title")}</h4>
       <p className={styles.description}>
-        DxGPT создан и поддерживается волонтерами, поэтому по окончании разработки я хочу
-        безвозмездно передать дизайн-проект Irida.
+        {t("description")}
       </p>
 
       <div className={styles.highlight}>
@@ -16,8 +20,7 @@ export default function Impact() {
           <span className={styles.emoji}>🤝</span>
         </div>
         <p className={styles.text}>
-          Если команде DxGPT понравится редизайн, то я готова на время
-          присоединиться и доработать проект под потребности продукта.
+          {t("text")}
         </p>
       </div>
     </section>

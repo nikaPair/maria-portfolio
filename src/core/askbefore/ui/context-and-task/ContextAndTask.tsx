@@ -1,141 +1,97 @@
 "use client";
-import { useState, useRef } from "react";
+
+import React from "react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 import styles from "./ContextAndTask.module.css";
 
-const memberPortalSlides = [
-  {
-    image: "/images/askbefore/03.png",
-    caption: "Загрузка анализов",
-  },
-  {
-    image: "/images/askbefore/Frame 2085661872.png",
-    caption: "Визуальное оформление",
-  },
-  {
-    image: "/images/askbefore/Frame 2085661873.png",
-    caption: "Генерация QR-кода",
-  },
-  {
-    image: "/images/askbefore/06.png",
-    caption: "Страница обмена",
-  },
-  {
-    image: "/images/askbefore/Frame 2085661874.png",
-    caption: "Уведомления",
-  },
-  {
-    image: "/images/askbefore/Frame 2085661875.png",
-    caption: "Результат",
-  },
-];
-
 export default function ContextAndTask() {
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const touchStartX = useRef(0);
-  const touchEndX = useRef(0);
+  const t = useTranslations("askBefore.contextAndTask");
+  const navT = useTranslations("askBefore.sidebarItems");
 
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % memberPortalSlides.length);
-  };
-
-  const prevSlide = () => {
-    setCurrentSlide(
-      (prev) =>
-        (prev - 1 + memberPortalSlides.length) % memberPortalSlides.length,
-    );
-  };
-
-  const handleTouchStart = (e: React.TouchEvent) => {
-    touchStartX.current = e.touches[0].clientX;
-  };
-
-  const handleTouchMove = (e: React.TouchEvent) => {
-    touchEndX.current = e.touches[0].clientX;
-  };
-
-  const handleTouchEnd = () => {
-    const diff = touchStartX.current - touchEndX.current;
-    const minSwipeDistance = 50;
-
-    if (Math.abs(diff) > minSwipeDistance) {
-      if (diff > 0) {
-        nextSlide();
-      } else {
-        prevSlide();
-      }
-    }
-  };
+  const slides = [
+    {
+      image: "/images/askbefore/1-1.png",
+      caption: t("slides.upload"),
+    },
+    {
+      image: "/images/askbefore/2-2.png",
+      caption: t("slides.visual"),
+    },
+    {
+      image: "/images/askbefore/3-3.png",
+      caption: t("slides.qr"),
+    },
+    {
+      image: "/images/askbefore/4-4.png",
+      caption: t("slides.exchange"),
+    },
+    {
+      image: "/images/askbefore/5-5.png",
+      caption: t("slides.notifications"),
+    },
+    {
+      image: "/images/askbefore/6-6.png",
+      caption: t("slides.result"),
+    },
+  ];
 
   return (
-    <section id="Контекст и задача" className={styles.section}>
-      <h4 className={styles.title}>Контекст и задача</h4>
-
+    <section id={navT("context")} className={styles.section}>
+      <h2 className={styles.title}>{t("title")}</h2>
       <p className={styles.description}>
-        Я присоединилась к команде на раннем этапе, когда начали отрисовывать
-        базовый сценарий, и его доработка перешла в мою зону ответственности.
-        Также мне поручили создание с нуля 4х крупных участков продукта и
-        передача их в разработку. Я начала с проработки основного функционала,
-        или по-другому Member Portal.
+        {t("description")}
       </p>
 
-      {/* Member Portal Section */}
-      <div className={styles.portalSection}>
-        <h3 className={styles.subtitle}>Member Portal</h3>
+      <div className={styles.block}>
+        <h3 className={styles.subtitle}>{t("subtitle")}</h3>
         <p className={styles.text}>
-          Основной пользовательский сценарий включает в себя загрузку анализов,
-          визуальное оформление и генерация QR-кода для безопасного доступа
-          партнера к странице обмена.
+          {t("text")}
         </p>
-      </div>
 
-      {/* Slider */}
-      <div className={styles.sliderWrapper}>
-        <div
-          className={styles.slider}
-          onTouchStart={handleTouchStart}
-          onTouchMove={handleTouchMove}
-          onTouchEnd={handleTouchEnd}
-        >
-          <div
-            className={styles.sliderTrack}
-            style={{ transform: `translateX(-${currentSlide * 100}%)` }}
-          >
-            {memberPortalSlides.map((slide, index) => (
-              <div key={index} className={styles.slide}>
+        {/* Desktop Grid */}
+        <div className={styles.desktopGrid}>
+          {slides.map((slide, index) => (
+            <div key={index} className={styles.gridItem}>
+              <p className={styles.gridItemTitle}>{slide.caption}</p>
+              <div className={styles.imageWrapper}>
                 <Image
                   src={slide.image}
                   alt={slide.caption}
-                  width={800}
-                  height={500}
-                  className={styles.slideImage}
+                  width={400}
+                  height={250}
+                  className={styles.image}
                 />
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
 
-        {/* Navigation */}
-        <button
-          className={`${styles.navButton} ${styles.navButtonPrev}`}
-          onClick={prevSlide}
-          aria-label="Previous slide"
-        >
-          <Image
-            src="/icons/chevron-right.svg"
-            alt=""
-            width={20}
-            height={20}
-            style={{ transform: "rotate(180deg)" }}
-          />
-        </button>
-        <button
-          className={`${styles.navButton} ${styles.navButtonNext}`}
-          onClick={nextSlide}
-          aria-label="Next slide"
-        >
-          <Image src="/icons/chevron-right.svg" alt="" width={20} height={20} />
-        </button>
+        {/* Mobile Slider */}
+        <div className={styles.mobileSlider}>
+          <Swiper
+            spaceBetween={16}
+            slidesPerView={1}
+          >
+            {slides.map((slide, index) => (
+              <SwiperSlide key={index}>
+                <div className={styles.slideItem}>
+                  <div className={styles.imageWrapper}>
+                    <Image
+                      src={slide.image}
+                      alt={slide.caption}
+                      width={400}
+                      height={250}
+                      className={styles.image}
+                    />
+                  </div>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
       </div>
     </section>
   );

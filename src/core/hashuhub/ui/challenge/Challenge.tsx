@@ -1,14 +1,19 @@
 "use client";
+
 import React from "react";
+import { useTranslations } from "next-intl";
 import styles from "./Challenge.module.css";
 
 export default function Challenge() {
+  const t = useTranslations("hashuhub.challenge");
+  const navT = useTranslations("hashuhub.sidebarItems");
+
   return (
-    <section id="Проблема" className={styles.section}>
+    <section id={navT("challenge")} className={styles.section}>
       <div className={styles.header}>
-        <h4 className={styles.title}>Проблема</h4>
+        <h4 className={styles.title}>{t("title")}</h4>
         <p className={styles.subtitle}>
-          В майнинговом бизнесе фигурируют 2 главные системы:
+          {t("subtitle")}
         </p>
       </div>
 
@@ -18,10 +23,9 @@ export default function Challenge() {
           <div className={styles.iconWrapper}>
             <span className={styles.emojiIcon}>⛏️</span>
           </div>
-          <h3 className={styles.columnTitle}>Майнинговый пул</h3>
+          <h3 className={styles.columnTitle}>{t("miningPoolTitle")}</h3>
           <p className={styles.columnText}>
-            Сервис, где майнеры объединяют мощности, чтобы добывать криптовалюту
-            и делить вознаграждение соразмерно вкладу.
+            {t("miningPoolText")}
           </p>
         </div>
 
@@ -30,10 +34,9 @@ export default function Challenge() {
           <div className={styles.iconWrapper}>
             <span className={styles.emojiIcon}>🔧</span>
           </div>
-          <h3 className={styles.columnTitle}>Административная панель</h3>
+          <h3 className={styles.columnTitle}>{t("adminPanelTitle")}</h3>
           <p className={styles.columnText}>
-            Веб интерфейс для настройки, мониторинга и управления майнером, где
-            пользователь контролирует работу устройства и его параметры.
+            {t("adminPanelText")}
           </p>
         </div>
       </div>
@@ -41,25 +44,15 @@ export default function Challenge() {
       {/* Bottom Text */}
       <div className={styles.bottomTextWrapper}>
         <p className={styles.bottomText}>
-          На практике владельцы майнеров почти всегда смотрят только на пул,
-          потому что доход и хешрейт понятны и напрямую связаны с прибылью.
-          Административную панель открывают реже, так как данные в ней
-          представлены в виде сложных таблиц, которые трудно читать и
-          интерпретировать. Из-за этого техническое состояние машин остается без
-          внимания.
+          {t("bottomText")}
         </p>
       </div>
 
       {/* Complication Section */}
       <div className={styles.complicationSection}>
-        <h4 className={styles.complicationTitle}>Отягощение</h4>
+        <h4 className={styles.complicationTitle}>{t("complicationTitle")}</h4>
         <p className={styles.complicationText}>
-          Асики плохо переносят невнимательное обслуживание. У них высокая
-          температура работы, поэтому пыль, сухая термопаста и изношенные
-          термопрокладки ускоряют деградацию запчастей. При этом внешне
-          устройство продолжает работать нормально и до последнего показывает
-          максимальный хешрейт. На пуле проблемы не видны до тех пор, пока
-          хешрейт не начнет падать.
+          {t("complicationText")}
         </p>
 
         <div className={styles.warningCard}>
@@ -67,10 +60,7 @@ export default function Challenge() {
             <span className={styles.emojiIcon}>⚠️</span>
           </div>
           <p className={styles.warningText}>
-            Когда хешрейт падает, то поломка уже произошла и оборудование
-            требует технического вмешательства. Ремонт одного майнера может
-            длится несколько недель и обходится дорого, поэтому для бизнеса
-            критично замечать отклонения заранее.
+            {t("warningText")}
           </p>
         </div>
       </div>

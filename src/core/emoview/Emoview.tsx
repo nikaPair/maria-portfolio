@@ -1,0 +1,44 @@
+"use client";
+import React from "react";
+import Aside from "@/core/askbefore/ui/aside/aside";
+import styles from "./emoview.module.css";
+import Footer from "@/components/Footer/Footer";
+import AboutProduct from "./ui/about-product/AboutProduct";
+import MarketResearch from "./ui/market-research/MarketResearch";
+import DevelopmentStart from "./ui/development-start/DevelopmentStart";
+import Solution from "./ui/solution/Solution";
+import VisualStrategy from "./ui/visual-strategy/VisualStrategy";
+import Perspectives from "./ui/perspectives/Perspectives";
+import OtherProjects from "./ui/other-projects/OtherProjects";
+import { useTranslations } from "next-intl";
+
+export default function Emoview() {
+    const t = useTranslations("emoview.sidebarItems");
+
+    const list = [
+        t("idea"),
+        t("market"),
+        t("development"),
+        t("solution"),
+        t("visualStrategy"),
+        t("perspectives"),
+    ];
+
+    return (
+        <div className={styles.mainWrapper}>
+            <div className={styles.emoview}>
+                <Aside list={list} />
+                <div className={styles.emoview__content}>
+                    <AboutProduct />
+                    <MarketResearch />
+                    <DevelopmentStart />
+                    <Solution />
+                    <VisualStrategy />
+                    <Perspectives />
+                    <OtherProjects />
+                </div>
+            </div>
+            <Footer />
+        </div>
+    );
+}

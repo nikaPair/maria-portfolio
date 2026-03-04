@@ -1,11 +1,16 @@
 "use client";
+
 import React from "react";
+import { useTranslations } from "next-intl";
 import styles from "./Impact.module.css";
 
 export default function Impact() {
+  const t = useTranslations("hashuhub.impact");
+  const navT = useTranslations("hashuhub.sidebarItems");
+
   return (
-    <section id="Перспективы проекта" className={styles.section}>
-      <h4 className={styles.title}>Перспективы проекта</h4>
+    <section id={navT("impact")} className={styles.section}>
+      <h4 className={styles.title}>{t("title")}</h4>
       <div className={styles.highlight}>
         <div className={styles.iconWrapper}>
           <svg
@@ -39,9 +44,7 @@ export default function Impact() {
           </svg>
         </div>
         <p className={styles.text}>
-          Я планирую сделать локализацию на китайском и английском языках,
-          отправить на оценку проект коллегам из Web3 и предложить его компании
-          MicroBT.
+          {t("text")}
         </p>
       </div>
     </section>

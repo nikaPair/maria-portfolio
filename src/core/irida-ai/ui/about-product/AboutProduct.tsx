@@ -1,17 +1,22 @@
 "use client";
+
 import React from "react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import styles from "./AboutProduct.module.css";
 
 export default function AboutProduct() {
+  const t = useTranslations("irida.aboutProduct");
+  const navT = useTranslations("irida.sidebarItems");
+
   return (
-    <section id="Как появилась идея" className={styles.section}>
+    <section id={navT("idea")} className={styles.section}>
       <div className={styles.topBlock}>
         <div className={styles.header}>
           <div className={styles.logoWrapper}>
             <div className={styles.logoIcon}>
               <Image
-                src="/images/irida/logo.svg"
+                src="/images/logo-irida.png"
                 alt="Irida AI Logo"
                 width={40}
                 height={40}
@@ -22,32 +27,26 @@ export default function AboutProduct() {
         </div>
         <div className={styles.textBlock}>
           <p className={styles.description}>
-            Irida AI — это моя переработка проекта DxGPT, волонтерского AI-ассистента для предварительной
-            медицинской диагностики.
+            {t("description")}
           </p>
         </div>
       </div>
 
       <div className={styles.contextBlock}>
         <div className={styles.contextContent}>
-          <h4 className={styles.contextTitle}>Как появилась идея</h4>
+          <h4 className={styles.contextTitle}>{t("contextTitle")}</h4>
           <p className={styles.contextText}>
-            О проекте DxGPT я узнала от друга-врача, который использует сервис в своей практике и иногда
-            рекомендует его пациентам. Из любопытства я протестировала DxGPT и увидела, что модель предлагает
-            действительно хорошо обоснованные гипотезы, которые помогают разобраться в состоянии здоровья.
+            {t("contextText1")}
           </p>
           <p className={styles.contextText}>
-            Я постоянно спотыкалась об интерфейс в работе с DxGPT. Его сценарий использования нарушает
-            сформированные паттерны взаимодействия с AI-сервисами, не имеет удобной мобильной версии и скрывает
-            текст промта. Мне захотелось с нуля переработать DxGPT, пойти по дизайн-процессу и создать более
-            удобную и красивую версию.
+            {t("contextText2")}
           </p>
         </div>
         <div className={styles.imageCard}>
           <div className={styles.imageContainer}>
             <Image
               src="/images/irida/idea.png"
-              alt="Irida AI Mobile Interface"
+              alt="Irida AI"
               width={304}
               height={352}
               className={styles.ideaImage}
@@ -59,4 +58,3 @@ export default function AboutProduct() {
     </section>
   );
 }
-

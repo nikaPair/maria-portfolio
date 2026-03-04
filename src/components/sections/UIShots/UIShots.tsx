@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import Image from "next/image";
 import { animate, inView } from "motion";
 import MobileSlider from "@/components/ui/MobileSlider";
+import { useTranslations } from "next-intl";
 import {
   UI_SHOTS_DESKTOP,
   UI_SHOTS_TABLET,
@@ -13,6 +14,7 @@ import styles from "./UIShots.module.css";
 
 export default function UIShots() {
   const gridRef = useRef<HTMLDivElement>(null);
+  const t = useTranslations("uiShots");
 
   useEffect(() => {
     if (gridRef.current) {
@@ -29,8 +31,8 @@ export default function UIShots() {
   return (
     <section className={styles.uiShots} id="ui-shots">
       <header className={styles.sectionHeader}>
-        <h2>UI шоты</h2>
-        <p>Визуал с кейсов и pet-проектов</p>
+        <h2>{t("title")}</h2>
+        <p>{t("subtitle")}</p>
       </header>
 
       {/* Desktop grid - 11 images */}

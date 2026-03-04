@@ -1,45 +1,24 @@
 "use client";
 import React, { useState, useRef } from "react";
-import styles from "./OriginalDesign.module.css";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
-
-const cards = [
-  {
-    id: 1,
-    text: "Главный дашборд со статусом устройств, показателями и событиями",
-    image: "/images/hashuhub/1.png",
-  },
-  {
-    id: 2,
-    text: "Обзор системных характеристик, памяти и сетевых параметров",
-    image: "/images/hashuhub/2.png",
-  },
-  {
-    id: 3,
-    text: "Настройки подключения к майнинг-пулу и рабочих узлов",
-    image: "/images/hashuhub/3.png",
-  },
-  {
-    id: 4,
-    text: "Раздел системных логов для технической диагностики",
-    image: "/images/hashuhub/4.png",
-  },
-  {
-    id: 5,
-    text: "Синхронизация системного времени через NTP-серверы",
-    image: "/images/hashuhub/5.png",
-  },
-  {
-    id: 6,
-    text: "Страница авторизации с вводом логина и пароля администратора",
-    image: "/images/hashuhub/6.png",
-  },
-];
+import styles from "./OriginalDesign.module.css";
 
 export default function OriginalDesign() {
+  const t = useTranslations("hashuhub.originalDesign");
+  const navT = useTranslations("hashuhub.sidebarItems");
   const [currentSlide, setCurrentSlide] = useState(0);
   const touchStartX = useRef(0);
   const touchEndX = useRef(0);
+
+  const cards = [
+    { id: 1, image: "/images/hashuhub/1.png", text: t("cards.0") },
+    { id: 2, image: "/images/hashuhub/2.png", text: t("cards.1") },
+    { id: 3, image: "/images/hashuhub/3.png", text: t("cards.2") },
+    { id: 4, image: "/images/hashuhub/4.png", text: t("cards.3") },
+    { id: 5, image: "/images/hashuhub/5.png", text: t("cards.4") },
+    { id: 6, image: "/images/hashuhub/6.png", text: t("cards.5") },
+  ];
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % cards.length);
@@ -71,22 +50,14 @@ export default function OriginalDesign() {
   };
 
   return (
-    <section id="Исходный дизайн" className={styles.section}>
-      <h4 className={styles.title}>Исходный дизайн</h4>
+    <section id={navT("originalDesign")} className={styles.section}>
+      <h4 className={styles.title}>{t("title")}</h4>
       <div className={styles.description}>
         <p className={styles.text}>
-          В производстве майнеров одним из главных лидеров является компания
-          MicroBT. Во время конференции Bitcoin MENA компания представила новые
-          поколения машин с революционными показателями и регулярно продолжает
-          пробивать технический потолок мощности майнинга.
+          {t("description1")}
         </p>
         <p className={styles.text}>
-          Я взяла интерфейс Whatsminer (модель асика от компании MicroBT) как
-          исходный, ориентируясь на него как на стандарт индустрии. Он
-          перегружен таблицами, слабо структурирован и почти не дает визуальной
-          обратной связи. Ключевые метрики теряются среди второстепенных данных,
-          из-за чего даже техникам сложно быстро оценить состояние оборудования.
-          На мобильных устройствах интерфейс становится неудобным и медленным.
+          {t("description2")}
         </p>
       </div>
 
