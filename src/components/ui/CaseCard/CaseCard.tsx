@@ -32,7 +32,6 @@ export default function CaseCard({
     company,
     tags,
     image,
-    isNDA,
   } = data;
 
   // Get translated fields
@@ -51,9 +50,7 @@ export default function CaseCard({
             width={logoWidth}
             height={logoHeight}
           />
-          {isNDA && (
-            <span className={styles.ndaBadge}>{t("ndaBadge")}</span>
-          )}
+          
         </div>
 
         <h3 className={styles.position}>{position}</h3>

@@ -13,8 +13,9 @@
 }
 
 .logo {
-  height: 32px;
+  height: 48px;
   width: auto;
+  align-self: start;
 }
 
 .infoGrid {
@@ -31,13 +32,13 @@
 
 .infoLabel {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--fg-secondary);
 }
 
 .infoLink {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--blue-500);
   transition: color 0.3s ease;
 }
@@ -48,7 +49,7 @@
 
 .infoValue {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--black);
 }
 
@@ -63,7 +64,7 @@
   gap: 4px;
   a {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
     color: var(--blue-500);
     transition: all 0.3s ease;
     &:hover {
@@ -80,20 +81,20 @@
 
 .tagLabel {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--fg-secondary);
 }
 
 .tagValue {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--black);
 }
 
 /* Description */
 .description {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.6;
   color: var(--black);
   max-width: 700px;
@@ -122,7 +123,7 @@
 
 .text {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.6;
   color: var(--black);
 }
@@ -132,11 +133,14 @@
   flex-direction: column;
   gap: 12px;
   padding-left: 20px;
+  li {
+    list-style: disc;
+  }
 }
 
 .listItem {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.6;
   color: var(--black);
   list-style: disc;
@@ -171,7 +175,7 @@
 .caption,
 .imageCaption {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--fg-secondary);
   text-align: center;
 }
@@ -191,4 +195,8 @@
   flex-direction: column;
   gap: 16px;
   width: 100%;
+  @media screen and (max-width: 560px) {
+    max-height: 350px;
+  
+  }
 }

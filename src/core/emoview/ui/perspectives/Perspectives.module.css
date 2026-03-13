@@ -60,7 +60,7 @@
     font-family: var(--font-manrope);
     font-size: 20px;
     line-height: 32px;
-    font-weight: 500;
+    font-weight: 400;
     color: var(--black);
     margin: 0;
 }
@@ -79,7 +79,7 @@
     font-family: var(--font-manrope);
     font-size: 20px;
     line-height: 32px;
-    font-weight: 500;
+    font-weight: 400;
     color: var(--black);
     margin: 0;
 }

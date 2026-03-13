@@ -30,7 +30,7 @@
 
 .blockTitle {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.4;
   color: var(--black);
   margin: 0;
@@ -48,7 +48,7 @@
 
 .listItem {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.5;
   color: var(--black);
   list-style: disc;
@@ -65,14 +65,14 @@
   align-items: center;
   gap: 16px;
   padding: 40px 32px;
-  background: var(--blue-50);
-  border-radius: 24px;
+  background: #FFF4F7;
+  border-radius: 40px;
   text-align: center;
 }
 
 .challengeTitle {
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 28px;
   color: var(--black);
   max-width: 710px;
@@ -81,7 +81,7 @@
 
 .challengeText {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 24px;
   color: #8588a2;
   max-width: 710px;

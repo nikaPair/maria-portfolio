@@ -1,547 +1,547 @@
 {
     "metadata": {
         "title": "Portfolio - Maria Lubimova | Product UX/UI Designer",
-        "description": "Портфолио UX/UI дизайнера Марии Любимовой. 3 года в продуктовом дизайне: дизайн-системы, UX Research, прототипирование."
+        "description": "UX/UI Designer Maria Lubimova's portfolio. 3 years in product design: design systems, UX Research, prototyping."
     },
     "nav": {
-        "about": "Обо мне",
-        "cases": "Кейсы",
-        "petProjects": "Пет-проекты",
-        "uiShots": "UI шоты",
-        "back": "Назад"
+        "about": "About me",
+        "cases": "Cases",
+        "petProjects": "Pet projects",
+        "uiShots": "UI shots",
+        "back": "Back"
     },
     "hero": {
-        "pageTitle": "Портфолио Марии Любимовой - Product UX/UI Designer",
+        "pageTitle": "Portfolio - Maria Lubimova | Product UX/UI Designer",
         "greeting": "Hi, I'm Maria",
         "role": "— Product UX/UI Designer",
-        "description": "Работаю в берлинском medtech стартапе AskBefore на позиции старшего дизайнера. Вместе с командой строю международный кроссплатформенный продукт, у которого крупные амбиции на европейском IT-рынке и он успешно их реализовывает.",
-        "caseLinkPrefix": "Кейс о работе в AskBefore",
-        "caseLinkText": "по ссылке",
-        "yearsDesign": "3 года",
-        "inDesign": "в дизайне",
-        "yearsDigital": "8 лет",
-        "inDigital": "в digital",
-        "resumeFile": "резюме.pdf",
-        "resumePath": "/Резюме.pdf"
+        "description": "I work at the Berlin medtech startup AskBefore as a senior designer. Together with the team, I am building an international cross-platform product with significant ambitions in the European IT market, and it is successfully realizing them.",
+        "caseLinkPrefix": "Case study on working at AskBefore",
+        "caseLinkText": "via the link",
+        "yearsDesign": "3 years",
+        "inDesign": "in design",
+        "yearsDigital": "7 years",
+        "inDigital": "in digital",
+        "resumeFile": "resume.pdf",
+        "resumePath": "/resume.pdf"
     },
     "cases": {
-        "title": "Кейсы",
-        "subtitle": "3 компании — 3 кейса",
-        "ndaBadge": "Детали на собеседовании",
+        "title": "Cases",
+        "subtitle": "Where and what I worked on.",
+        "ndaBadge": "Details at the interview",
         "items": {
             "askbefore": {
                 "position": "Product Designer",
-                "location": "Berlin, Germany • с 2024 по 2026",
-                "description": "Работала над всеми сторонами продукта под руководством лида: поддерживала дизайн-систему, разрабатывала экраны под новый функционал, проводила интервью и юзабилити-тесты. Курировала работу двух дизайнеров."
+                "location": "Berlin, Germany • 2024 to 2026",
+                "description": "Worked on all aspects of the product under the lead's guidance: supported the design system, developed screens for new functionalities, conducted interviews and usability tests. Supervised the work of two designers."
             },
             "dessst": {
                 "position": "Product Designer",
-                "location": "Moscow, Russia • с 2023-2024",
-                "description": "Разработала в команде образовательную платформу для школы продуктовых дизайнеров. Работала под руководством основателя, отвечала за два крупных раздела «Учебных практик» и «Интенсивов»."
+                "location": "Moscow, Russia • 2023 to 2024",
+                "description": "Developed an educational platform for a school of product designers as part of a team. Worked under the founder's guidance and was responsible for two major sections: Educational Practices and Intensives."
             },
             "metropolitan": {
                 "position": "UX/UI Designer",
-                "location": "Dubai, UAE • 2022-2023",
-                "description": "Отвечала за разработку дизайн-системы, перевела стек на современную методоодологию в Figma, выполняла проектные задачи по созданию digital-продуктов для компаний-девелоперов и внутренних отделов агентства."
+                "location": "Dubai, UAE • 2022 to 2023",
+                "description": "Responsible for developing the design system, transitioned the stack to a modern methodology in Figma, and completed project tasks for creating digital products for developer companies and internal departments of the agency."
             }
         }
     },
     "petProjects": {
-        "title": "Pet-проекты",
-        "subtitle": "Проектирую для души и могу показывать без ограничений",
+        "title": "Pet projects",
+        "subtitle": "I design for the soul and can showcase without restrictions.",
         "items": {
             "emoview": {
-                "description": "Профессиональный трекер психического состояния для людей с БАР и ПРЛ"
+                "description": "Professional mental health tracker for people with bipolar disorder and borderline personality disorder."
             },
             "iridaAi": {
-                "description": "Медицинский AI-ассистент на технической базе некоммерческого проекта DxGPT"
+                "description": "Medical AI assistant based on the technical foundation of the non-profit project DxGPT."
             },
             "hashuhub": {
-                "description": "Унифицированная платформа для мониторинга работы ASIC-майнеров"
+                "description": "Unified platform for monitoring ASIC miner performance."
             }
         }
     },
     "uiShots": {
-        "title": "UI шоты",
-        "subtitle": "Визуал с кейсов и pet-проектов"
+        "title": "UI shots",
+        "subtitle": "Visuals from cases and pet projects"
     },
     "about": {
-        "name": "Мария Любимова",
-        "tagline": "Строю карьеру вокруг ценностей бизнеса и углубления в продуктовый дизайн",
-        "biography": "Я пришла в дизайн из цифрового маркетинга, где научилась работать с вниманием пользователей и веб-аналитикой. Этот опыт дал мне понимание развития онлайн-бизнеса и помог достичь в рекламе хороших результатов",
-        "biographyContinued": "Со временем я стала уделять больше времени клиентским онлайн-площадкам, анализировать и улучшать их в Figma. Коллеги начали чаще со мной советоваться по вопросам дизайна и его влияния на продажи. Я начала помогать команде дизайнеров в своем digital-агентстве, а затем решила начать свой путь в UX/UI дизайне, который сегодня продолжаю в продуктовом",
-        "workApproachTitle": "Подход к работе",
-        "workApproachText": "Я перенимаю приоритеты разработки и бизнеса вокруг ROI. Стараюсь, чтобы мои дизайн-решения приносили пользу и делали это стабильно. Для этого я детально погружаюсь в метрики, внимательно слушаю пользователей и согласовываю свои шаги с фронтендерами, менеджерами и стекхолдерами",
-        "uxText": "Доверяю статистике и минимизирую субъективный взгляд на интерфейс. Люблю модерируемые интервью и сессионную аналитику. Прорабатываю corner кейсы и снижаю фрустрацию пользователей",
-        "uiText": "Люблю подбирать визуальные синонимы для бренда компании, продолжать его идеи и настроение. Работаю с современными дизайн-системами, поддерживаю и создаю их с нуля",
-        "contactCta": "Буду рада познакомиться"
+        "name": "Maria Lubimova",
+        "tagline": "I build my career around business values and a deep dive into product design.",
+        "biography": "I came to design from digital marketing, where I learned how to work with user attention and web analytics. This experience gave me an understanding of online business growth and helped me achieve strong results in advertising.",
+        "biographyContinued": "Over time, I began to spend more time on client online platforms, analyzing and improving them in Figma. Colleagues started consulting me more often on design issues and its impact on sales. I began assisting the design team at my digital agency, and then decided to embark on my journey in UX/UI design, which I continue today in product design.",
+        "workApproachTitle": "Approach to Work",
+        "workApproachText": "I adopt the priorities of development and business around ROI. I strive for my design solutions to be beneficial and to do so consistently. To achieve this, I dive deeply into metrics, listen carefully to users, and align my steps with front-end developers, managers, and stakeholders.",
+        "uxText": "I trust statistics and minimize subjective views on the interface. I enjoy moderated interviews, session analytics, and BPMN notation for process modeling.",
+        "uiText": "I love to find visual synonyms for the company's brand, continuing its ideas and mood. I work with design systems, supporting and creating them from scratch.",
+        "contactCta": "I'd be happy to connect"
     },
     "petProjectCard": {
-        "screenshotAlt": "Скриншот проекта"
+        "screenshotAlt": "Project screenshot"
     },
     "askBefore": {
         "sidebarItems": {
-            "about": "О продукте",
-            "context": "Контекст и задача",
-            "research": "Исследование",
-            "architecture": "Архитектура и сценарии",
-            "designSystem": "Дизайн-система",
-            "teamWork": "Работа с командой",
-            "result": "Результат"
+            "about": "About the Product",
+            "context": "Context and Task",
+            "research": "Research",
+            "architecture": "Architecture and Scenarios",
+            "designSystem": "Design System",
+            "teamWork": "Working with the Team",
+            "result": "Result"
         },
         "aboutProduct": {
-            "site": "Сайт",
-            "product": "Продукт",
-            "productValue": "MedTech стартап",
-            "geography": "География",
-            "geographyValue": "Берлин, Германия",
-            "description": "AskBefore — это сервис для безопасного обмена результатами тестов на ИППП. Пользователь может отправить партнеру подтверждённый статус здоровья в формате цифровой валентинки. Все данные при этом защищены сквозным шифрованием на базе блокчейн.",
+            "site": "Website",
+            "product": "Product",
+            "productValue": "MedTech",
+            "geography": "Geography",
+            "geographyValue": "Berlin, Germany",
+            "description": "AskBefore is a service for safely sharing STD test results. Users can send their partner a verified health status in the form of a digital valentine. All data is protected by end-to-end encryption based on blockchain.",
             "marketingTitle": "Marketing Websites",
-            "marketingText": "У компании есть B2C и B2B направления:",
-            "b2cDescription": "B2C это пользователи, которые приходят в продукт за обменом медицинскими данными с партнером;",
-            "b2bDescription": "B2B это клиники-партнеры, которые размещают на платформе предложение о лабораторных медицинских исследованиях.",
-            "marketingConclusion": "Для каждой из аудиторий разработан отдельный сайт.",
-            "userSiteCaption": "Сайт для пользователей",
-            "clinicSiteCaption": "Сайт для клиник"
+            "marketingText": "The company has B2C and B2B segments:",
+            "b2cDescription": "B2C refers to users who come to the product to exchange medical data with a partner;",
+            "b2bDescription": "B2B refers to partner clinics that post offers for laboratory medical research on the platform.",
+            "marketingConclusion": "Each audience has a separate website developed for them.",
+            "userSiteCaption": "Website for B2C users",
+            "clinicSiteCaption": "Website for clinics"
         },
         "contextAndTask": {
-            "title": "Контекст и задача",
-            "description": "Я присоединилась к команде на раннем этапе, когда начали отрисовывать базовый сценарий, и его доработка перешла в мою зону ответственности. Также мне поручили создание с нуля 4х крупных участков продукта и передача их в разработку. Я начала с проработки основного функционала, или по-другому Member Portal.",
+            "title": "Context and task",
+            "description": "I joined the team at an early stage when we started sketching the basic scenario, and its refinement became my responsibility. I was also tasked with creating four major sections of the product from scratch and handing them over for development. I began by working on the core functionality, also known as the Member Portal.",
             "subtitle": "Member Portal",
-            "text": "Основной пользовательский сценарий включает в себя загрузку анализов, визуальное оформление и генерация QR-кода для безопасного доступа партнера к странице обмена.",
+            "text": "The main user scenario includes uploading test results, visual design, and generating a QR code for secure partner access to the exchange page.",
             "slides": {
-                "upload": "Загрузка анализов",
-                "visual": "Визуальное оформление",
-                "qr": "Генерация QR-кода",
-                "exchange": "Страница обмена",
-                "notifications": "Уведомления",
-                "result": "Результат"
+                "upload": "Uploading analyses",
+                "visual": "Selecting a cover",
+                "qr": "Sharing page",
+                "exchange": "Preview",
+                "notifications": "Notifications",
+                "result": "Result"
             }
         },
         "research": {
-            "title": "Исследование",
-            "description1": "Интимное здоровье является важной и чувствительной темой, особенно в контексте близости. При этом разговор о здоровье партнера часто откладывается или избегается из-за страха нарушить границы, обидеть человека или испортить атмосферу.",
-            "description2": "Чтобы глубже разобраться в проблеме, я провела интервью с людьми, которые уже обменивались медицинскими справками. Это позволило понять их мотивацию, страхи, контекст использования и текущие способы решения задачи.",
-            "highlightText": "Для интервью я отказалась от платного рекрутинга и использовала альтернативные методы поиска респондентов. Это позволило опросить более 20 заинтересованных пользователей и выявить главные страхи аудитории.",
-            "insightsTitle": "Инсайты",
+            "title": "Research",
+            "description1": "Intimate health is an important and sensitive topic, especially in the context of closeness. Conversations about a partner's health are often postponed or avoided due to fear of crossing boundaries, offending the person, or ruining the atmosphere.",
+            "description2": "To gain deeper insight into the issue, I conducted interviews with people who had already exchanged medical certificates. This helped to understand their motivations, fears, usage context, and current ways of addressing the issue.",
+            "highlightText": "For the interviews, I opted out of paid recruiting and used alternative methods to find respondents. This allowed me to survey over 20 interested users and identify the main fears of the audience.",
+            "insightsTitle": "Insights",
             "insightsList": [
-                "Главная боль — это состояние неопределенности: неизвестно, просмотрена ли справка, когда это произошло и готов ли партнер к изменениям.",
-                "Пользователи опасаются потери контроля над информацией, включая возможность пересылки справки третьим лицам в мессенджерах;",
-                "Пользователи избегают прямого запроса и стараются смягчить ситуацию, обыгрывая тему через романтический контекст, флирт, эмодзи и неформальное общение;",
-                "Перед запросом пользователи заранее продумывают формулировки, сценарии диалога и обсуждают вопрос с друзьями, чтобы снизить тревожность и риск конфликта;",
-                "Запрос справки формируется на фоне репутации партнера, прошлого негативного опыта и базовой осведомленности пользователя о рисках;",
-                "Сильный страх вызывает вероятность быть неправильно понятым или спровоцировать негативную реакцию партнера;"
+                "The main pain point is the state of uncertainty: it is unknown whether the certificate has been viewed, when it happened, and if the partner is ready for changes.",
+                "Users fear losing control over their information, including the possibility of the certificate being forwarded to third parties via messaging apps;",
+                "Users avoid direct requests and try to soften the situation by playing around the topic through romantic context, flirting, emojis, and informal communication;",
+                "Before making a request, users carefully think through their wording, dialogue scenarios, and discuss the issue with friends to reduce anxiety and the risk of conflict;",
+                "The request for a certificate is formed against the backdrop of the partner's reputation, past negative experiences, and the user's basic awareness of risks;",
+                "A strong fear arises from the possibility of being misunderstood or provoking a negative reaction from the partner."
             ]
         },
         "architectureAndScenarios": {
-            "title": "Архитектура и сценарии",
-            "description1": "В результате исследования я спроектировала «As-Is process flow», чтобы зафиксировать текущий путь пользователей. Далее в процессе мозгового штурма мы определили, какие решения необходимо создать в корне продукта, чтобы закрыть острые болевые точки.",
-            "description2": "Я использовала BPMN для визуализации процессов и синхронизации с разработкой. Нотация помогла структурировать логику сервиса и выдержала три итерации масштабирования бизнес-модели.",
-            "highlightText": "Результат моей работы использовался для передачи макетов в разработку, общения с юристами и специалистами по защите данных.",
-            "imageCaption": "Часть BPMN карты",
+            "title": "Architecture and scenarios",
+            "description1": "As a result of the research, I designed the \"As-Is process flow\" to capture the current user journey. Next, during the brainstorming process, we identified what solutions needed to be created at the core of the product to address the critical pain points.",
+            "description2": "I used BPMN to visualize processes and synchronize with development. The notation helped structure the service logic and withstood three iterations of scaling the business model.",
+            "highlightText": "The result of my work was used to transfer layouts to development, communicate with lawyers, and data protection specialists.",
+            "imageCaption": "Part of the BPMN map",
             "businessPositioning": {
-                "subtitle": "Изменение бизнес-позиционирования",
-                "description1": "По мере развития продукта фокус бренд-позиционирования сместился. Изначально он строился вокруг поддержки, близости и романтики, но со временем эволюционировал в сервис, ориентированный на здоровье и безопасность данных.",
-                "description2": "Лендинг, как основная точка входа, был пересобран в соответствии с этим сдвигом: изменились акценты, тон коммуникации и визуальные маркеры доверия."
+                "subtitle": "Changing Business Positioning",
+                "description1": "As the product evolved, the focus of brand positioning shifted. Initially, it was built around support, closeness, and romance, but over time it evolved into a service focused on health and data security.",
+                "description2": "The landing page, as the main entry point, was rebuilt in accordance with this shift: the emphasis, tone of communication, and visual trust markers changed."
             },
             "clinicsPortal": {
                 "subtitle": "Clinics Portal",
-                "description": "Первым по важности после Member Portal следует Clinic Portal. Мы его создали, чтобы обеспечить Member Portal необходимыми данными и сделать процесс автоматическим.",
-                "restricted": "Ограничено для публичного просмотра"
+                "description": "The Clinic Portal is the second most important after the Member Portal. We created it to provide the Member Portal with the necessary data and automate the process.",
+                "restricted": "Limited for public viewing"
             },
             "influencersPortal": {
-                "title": "Дополнительно",
+                "title": "Additional",
                 "subtitle": "Influencers Portal",
-                "description": "AskBefore имеет программу сотрудничества с блогерами и инфлюенсерами. Для них мы разработали Influencers Portal, где отображается статистика привлеченных пользователей. Через него партнеры могут отслеживать свой доход, выводить средства и отслеживать историю пополнений.",
-                "restricted": "Ограничено для публичного просмотра"
+                "description": "AskBefore has a collaboration program with bloggers and influencers. For them, we developed the Influencers Portal, where statistics on attracted users are displayed. Through it, partners can track their income, withdraw funds, and monitor their top-up history.",
+                "restricted": "Limited for public viewing"
             },
             "mobileApp": {
                 "subtitle": "Mobile App",
-                "description": "Также мы сделали адаптации веб-версии под нативные гайдлайны iOS и Android, чтобы сервис был удобен на мобильных устройствах.",
-                "slideAlt": "Mobile App экран"
+                "description": "We also adapted the web version to the native guidelines of iOS and Android to ensure the service is convenient on mobile devices.",
+                "slideAlt": "Mobile app screen"
             }
         },
         "designSystem": {
-            "title": "Дизайн-система",
-            "highlightTitle": "Совместно с командой я систематизировала разрозненные UI-компоненты и выстроила масштабируемую дизайн-систему.",
-            "highlightText": "Это ускорило сборку макетов для веб-платформы и мобильного приложения и заложило крепкую основу для масштабирования продукта."
+            "title": "Design System",
+            "highlightTitle": "Together with the team, I systematized disparate UI components and built a scalable design system.",
+            "highlightText": "Together with the team, I systematized disparate UI components and built a scalable design system."
         },
         "teamWork": {
-            "title": "Работа с командой",
-            "description": "Я курировала двух девушек-дизайнеров и распределяла задачи с учётом сильных сторон каждой.",
+            "title": "Working with the team",
+            "description": "I supervised two designers and assigned tasks based on each person's strengths.",
             "members": {
-                "ksenya": "Ксения имеет опыт фронтенд-разработки, у нее сильное системное мышление. В стартапе она занималась порталом для клиник, потому что сложные интерфейсы и длинные сценарии требовали детальной проработки UX.",
-                "aynur": "Айнур имеет прекрасный эстетический вкус, способна долго концентрироваться без замыливания глаза. Она работала над визуализацией карты и сценариями поиска, где больше требовалась эмпатия и навыки UI."
+                "ksenya": "Ksenia has experience in frontend development and possesses strong systemic thinking. In the startup, she worked on the clinic portal, as complex interfaces and lengthy scenarios required detailed UX development.",
+                "aynur": "Ainur has excellent aesthetic taste and can concentrate for long periods without losing focus. She worked on visualizing the map and search scenarios, where empathy and UI skills were more required."
             }
         },
         "result": {
-            "title": "Результат",
-            "blockTitle": "Что я сделала в AskBefore",
+            "title": "Results",
+            "blockTitle": "What I did at AskBefore",
             "achievements": [
-                "Спроектировала и передала в разработку экосистему из шести продуктов;",
-                "Выстроила для команды схему передачи макетов с использованием BPMN и спецификаций;",
-                "Получила ценные данные с интервью и тестирований, которыми регулярно пользуются в компании;",
-                "Разработала дизайн-систему, с которой приятно и легко работать."
+                "Designed and handed over a six-product ecosystem to development;",
+                "Built a layout transfer scheme for the team using BPMN and specifications;",
+                "Obtained valuable data from interviews and tests that are regularly used in the company;",
+                "Developed a design system that is pleasant and easy to work with."
             ],
-            "challengeTitle": "Ключевым вызовом для меня стала локализация продукта. Я изучала требования законодательств и культурные особенности разных стран, чтобы согласовать с ними дизайн.",
-            "challengeText": "Я научилась управлять доверием, узнала о юридических рисках и позаботилась о росте продукта. Это была объемная работа, которая помогла мне вырасти как профессионалу."
+            "challengeTitle": "A key challenge for me was localizing the product. I studied the legal requirements and cultural nuances of different countries to align the design with them.",
+            "challengeText": "I learned to manage trust, understood legal risks, and took care of product growth. It was a substantial amount of work that helped me grow as a professional."
         }
     },
     "emoview": {
         "sidebarItems": {
-            "idea": "Как появилась идея",
-            "market": "Что нашла на рынке",
-            "development": "Начало разработки",
-            "solution": "Решение",
-            "visualStrategy": "Визуальная стратегия",
-            "perspectives": "Перспективы проекта"
+            "idea": "How the idea came about",
+            "market": "What I found on the market",
+            "development": "Beginning of development",
+            "solution": "Solution",
+            "visualStrategy": "Visual strategy",
+            "perspectives": "Project prospects"
         },
         "aboutProduct": {
-            "description": "Emoview — это медицинский трекер психического состояния. Он задуман как инструмент, который помогает людям с аффективными расстройствами регулярно фиксировать свои симптомы. Сервис сохраняет и структурирует данные, которые можно использовать в терапии и в работе с врачом.",
-            "contextTitle": "Как появилась идея",
-            "contextText1": "В 2021 году мне поставили диагноз БАР 2 типа. Это хроническое заболевание, которое требует пожизненного медикаментозного лечения и строгого контроля состояния. Главный инструмент контроля — дневник настроения. Мой врач посоветовал использовать eMoods, который считается золотым стандартом в этой области.",
-            "contextText2": "Я пользовалась eMoods полтора года и каждый день сталкивалась с неудобствами: интерфейс выглядит устаревшим, ввод данных требует много усилий, а визуализация графиков не дает быстрого понимания ситуации.",
-            "contextText3": "Как дизайнер, я решила создать свой продукт, который сохранит медицинскую точность, но станет удобным, современным и поддерживающим."
+            "description": "Emoview is a medical tracker for mental health. It is designed as a tool to help people with affective disorders regularly record their symptoms. The service saves and structures data that can be used in therapy and in working with a doctor.",
+            "contextTitle": "How the idea came about",
+            "contextText1": "My friend works as a clinical psychologist at the NGO \"Partnership of Equals.\" He has been diagnosed with bipolar disorder and borderline personality disorder, which gives him a perspective on treatment from two positions: as a psychologist and as a client.",
+            "contextText2": "One day he told me about the eMoods app that he uses to track his condition. He shared that it is not very convenient to make entries in it, but he hasn't found a replacement.",
+            "contextText3": "I started searching with professional enthusiasm for an alternative to the eMoods app for my friend."
         },
         "marketResearch": {
-            "title": "Что нашла на рынке",
-            "description": "Большинство трекеров психологического состояния сделаны для здоровых людей. Они красивые, геймифицированные, с позитивным дизайном и совершенно не подходят людям с психическими заболеваниями.",
-            "text1": "Люди с аффективными расстройствами живут фазами депрессии и мании. Для них критично вовремя заметить переход между фазами, потому что при смене фазы меняется и настроение, и физиологические реакции, и поведение. Эмоции становятся резче, реакции интенсивнее.",
-            "text2": "Большинство трекеров фиксируют только эмоции и общие оценки настроения, и этого недостаточно для определения фазы. Нужно отслеживать поведенческие сигналы и давать пользователю язык для описания клинических симптомов, а не только эмоций. Простые трекеры этого не предлагают и поэтому не закрывают реальные потребности людей с психическими расстройствами.",
-            "text3": "Большинство трекеров фиксируют только эмоции и общие оценки настроения, и этого недостаточно для определения фазы.",
-            "bipolarTitle": "Биполярный трекер настроения",
-            "bipolarText1": "Я упорно искала прямых русифицированных конкурентов eMoods и нашла только один. Он ограничен отслеживанием эмоций, но имеет медицинское позиционирование. В отличие от eMoods приложение требует очень дорогую подписку и предоставляет меньше возможностей.",
-            "bipolarText2": "Выходит, что люди выбирают между не самым удобным eMoods, дорогим «Биполярным трекером настроения» и малополезными трекерами эмоций."
+            "title": "What I found on the market",
+            "description": "Most psychological state trackers are designed for healthy people. They are beautiful, gamified, with a positive design, and are completely unsuitable for people with mental illnesses.",
+            "text1": "People with affective disorders live through phases of depression and mania. It is critical for them to notice the transition between phases in time because with the change of phase, both mood and physiological reactions, as well as behavior, change. Emotions become sharper, and reactions more intense.",
+            "text2": "Most trackers only record emotions and general mood ratings, which is insufficient for determining the phase. Behavioral signals need to be tracked, and users should be given a language to describe clinical symptoms, not just emotions. Simple trackers do not offer this and therefore do not meet the real needs of people with mental disorders.",
+            "text3": "Most trackers only record emotions and general mood ratings, and this is not enough to determine the phase.",
+            "bipolarTitle": "Bipolar mood tracker",
+            "bipolarText1": "I diligently searched for direct Russian-speaking competitors to eMoods and found only one. It is limited to tracking emotions but has a medical positioning. Unlike eMoods, the app requires a very expensive subscription and offers fewer features.",
+            "bipolarText2": "It turns out that people are choosing between the inconvenient eMoods, the expensive Bipolar Mood Tracker, and minimally useful emotion trackers."
         },
         "developmentStart": {
-            "title": "Начало разработки",
-            "description": "Я провела глубинные интервью с тремя респондентами, которые ведут дневники наблюдения больше года. Уточнила, что они фиксируют, в какой момент жизни выпускают записи, что показывают врачу и что их раздражает в интерфейсе.",
-            "text": "Я провела глубинные интервью с тремя респондентами, которые ведут дневники наблюдения больше года. Уточнила, что они фиксируют, в какой момент жизни выпускают записи, что показывают врачу и что их раздражает в интерфейсе.",
-            "insightsTitle": "Инсайты из интервью",
+            "title": "Beginning of development",
+            "description": "I conducted in-depth interviews with three respondents who have been keeping observation diaries for over a year. I clarified what they record, at what moments in life they skip entries, what they show to their doctor, and what annoys them about the interface.",
+            "text": "I conducted in-depth interviews with three respondents who have been keeping observation diaries for over a year. I clarified what they record, at what moments in life they skip entries, what they show to their doctor, and what annoys them about the interface.",
+            "insightsTitle": "Insights from the interviews",
             "insightsList": [
-                "Пользователи устают от длинной анкеты и перестают заполнять ее в тяжелые дни. На заполнение анкеты должно уходить максимум 5-7 минут;",
-                "Важно указывать на тренды, а не просто показывать статистику на графиках. Это нужно, чтобы замечать циклы заблаговременно до развития полноценного эпизода;",
-                "Людям трудно оценить состояние словами, им нужны подсказки и направления;",
-                "Нужен быстрый экспорт статистики для врача, потому что на приеме время ограничено."
+                "Users get tired of long questionnaires and stop filling them out on difficult days. Filling out the questionnaire should take a maximum of 5-7 minutes;",
+                "It is important to point out trends rather than just showing statistics on graphs. This is necessary to notice cycles in advance before a full episode develops;",
+                "People find it difficult to assess their condition in words; they need prompts and directions;",
+                "A quick export of statistics for the doctor is needed because time is limited during appointments."
             ],
             "insights": [
-                "Пользователи устают от длинной анкеты и перестают заполнять ее в тяжелые дни. На заполнение анкеты должно уходить максимум 5-7 минут;",
-                "Важно указывать на тренды, а не просто показывать статистику на графиках. Это нужно, чтобы замечать циклы заблаговременно до развития полноценного эпизода;",
-                "Людям трудно оценить состояние словами, им нужны подсказки и направления;",
-                "Нужен быстрый экспорт статистики для врача, потому что на приеме время ограничено."
+                "Users get tired of long questionnaires and stop filling them out on difficult days. Filling out the questionnaire should take a maximum of 5-7 minutes;",
+                "It is important to point out trends rather than just showing statistics on graphs. This is necessary to notice cycles in advance before a full episode develops;",
+                "People find it difficult to assess their condition in words; they need prompts and directions;",
+                "A quick export of statistics for the doctor is needed because time is limited during appointments."
             ]
         },
         "solution": {
-            "title": "Решение",
+            "title": "Solution",
             "items": {
                 "clinical": {
-                    "title": "Сохранила клиническое ядро",
-                    "text": "Оставила ключевые метрики и структуру записей, за которые eMoods ценят."
+                    "title": "I preserved the clinical core",
+                    "text": "I kept the key metrics and structure of entries that eMoods is valued for."
                 },
                 "input": {
-                    "title": "Упростила ввод",
-                    "text": "Разбила анкету на короткие шаги, чтобы запись занимала 2-3 минуты."
+                    "title": "I simplified data entry",
+                    "text": "I broke the questionnaire into short steps so that recording takes 2-3 minutes."
                 },
                 "tips": {
-                    "title": "Добавила подсказки",
-                    "text": "Ввела карточки с описанием телесных и эмоциональных проявлений симптомов, чтобы пользователю было проще определить своё состояние."
+                    "title": "I added prompts",
+                    "text": "I introduced cards describing the bodily and emotional manifestations of symptoms to make it easier for users to determine their state."
                 },
                 "integrity": {
-                    "title": "Продумала честность данных",
-                    "text": "Ограничила редактирование прошлых записей, чтобы дневник оставался надежным источником для врача."
+                    "title": "I considered data honesty",
+                    "text": "I limited the editing of past entries to ensure the diary remains a reliable source for the doctor."
                 }
             },
             "cards": [
                 {
-                    "title": "Сохранила клиническое ядро",
-                    "text": "Оставила ключевые метрики и структуру записей, за которые eMoods ценят."
+                    "title": "I preserved the clinical core",
+                    "text": "I kept the key metrics and structure of entries that eMoods is valued for."
                 },
                 {
-                    "title": "Упростила ввод",
-                    "text": "Разбила анкету на короткие шаги, чтобы запись занимала 2-3 минуты."
+                    "title": "I simplified data entry",
+                    "text": "I broke the questionnaire into short steps so that recording takes 2-3 minutes."
                 },
                 {
-                    "title": "Добавила подсказки",
-                    "text": "Ввела карточки с описанием телесных и эмоциональных проявлений симптомов, чтобы пользователю было проще определить своё состояние."
+                    "title": "I added prompts",
+                    "text": "I introduced cards describing the bodily and emotional manifestations of symptoms to make it easier for users to determine their state."
                 },
                 {
-                    "title": "Продумала честность данных",
-                    "text": "Ограничила редактирование прошлых записей, чтобы дневник оставался надежным источником для врача."
+                    "title": "I considered data honesty",
+                    "text": "I limited the editing of past entries to ensure the diary remains a reliable source for the doctor."
                 }
             ]
         },
         "visualStrategy": {
-            "title": "Визуальная стратегия",
-            "text1": "eMoods использует перегруженные таблицы и сухой интерфейс, а обычные трекеры перебарщивают с позитивными сообщениями. Я искала баланс и думала о главной цели - помощи в лечении психического здоровья. Так я пришла к холодной палитре, к Radiobutton вместо Severity Slider, к наклонному шрифту в дозировках препаратов, чтобы сделать отсылку к упаковкам лекарств.",
-            "text2": "Мне хочется, чтобы пользователь чувствовал поддержку и при этом относился к трекеру всерьез, потому что в первую очередь это часть его лечения, а не самопознания."
+            "title": "Visual strategy",
+            "text1": "eMoods uses overloaded tables and a dry interface, while regular trackers overdo it with positive messages. I sought balance and thought about the main goal: aiding in mental health treatment. Thus, I arrived at a cool palette, using radio buttons instead of severity sliders, and italic fonts for medication dosages to reference medication packaging.",
+            "text2": "I want the user to feel supported while also taking the tracker seriously, as it is primarily a part of their treatment, not just self-discovery."
         },
         "perspectives": {
-            "title": "Перспективы проекта",
-            "text1": "За время разработки я получила положительные отзывы от двух клинических экспертов и довольно много просьб реализовать приложение.",
-            "highlightText": "У меня добрые отношения с несколькими фронтенд-разработчиками и один из них выразил заинтересованность в реализации Emoview.",
-            "listTitle": "Так у проекта появляется несколько сценариев развития:",
+            "title": "Project prospects",
+            "text1": "During the development, I received positive feedback from two clinical experts and quite a few requests to implement the app.",
+            "highlightText": "I have good relationships with several frontend developers, and one of them expressed interest in implementing Emoview.",
+            "listTitle": "Thus, the project has several development scenarios:",
             "listItems": [
-                "Я могу реализовать MVP как совместный проект с разработчиком, протестировать в реальных условиях и добавить в оба портфолио как кейс с рабочим кодом;",
-                "Предложить дизайн-проект американской компании eMoods как единственному доступному сервису с аналогичной целью и задачами;",
-                "Использовать проект как тренировку собственных навыков разработки."
+                "I can implement an MVP as a joint project with a developer, test it in real conditions, and add it to both portfolios as a case with working code;",
+                "Propose a design project to the American company eMoods as the only available service with a similar goal and tasks;",
+                "Use the project as a training exercise for my own development skills."
             ],
             "list": [
-                "Я могу реализовать MVP как совместный проект с разработчиком, протестировать в реальных условиях и добавить в оба портфолио как кейс с рабочим кодом;",
-                "Предложить дизайн-проект американской компании eMoods как единственному доступному сервису с аналогичной целью и задачами;",
-                "Использовать проект как тренировку собственных навыков разработки."
+                "I can implement an MVP as a joint project with a developer, test it in real conditions, and add it to both portfolios as a case with working code;",
+                "Propose a design project to the American company eMoods as the only available service with a similar goal and tasks;",
+                "Use the project as a training exercise for my own development skills."
             ],
-            "conclusion": "Независимо от того, какой путь будет выбран, мое новое желание останется неизменным: в мире должно быть больше качественных медицинских продуктов в области психического здоровья. И неважно, кто их создает, важно, чтобы они помогали людям и были доступны.",
-            "text2": "Независимо от того, какой путь будет выбран, мое новое желание останется неизменным: в мире должно быть больше качественных медицинских продуктов в области психического здоровья. И неважно, кто их создает, важно, чтобы они помогали людям и были доступны."
+            "conclusion": "Regardless of which path is chosen, my new desire will remain unchanged: there should be more quality medical products in the field of mental health in the world. And it doesn't matter who creates them; what matters is that they help people and are accessible.",
+            "text2": "Regardless of which path is chosen, my new desire will remain unchanged: there should be more quality medical products in the field of mental health in the world. And it doesn't matter who creates them; what matters is that they help people and are accessible."
         }
     },
     "dessst": {
-        "site": "Сайт",
-        "product": "Продукт",
-        "geography": "География",
-        "geographyValue": "Москва, Россия",
-        "description": "Dessst — это образовательная платформа и онлайн-школа продуктового UX/UI дизайна на базе собственной LMS (система управления обучением), в которой реализован дизайн-тренажер для отработки навыков и интенсивы для углубленного изучения профильных тем.",
-        "restrictionsTitle": "Ограничения",
-        "restrictionsText": "На рынке EdTech много предложений и высокая конкуренция. В основе платформы Dessst лежат авторские образовательные механики, которые выступают преимуществом школы. По этим причинам я не могу опубликовать кейс о Dessst в открытом доступе, но готова обсудить проект на собеседовании.",
-        "imageCaption": "Главный экран раздела «Дизайн-тренажер»"
+        "site": "Website",
+        "product": "Product",
+        "geography": "Geography",
+        "geographyValue": "Moscow, Russia",
+        "description": "Dessst is an educational platform and online product UX/UI design school based on a proprietary LMS (Learning Management System), featuring a design simulator for practicing skills and intensives for an in-depth study of specialized topics.",
+        "restrictionsTitle": "Restrictions",
+        "restrictionsText": "There are many offerings and high competition in the EdTech market. The Dessst platform is built on proprietary educational mechanics, which serve as the school's competitive advantage. For these reasons, I cannot publicly share the Dessst case study, but I am ready to discuss the project during an interview.",
+        "imageCaption": "Main screen of the Design Simulator section"
     },
     "hashuhub": {
         "sidebarItems": {
-            "context": "Контекст",
-            "challenge": "Проблема",
-            "strategy": "Стратегия",
-            "originalDesign": "Исходный дизайн",
-            "solution": "Решение",
-            "impact": "Перспективы проекта"
+            "context": "Context",
+            "challenge": "Challenge",
+            "strategy": "Strategy",
+            "originalDesign": "Original Design",
+            "solution": "Solution",
+            "impact": "Project Prospects"
         },
         "aboutProduct": {
-            "description1": "Проект HashuHub основан на моем трехлетнем опыте добычи BTC и ETH на ASIC-майнерах. Я обслуживала свою майнинг-ферму, консультировала и помогала ставить фермы друзьям. Мне также приходилось разбирать майнеры, чистить платы, наблюдать за ремонтом в сервис-центрах и заниматься техническим обслуживанием.",
-            "description2": "В работе с асиками основным источником данных и главным элементом управления являются административные панели. Из-за слабого дизайна ими редко пользуются, что ведет к позднему обнаружению сбоев и крупным финансовым потерям.",
-            "contextTitle": "Контекст",
-            "contextText1": "В широком смысле ASIC означает специализированный компьютер, который выполняет одну-единственную задачу. Следовательно, ASIC-майнер — это устройство, которое добывает криптовалюту и больше ни на что не способно.",
-            "contextText2": "ASIC-майнеры нового поколения имеют системы предохранения и большое количество датчиков, но редко у какого частного майнера есть средства на машины последних моделей. Это является главным обстоятельством, почему я спроектировала HashuHub."
+            "description1": "The HashuHub project is based on my three years of experience mining BTC and ETH using ASIC miners. I maintained my own mining farm, consulted, and helped friends set up their farms. I also had to disassemble miners, clean boards, observe repairs in service centers, and handle maintenance.",
+            "description2": "When working with ASICs, the main data source and control element are administrative panels. Due to weak design, they are rarely used, which leads to late failure detection and major financial losses.",
+            "contextTitle": "Context",
+            "contextText1": "In a broad sense, ASIC means a specialized computer that performs one single task. Therefore, an ASIC miner is a device that mines cryptocurrency and is not capable of anything else.",
+            "contextText2": "New-generation ASIC miners have protection systems and a large number of sensors, but private miners rarely have the funds for the newest models. This was the main reason why I designed HashuHub."
         },
         "challenge": {
-            "title": "Проблема",
-            "subtitle": "В майнинговом бизнесе фигурируют 2 главные системы:",
-            "poolTitle": "Майнинговый пул",
-            "poolText": "Сервис, где майнеры объединяют мощности, чтобы добывать криптовалюту и делить вознаграждение соразмерно вкладу.",
-            "miningPoolTitle": "Майнинговый пул",
-            "miningPoolText": "Сервис, где майнеры объединяют мощности, чтобы добывать криптовалюту и делить вознаграждение соразмерно вкладу.",
-            "adminTitle": "Административная панель",
-            "adminText": "Веб интерфейс для настройки, мониторинга и управления майнером, где пользователь контролирует работу устройства и его параметры.",
-            "adminPanelTitle": "Административная панель",
-            "adminPanelText": "Веб интерфейс для настройки, мониторинга и управления майнером, где пользователь контролирует работу устройства и его параметры.",
-            "bottomText": "На практике владельцы майнеров почти всегда смотрят только на пул, потому что доход и хешрейт понятны и напрямую связаны с прибылью. Административную панель открывают реже, так как данные в ней представлены в виде сложных таблиц, которые трудно читать и интерпретировать. Из-за этого техническое состояние машин остается без внимания.",
-            "complicationTitle": "Отягощение",
-            "complicationText": "Асики плохо переносят невнимательное обслуживание. У них высокая температура работы, поэтому пыль, сухая термопаста и изношенные термопрокладки ускоряют деградацию запчастей. При этом внешне устройство продолжает работать нормально и до последнего показывает максимальный хешрейт. На пуле проблемы не видны до тех пор, пока хешрейт не начнет падать.",
-            "warningText": "Когда хешрейт падает, то поломка уже произошла и оборудование требует технического вмешательства. Ремонт одного майнера может длится несколько недель и обходится дорого, поэтому для бизнеса критично замечать отклонения заранее."
+            "title": "Challenge",
+            "subtitle": "There are 2 key systems in the mining business:",
+            "poolTitle": "Mining pool",
+            "poolText": "A service where miners combine computing power to mine cryptocurrency and split the reward proportionally to their contribution.",
+            "miningPoolTitle": "Mining pool",
+            "miningPoolText": "A service where miners combine computing power to mine cryptocurrency and split the reward proportionally to their contribution.",
+            "adminTitle": "Administrative panel",
+            "adminText": "A web interface for configuring, monitoring, and managing a miner, where the user controls the device's operation and parameters.",
+            "adminPanelTitle": "Administrative panel",
+            "adminPanelText": "A web interface for configuring, monitoring, and managing a miner, where the user controls the device's operation and parameters.",
+            "bottomText": "In practice, miner owners almost always look only at the pool, because revenue and hash rate are clear and directly tied to profit. The administrative panel is opened less often because its data is presented in complex tables that are hard to read and interpret. As a result, the technical condition of the machines remains unattended.",
+            "complicationTitle": "Complication",
+            "complicationText": "ASICs do not tolerate careless maintenance well. They operate at high temperatures, so dust, dry thermal paste, and worn thermal pads accelerate component degradation. At the same time, the device may still appear to work normally and show maximum hash rate until the last moment. Problems remain invisible in the pool until the hash rate starts to fall.",
+            "warningText": "When the hash rate drops, the breakdown has already happened and the equipment requires technical intervention. Repairing one miner can take several weeks and be expensive, so it is critical for the business to notice deviations in advance."
         },
         "process": {
-            "title": "Стратегия",
-            "text": "Я хочу дать владельцу простую и понятную картину состояния фермы: если температура растет, интерфейс объясняет риски и предлагает действия; если падает хэшрейт, панель указывает на возможные причины. Техники получают отдельный доступ к логам и другим внутренним данные."
+            "title": "Strategy",
+            "text": "I want to give the owner a simple and understandable picture of the farm's condition: if the temperature rises, the interface explains the risks and suggests actions; if the hash rate falls, the panel points to possible causes. Technicians get separate access to logs and other internal data."
         },
         "strategy": {
-            "title": "Стратегия",
-            "text": "Я хочу дать владельцу простую и понятную картину состояния фермы: если температура растет, интерфейс объясняет риски и предлагает действия; если падает хэшрейт, панель указывает на возможные причины. Техники получают отдельный доступ к логам и другим внутренним данные."
+            "title": "Strategy",
+            "text": "I want to give the owner a simple and understandable picture of the farm's condition: if the temperature rises, the interface explains the risks and suggests actions; if the hash rate falls, the panel points to possible causes. Technicians get separate access to logs and other internal data."
         },
         "originalDesign": {
-            "title": "Исходный дизайн",
-            "text1": "В производстве майнеров одним из главных лидеров является компания MicroBT. Во время конференции Bitcoin MENA компания представила новые поколения машин с революционными показателями и регулярно продолжает пробивать технический потолок мощности майнинга.",
-            "text2": "Я взяла интерфейс Whatsminer (модель асика от компании MicroBT) как исходный, ориентируясь на него как на стандарт индустрии. Он перегружен таблицами, слабо структурирован и почти не дает визуальной обратной связи. Ключевые метрики теряются среди второстепенных данных, из-за чего даже техникам сложно быстро оценить состояние оборудования. На мобильных устройствах интерфейс становится неудобным и медленным.",
-            "description1": "В производстве майнеров одним из главных лидеров является компания MicroBT. Во время конференции Bitcoin MENA компания представила новые поколения машин с революционными показателями и регулярно продолжает пробивать технический потолок мощности майнинга.",
-            "description2": "Я взяла интерфейс Whatsminer (модель асика от компании MicroBT) как исходный, ориентируясь на него как на стандарт индустрии. Он перегружен таблицами, слабо структурирован и почти не дает визуальной обратной связи. Ключевые метрики теряются среди второстепенных данных, из-за чего даже техникам сложно быстро оценить состояние оборудования. На мобильных устройствах интерфейс становится неудобным и медленным.",
+            "title": "Original Design",
+            "text1": "One of the main leaders in miner manufacturing is MicroBT. During the Bitcoin MENA conference, the company introduced new generations of machines with breakthrough performance and continues to push the technical limits of mining power.",
+            "text2": "I took the Whatsminer interface, an ASIC model by MicroBT, as the starting point and treated it as an industry standard. It is overloaded with tables, weakly structured, and offers almost no visual feedback. Key metrics are lost among secondary data, making it difficult even for technicians to quickly assess the equipment's state. On mobile devices, the interface becomes inconvenient and slow.",
+            "description1": "One of the main leaders in miner manufacturing is MicroBT. During the Bitcoin MENA conference, the company introduced new generations of machines with breakthrough performance and continues to push the technical limits of mining power.",
+            "description2": "I took the Whatsminer interface, an ASIC model by MicroBT, as the starting point and treated it as an industry standard. It is overloaded with tables, weakly structured, and offers almost no visual feedback. Key metrics are lost among secondary data, making it difficult even for technicians to quickly assess the equipment's state. On mobile devices, the interface becomes inconvenient and slow.",
             "cards": [
-                "Главный дашборд со статусом устройств, показателями и событиями",
-                "Обзор системных характеристик, памяти и сетевых параметров",
-                "Настройки подключения к майнинг-пулу и рабочих узлов",
-                "Раздел системных логов для технической диагностики",
-                "Синхронизация системного времени через NTP-серверы",
-                "Страница авторизации с вводом логина и пароля администратора"
+                "Main dashboard with device statuses, metrics, and events",
+                "Overview of system characteristics, memory, and network parameters",
+                "Mining pool connection and worker configuration settings",
+                "System logs section for technical diagnostics",
+                "System time synchronization through NTP servers",
+                "Authorization screen with administrator login and password"
             ]
         },
         "solution": {
-            "title": "Решение",
-            "description": "Мне было важно сделать мониторинг понятным с первого взгляда. Для этого я упростила доступ к ключевым показателям, усилила визуальную иерархию и адаптировала интерфейс под работу с тем устройствами. В основе работы лежит разделение функционала, увеличение зон взаимодействия и группировка информации.",
+            "title": "Solution",
+            "description": "It was important for me to make monitoring understandable at first glance. For this, I simplified access to key indicators, strengthened the visual hierarchy, and adapted the interface for working from those devices that are actually used in the field. The solution is based on functional separation, larger interaction zones, and better information grouping.",
             "slides": {
                 "dashboard": "Dashboard",
-                "auth": "Авторизация",
-                "status": "Системный статус",
-                "pool": "Конфигурация пула",
-                "logs": "Логи"
+                "auth": "Authorization",
+                "status": "System status",
+                "pool": "Pool configuration",
+                "logs": "Logs"
             }
         },
         "impact": {
-            "title": "Перспективы проекта",
-            "text": "Я планирую сделать локализацию на китайском и английском языках, отправить на оценку проект коллегам из Web3 и предложить его компании MicroBT."
+            "title": "Project prospects",
+            "text": "I plan to localize the project into Chinese and English, send it for evaluation to colleagues from Web3, and propose it to MicroBT."
         }
     },
     "iridaAi": {
         "sidebarItems": {
-            "idea": "Как появилась идея",
-            "research": "Исследование и инсайты",
-            "solution": "Решение",
-            "visualStrategy": "Визуальная стратегия",
-            "perspectives": "Перспективы проекта"
+            "idea": "How the idea came about",
+            "research": "Research and insights",
+            "solution": "Solution",
+            "visualStrategy": "Visual strategy",
+            "perspectives": "Project prospects"
         },
         "aboutProduct": {
-            "description": "Irida AI — это моя переработка проекта DxGPT, волонтерского AI-ассистента для предварительной медицинской диагностики.",
-            "contextTitle": "Как появилась идея",
-            "contextText1": "О проекте DxGPT я узнала от друга-врача, который использует сервис в своей практике и иногда рекомендует его пациентам. Из любопытства я протестировала DxGPT и увидела, что модель предлагает действительно хорошо обоснованные гипотезы, которые помогают разобраться в состоянии здоровья.",
-            "contextText2": "Я постоянно спотыкалась об интерфейс в работе с DxGPT. Его сценарий использования нарушает сформированные паттерны взаимодействия с AI-сервисами, не имеет удобной мобильной версии и скрывает текст промта. Мне захотелось с нуля переработать DxGPT, пойти по дизайн-процессу и создать более удобную и красивую версию."
+            "description": "Irida AI is my rework of the DxGPT project, a volunteer AI assistant for preliminary medical diagnosis.",
+            "contextTitle": "How the idea came about",
+            "contextText1": "I learned about the DxGPT project from a doctor friend who uses the service in his practice and sometimes recommends it to patients. Out of curiosity, I tested DxGPT and saw that the model offers really well-founded hypotheses that help understand health conditions.",
+            "contextText2": "I constantly stumbled over the interface when working with DxGPT. Its use case violates established interaction patterns with AI services, it lacks a convenient mobile version, and it hides the prompt text. I wanted to rework DxGPT from scratch, follow the design process, and create a more convenient and beautiful version."
         },
         "research": {
-            "title": "Исследование и инсайты",
-            "description": "Мне помогли беседы с двумя врачами, опыт работы с DxGPT и анализ существующих AI-сервисов. Для начала работы я выделила самые слабые стороны DxGPT и приступила к редизайну.",
+            "title": "Research and insights",
+            "description": "Conversations with two doctors, my experience with DxGPT, and an analysis of existing AI services helped me. To start, I highlighted DxGPT's weakest points and began the redesign.",
             "slides": {
-                "result": "DxGPT: результат генерации",
-                "input": "DxGPT: ввод промта",
-                "refine": "DxGPT: уточнение ответа"
+                "result": "DxGPT: generation result",
+                "input": "DxGPT: prompt input",
+                "refine": "DxGPT: refining the answer"
             },
-            "problemsTitle": "Проблемы",
+            "problemsTitle": "Problems",
             "problemsList": [
-                "Флоу DxGPT разительно отличается от других AI-сервисов и нарушает установленный опыт взаимодействия;",
-                "Все функции находятся на одном уровне, что нарушает сценарии использования и скрывает ценный расширенный режим;",
-                "Визуальный стиль элементов может не соответствовать их функции, ошибка в базовой семантике интерфейса;",
-                "Многословный нейминг элементов превращается в текстовый шум, который пользователь плохо воспринимает;",
-                "Нельзя использовать расширенный режим при входе, он становится доступен после ввода первого промта."
+                "The DxGPT flow differs drastically from other AI services and violates the established interaction experience;",
+                "All features are on the same level, which breaks usage scenarios and hides the valuable advanced mode;",
+                "The visual style of elements may not correspond to their function, an error in the basic semantics of the interface;",
+                "Verbose element naming turns into textual noise that the user struggles to perceive;",
+                "You cannot use the advanced mode upon entry; it becomes available after entering the first prompt."
             ]
         },
         "solution": {
-            "title": "Решение",
-            "description": "DxGPT часто нужен в моменте, на приеме или между пациентами. В таких сценариях врач работает с телефоном, поэтому я выбрала подход mobile first.",
-            "subtitle": "2 основных сценария использования:",
+            "title": "Solution",
+            "description": "DxGPT is often needed in the moment, during an appointment or between patients. In such scenarios, the doctor works with a phone, so I chose a mobile-first approach.",
+            "subtitle": "2 main usage scenarios:",
             "cards": {
-                "quick": "Быстрый режим",
-                "advanced": "Расширенный режим"
+                "quick": "Quick mode",
+                "advanced": "Advanced mode"
             },
-            "infoTitle": "В расширенном режиме работы сервиса пользователь не пишет промпт вручную. Он заполняет анкету, а система сама формирует запрос к модели.",
-            "infoText": "Для изменения результата и отправки нового промта достаточно отредактировать уже заполненную анкету.",
-            "functionTitle": "Общая функция",
-            "functionDescription": "Независимо от выбранного режима у пользователя есть возможность задать уточняющие вопросы к одной гипотезе. Для этого нужно перейти по нажатию на заголовок гипотезы и откроется экран с готовыми вопросами; они же и являются промптами для модели.",
-            "functionCaption": "Ответы генерируются сразу, без переходов между экранами."
+            "infoTitle": "In the service's advanced mode, the user does not write the prompt manually. They fill out a questionnaire, and the system itself forms the request to the model.",
+            "infoText": "To change the result and send a new prompt, it is enough to edit the already filled questionnaire.",
+            "functionTitle": "General function",
+            "functionDescription": "Regardless of the selected mode, the user has the opportunity to ask clarifying questions about a single hypothesis. To do this, click on the hypothesis title, and a screen with ready-made questions will open; these are also the prompts for the model.",
+            "functionCaption": "Answers are generated immediately, without transitioning between screens."
         },
         "visualStrategy": {
-            "title": "Визуальная стратегия",
-            "description": "Большинство медицинских сервисов используют холодную палитру, из-за чего интерфейс часто воспринимается клиническим и закрытым. В Ириде это могло усложнить восприятие для пользователей без медицинского бэкграунда и вызвать тревогу за своё здоровье. Мне захотелось смягчить тематику сервиса с помощью цвета и я выбрала теплый оранжевый как акцентный.",
+            "title": "Visual strategy",
+            "description": "Most medical services use a cold palette, which makes the interface often perceived as clinical and closed. In Irida, this could complicate perception for users without a medical background and cause anxiety about their health. I wanted to soften the service's theme with color, and I chose a warm orange as an accent.",
             "slides": {
-                "welcome": "Экран приветствия Irida",
-                "case": "Опишите случай",
-                "details": "Уточните детали",
-                "advancedInput": "Расширенный режим — ввод",
-                "advancedLoading": "Расширенный режим — загрузка",
-                "advancedResult": "Расширенный режим — результат",
-                "advancedContinue": "Расширенный режим — продолжить"
+                "welcome": "Irida welcome screen",
+                "case": "Describe the case",
+                "details": "Clarify details",
+                "advancedInput": "Advanced mode — input",
+                "advancedLoading": "Advanced mode — loading",
+                "advancedResult": "Advanced mode — result",
+                "advancedContinue": "Advanced mode — continue"
             },
             "desktop": {
-                "welcome": "Экран приветствия Irida",
-                "onboarding": "Онбординг — Опишите случай и Уточните детали",
-                "advanced": "Расширенный режим работы"
+                "welcome": "Irida welcome screen",
+                "onboarding": "Onboarding — Describe the case and Clarify details",
+                "advanced": "Advanced operating mode"
             },
-            "footnote": "Визуальный язык я строила на эстетике AI-продуктов вроде Arc Search, Perplexity и Amie, которые задают тренд на легкий и эмпатичный дизайн. Я старалась перенять их подход к работе с объемом и светом, использовала градиент для динамики и мягкие тени для глубины."
+            "footnote": "I built the visual language on the aesthetics of AI products like Arc Search, Perplexity, and Amie, which set a trend for light and empathetic design. I tried to adopt their approach to working with volume and light, using a gradient for dynamics and soft shadows for depth."
         },
         "perspectives": {
-            "title": "Перспективы проекта",
-            "description": "DxGPT создан и поддерживается волонтерами, поэтому по окончании разработки я хочу безвозмездно передать дизайн-проект Irida.",
-            "text": "Если команде DxGPT понравится редизайн, то я готова на время присоединиться и доработать проект под потребности продукта."
+            "title": "Project prospects",
+            "description": "DxGPT is created and supported by volunteers, so upon completion of development, I want to donate the Irida design project.",
+            "text": "If the DxGPT team likes the redesign, I am ready to join temporarily and refine the project to fit the product's needs."
         }
     },
     "irida": {
         "sidebarItems": {
-            "idea": "Как появилась идея",
-            "research": "Исследование и инсайты",
-            "solution": "Решение",
-            "visualStrategy": "Визуальная стратегия",
-            "impact": "Перспективы проекта"
+            "idea": "How the idea came about",
+            "research": "Research and insights",
+            "solution": "Solution",
+            "visualStrategy": "Visual strategy",
+            "impact": "Project prospects"
         },
         "aboutProduct": {
-            "description": "Irida AI — это моя переработка проекта DxGPT, волонтерского AI-ассистента для предварительной медицинской диагностики.",
-            "contextTitle": "Как появилась идея",
-            "contextText1": "О проекте DxGPT я узнала от друга-врача, который использует сервис в своей практике и иногда рекомендует его пациентам. Из любопытства я протестировала DxGPT и увидела, что модель предлагает действительно хорошо обоснованные гипотезы, которые помогают разобраться в состоянии здоровья.",
-            "contextText2": "Я постоянно спотыкалась об интерфейс в работе с DxGPT. Его сценарий использования нарушает сформированные паттерны взаимодействия с AI-сервисами, не имеет удобной мобильной версии и скрывает текст промта. Мне захотелось с нуля переработать DxGPT, пойти по дизайн-процессу и создать более удобную и красивую версию."
+            "description": "Irida AI is my rework of the DxGPT project, a volunteer AI assistant for preliminary medical diagnosis.",
+            "contextTitle": "How the idea came about",
+            "contextText1": "I learned about the DxGPT project from a doctor friend who uses the service in his practice and sometimes recommends it to patients. Out of curiosity, I tested DxGPT and saw that the model offers really well-founded hypotheses that help understand health conditions.",
+            "contextText2": "I constantly stumbled over the interface when working with DxGPT. Its use case violates established interaction patterns with AI services, it lacks a convenient mobile version, and it hides the prompt text. I wanted to rework DxGPT from scratch, follow the design process, and create a more convenient and beautiful version."
         },
         "research": {
-            "title": "Исследование и инсайты",
-            "description": "Мне помогли беседы с двумя врачами, опыт работы с DxGPT и анализ существующих AI-сервисов. Для начала работы я выделила самые слабые стороны DxGPT и приступила к редизайну.",
+            "title": "Research and insights",
+            "description": "Conversations with two doctors, my experience with DxGPT, and an analysis of existing AI services helped me. To start, I highlighted DxGPT's weakest points and began the redesign.",
             "slides": [
-                "DxGPT: результат генерации",
-                "DxGPT: ввод промта",
-                "DxGPT: уточнение ответа"
+                "DxGPT: generation result",
+                "DxGPT: prompt input",
+                "DxGPT: refining the answer"
             ],
-            "problemsTitle": "Проблемы",
+            "problemsTitle": "Problems",
             "problems": [
-                "Флоу DxGPT разительно отличается от других AI-сервисов и нарушает установленный опыт взаимодействия;",
-                "Все функции находятся на одном уровне, что нарушает сценарии использования и скрывает ценный расширенный режим;",
-                "Визуальный стиль элементов может не соответствовать их функции, ошибка в базовой семантике интерфейса;",
-                "Многословный нейминг элементов превращается в текстовый шум, который пользователь плохо воспринимает;",
-                "Нельзя использовать расширенный режим при входе, он становится доступен после ввода первого промта."
+                "The DxGPT flow differs drastically from other AI services and violates the established interaction experience;",
+                "All features are on the same level, which breaks usage scenarios and hides the valuable advanced mode;",
+                "The visual style of elements may not correspond to their function, an error in the basic semantics of the interface;",
+                "Verbose element naming turns into textual noise that the user struggles to perceive;",
+                "You cannot use the advanced mode upon entry; it becomes available after entering the first prompt."
             ]
         },
         "solution": {
-            "title": "Решение",
-            "description": "DxGPT часто нужен в моменте, на приеме или между пациентами. В таких сценариях врач работает с телефоном, поэтому я выбрала подход mobile first.",
-            "subtitle": "2 основных сценария использования:",
+            "title": "Solution",
+            "description": "DxGPT is often needed in the moment, during an appointment or between patients. In such scenarios, the doctor works with a phone, so I chose a mobile-first approach.",
+            "subtitle": "2 main usage scenarios:",
             "scenarios": [
-                "Быстрый режим",
-                "Расширенный режим"
+                "Quick mode",
+                "Advanced mode"
             ],
             "cards": {
-                "quick": "Быстрый режим",
-                "advanced": "Расширенный режим"
+                "quick": "Quick mode",
+                "advanced": "Advanced mode"
             },
-            "infoTitle": "В расширенном режиме работы сервиса пользователь не пишет промпт вручную. Он заполняет анкету, а система сама формирует запрос к модели.",
-            "infoText": "Для изменения результата и отправки нового промта достаточно отредактировать уже заполненную анкету.",
-            "functionTitle": "Общая функция",
-            "functionDescription": "Независимо от выбранного режима у пользователя есть возможность задать уточняющие вопросы к одной гипотезе. Для этого нужно перейти по нажатию на заголовок гипотезы и откроется экран с готовыми вопросами; они же и являются промптами для модели.",
-            "functionCaption": "Ответы генерируются сразу, без переходов между экранами."
+            "infoTitle": "In the service's advanced mode, the user does not write the prompt manually. They fill out a questionnaire, and the system itself forms the request to the model.",
+            "infoText": "To change the result and send a new prompt, it is enough to edit the already filled questionnaire.",
+            "functionTitle": "General function",
+            "functionDescription": "Regardless of the selected mode, the user has the opportunity to ask clarifying questions about a single hypothesis. To do this, click on the hypothesis title, and a screen with ready-made questions will open; these are also the prompts for the model.",
+            "functionCaption": "Answers are generated immediately, without transitioning between screens."
         },
         "visualStrategy": {
-            "title": "Визуальная стратегия",
-            "description": "Большинство медицинских сервисов используют холодную палитру, из-за чего интерфейс часто воспринимается клиническим и закрытым. В Ириде это могло усложнить восприятие для пользователей без медицинского бэкграунда и вызвать тревогу за своё здоровье. Мне захотелось смягчить тематику сервиса с помощью цвета и я выбрала теплый оранжевый как акцентный.",
+            "title": "Visual strategy",
+            "description": "Most medical services use a cold palette, which makes the interface often perceived as clinical and closed. In Irida, this could complicate perception for users without a medical background and cause anxiety about their health. I wanted to soften the service's theme with color, and I chose a warm orange as an accent.",
             "slides": {
-                "welcome": "Экран приветствия Irida",
-                "case": "Опишите случай",
-                "details": "Уточните детали",
-                "advancedInput": "Расширенный режим — ввод",
-                "advancedLoading": "Расширенный режим — загрузка",
-                "advancedResult": "Расширенный режим — результат",
-                "advancedContinue": "Расширенный режим — продолжить"
+                "welcome": "Irida welcome screen",
+                "case": "Describe the case",
+                "details": "Clarify details",
+                "advancedInput": "Advanced mode — input",
+                "advancedLoading": "Advanced mode — loading",
+                "advancedResult": "Advanced mode — result",
+                "advancedContinue": "Advanced mode — continue"
             },
             "desktop": {
-                "welcome": "Экран приветствия Irida",
-                "onboarding": "Онбординг — Опишите случай и Уточните детали",
-                "advanced": "Расширенный режим работы"
+                "welcome": "Irida welcome screen",
+                "onboarding": "Onboarding — Describe the case and Clarify details",
+                "advanced": "Advanced operating mode"
             },
-            "footnote": "Визуальный язык я строила на эстетике AI-продуктов вроде Arc Search, Perplexity и Amie, которые задают тренд на легкий и эмпатичный дизайн. Я старалась перенять их подход к работе с объемом и светом, использовала градиент для динамики и мягкие тени для глубины."
+            "footnote": "I built the visual language on the aesthetics of AI products like Arc Search, Perplexity, and Amie, which set a trend for light and empathetic design. I tried to adopt their approach to working with volume and light, using a gradient for dynamics and soft shadows for depth."
         },
         "impact": {
-            "title": "Перспективы проекта",
-            "description": "DxGPT создан и поддерживается волонтерами, поэтому по окончании разработки я хочу безвозмездно передать дизайн-проект Irida.",
-            "text": "Если команде DxGPT понравится редизайн, то я готова на время присоединиться и доработать проект под потребности продукта."
+            "title": "Project prospects",
+            "description": "DxGPT is created and supported by volunteers, so upon completion of development, I want to donate the Irida design project.",
+            "text": "If the DxGPT team likes the redesign, I am ready to join temporarily and refine the project to fit the product's needs."
         },
         "perspectives": {
-            "title": "Перспективы проекта",
-            "description": "DxGPT создан и поддерживается волонтерами, поэтому по окончании разработки я хочу безвозмездно передать дизайн-проект Irida.",
-            "text": "Если команде DxGPT понравится редизайн, то я готова на время присоединиться и доработать проект под потребности продукта."
+            "title": "Project prospects",
+            "description": "DxGPT is created and supported by volunteers, so upon completion of development, I want to donate the Irida design project.",
+            "text": "If the DxGPT team likes the redesign, I am ready to join temporarily and refine the project to fit the product's needs."
         }
     },
     "metropolitan": {
-        "site": "Сайт",
-        "product": "Продукт",
-        "geography": "География",
-        "geographyValue": "Дубай, ОАЭ",
-        "description": "Metropolitan Premium Properties — это крупное агентство жилой и коммерческой недвижимости в ОАЭ и Австрии. Моей основной задачей было проектирование digital-продуктов для компаний-девелоперов и внутренних отделов агентства",
-        "restrictionsTitle": "Ограничения",
-        "restrictionsText": "Я работала над этим проектом более 3х лет назад и, к сожалению, у меня не осталось на руках исходников, рабочих файлов или метрик. Я не могу предоставить исчерпывающей информации о кейсе, но могу устно рассказать о своем опыте на собеседовании.",
-        "imageCaption": "Экран поиска недвижимости",
+        "site": "Website",
+        "product": "Product",
+        "geography": "Geography",
+        "geographyValue": "Dubai, UAE",
+        "description": "Metropolitan Premium Properties is a large residential and commercial real estate agency in the UAE and Austria. My main task was designing digital products for development companies and the agency's internal departments.",
+        "restrictionsTitle": "Restrictions",
+        "restrictionsText": "I worked on this project over 3 years ago and, unfortunately, I do not have the source files, working files, or metrics left on hand. I cannot provide comprehensive information about the case study, but I can verbally talk about my experience during an interview.",
+        "imageCaption": "Real estate search screen",
         "aboutProduct": {
-            "description": "Metropolitan Premium Properties — это крупное агентство жилой и коммерческой недвижимости в ОАЭ и Австрии. Моей основной задачей было проектирование digital-продуктов для компаний-девелоперов и внутренних отделов агентства",
-            "restrictionsTitle": "Ограничения",
-            "restrictionsText": "Я работала над этим проектом более 3х лет назад и, к сожалению, у меня не осталось на руках исходников, рабочих файлов или метрик. Я не могу предоставить исчерпывающей информации о кейсе, но могу устно рассказать о своем опыте на собеседовании.",
-            "imageCaption": "Экран поиска недвижимости"
+            "description": "Metropolitan Premium Properties is a large residential and commercial real estate agency in the UAE and Austria. My main task was designing digital products for development companies and the agency's internal departments.",
+            "restrictionsTitle": "Restrictions",
+            "restrictionsText": "I worked on this project over 3 years ago and, unfortunately, I do not have the source files, working files, or metrics left on hand. I cannot provide comprehensive information about the case study, but I can verbally talk about my experience during an interview.",
+            "imageCaption": "Real estate search screen"
         }
     },
     "common": {
-        "others": "Другие проекты",
-        "back": "Назад"
+        "others": "Other projects",
+        "back": "Back"
     }
 }

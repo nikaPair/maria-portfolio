@@ -9,7 +9,7 @@ export default function Home() {
   const t = useTranslations("hero");
 
   return (
-    <>
+    <div>
       <h1>{t("pageTitle")}</h1>
       <main>
         <Hero />
@@ -18,6 +18,6 @@ export default function Home() {
         <UIShots />
       </main>
       <Footer />
-    </>
+    </div>
   );
 }

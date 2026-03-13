@@ -1,7 +1,7 @@
 .section {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 40px;
 }
 
 .title {
@@ -14,17 +14,16 @@
 /* Description */
 .description {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 24px;
   color: var(--black);
   max-width: 700px;
 }
 
-/* Block & Grid */
 .block {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 32px;
 }
 
 .desktopGrid {
@@ -50,7 +49,7 @@
 
 .gridItemTitle {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   color: #a5a6ac;
   text-align: center;
   margin: 0;
@@ -90,6 +89,9 @@
   border-radius: 24px;
   padding: 0;
   overflow: hidden;
+  @media screen and (max-width: 1024px) {
+    height: 316px;
+  }
 }
 
 .slideItem .imageWrapper {
@@ -104,7 +106,7 @@
 
 .slideItemTitle {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   color: #a5a6ac;
   text-align: center;
   margin: 0;
@@ -119,14 +121,14 @@
 
 .subtitle {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 400;
   color: var(--black);
   margin: 0;
 }
 
 .text {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.6;
   color: var(--black);
 }
@@ -204,7 +206,7 @@
 /* Caption */
 .caption {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--fg-secondary);
   text-align: center;
 }

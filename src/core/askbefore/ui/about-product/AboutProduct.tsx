@@ -66,7 +66,6 @@ export default function AboutProduct() {
             <li>{t("b2cDescription")}</li>
             <li>{t("b2bDescription")}</li>
           </ul>
-          <p className={styles.text}>{t("marketingConclusion")}</p>
         </div>
       </div>
 

@@ -68,7 +68,7 @@
 .competitorName {
     font-family: var(--font-manrope);
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 400;
     color: var(--black);
     text-align: center;
 }
@@ -115,7 +115,7 @@
 .bipolarTitle {
     font-family: var(--font-manrope);
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 32px;
     color: var(--black);
     margin: 0;
@@ -204,7 +204,7 @@
 
     .competitorName {
         font-size: 13px;
-        font-weight: 500;
+        font-weight: 400;
     }
 
     .bipolarTrackerBox {

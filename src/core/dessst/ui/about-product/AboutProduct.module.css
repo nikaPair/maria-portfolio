@@ -35,14 +35,14 @@
 .infoValue {
     font-family: var(--font-manrope);
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 400;
     color: var(--black);
 }
 
 .infoLink {
     font-family: var(--font-manrope);
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 400;
     color: #2F5DF1;
     text-decoration: none;
 }

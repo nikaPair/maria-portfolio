@@ -40,16 +40,16 @@ export default function ContextAndTask() {
 
   return (
     <section id={navT("context")} className={styles.section}>
-      <h2 className={styles.title}>{t("title")}</h2>
-      <p className={styles.description}>
-        {t("description")}
-      </p>
+      <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+        <h2 className={styles.title}>{t("title")}</h2>
+        <p className={styles.description}>{t("description")}</p>
+      </div>
 
       <div className={styles.block}>
-        <h3 className={styles.subtitle}>{t("subtitle")}</h3>
-        <p className={styles.text}>
-          {t("text")}
-        </p>
+        <div>
+          <h3 className={styles.subtitle}>{t("subtitle")}</h3>
+          <p className={styles.text}>{t("text")}</p>
+        </div>
 
         {/* Desktop Grid */}
         <div className={styles.desktopGrid}>
@@ -71,10 +71,7 @@ export default function ContextAndTask() {
 
         {/* Mobile Slider */}
         <div className={styles.mobileSlider}>
-          <Swiper
-            spaceBetween={16}
-            slidesPerView={1}
-          >
+          <Swiper spaceBetween={16} slidesPerView={1}>
             {slides.map((slide, index) => (
               <SwiperSlide key={index}>
                 <div className={styles.slideItem}>

@@ -1,7 +1,7 @@
 .cases {
   background-color: var(--white);
   color: var(--black);
-  padding-block: 120px;
+  padding-block: 180px;
 }
 
 .container {
@@ -16,7 +16,7 @@
 
 .casesTitle h2 {
   font-size: 44px;
-  letter-spacing: 0;
+   
   margin: 0 0 8px 0;
   color: var(--black);
   font-weight: 700;
@@ -24,8 +24,8 @@
 
 .casesTitle p {
   font-size: 20px;
-  letter-spacing: 0;
-  color: var(--fg-secondary);
+   
+  color: var(--fg-black);
 }
 
 .projects {

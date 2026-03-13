@@ -1,8 +1,8 @@
 import { Language, NavItem, CaseData, PetProjectData, UIShot } from "@/types";
 
 export const LANGUAGES: Language[] = [
-  { code: "ru", label: "Rus", flag: "/images/flag-rus.png" },
-  { code: "en", label: "EN", flag: "/images/flag-eng.png" },
+  { code: "ru", label: "Rus", flag: "/icons/ru.svg" },
+  { code: "en", label: "EN", flag: "/icons/en.svg" },
 ];
 
 export const NAV_ITEMS: NavItem[] = [

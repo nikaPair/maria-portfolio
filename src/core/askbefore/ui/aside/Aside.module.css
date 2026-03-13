@@ -14,7 +14,7 @@
 .aside__link {
   font-size: 14px;
   line-height: 20px;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--black);
   display: flex;
   align-items: center;
@@ -45,7 +45,7 @@
 .aside__list__item {
   font-size: 14px;
   line-height: 20px;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--black);
   transition: all 0.3s ease;
   &:hover {

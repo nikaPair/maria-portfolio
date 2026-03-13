@@ -4,6 +4,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
 }
 
 .telegramLink {
@@ -13,7 +17,7 @@
   color: var(--white);
   text-decoration: none;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   transition: opacity 0.3s ease;
 }
 

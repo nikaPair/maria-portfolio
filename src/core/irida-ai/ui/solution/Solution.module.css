@@ -38,7 +38,7 @@
 .subtitle {
   font-family: var(--font-manrope);
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--black);
   margin: 0;
   margin-top: 24px;
@@ -103,7 +103,7 @@
   text-align: center;
   margin: 0;
   margin-top: 8px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .cardsGrid {
@@ -184,7 +184,7 @@
   font-family: var(--font-manrope);
   font-size: 20px;
   line-height: 28px;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--black);
   margin: 0;
   max-width: 700px;

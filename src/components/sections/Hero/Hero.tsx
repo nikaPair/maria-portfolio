@@ -6,6 +6,7 @@ import { animate } from "motion";
 import { useTranslations } from "next-intl";
 import { SOCIAL_LINKS } from "@/constants";
 import styles from "./Hero.module.css";
+import { Link } from "@/i18n/routing";
 
 export default function Hero() {
   const heroRef = useRef<HTMLElement>(null);
@@ -28,7 +29,7 @@ export default function Hero() {
           src="/images/tg_profile.png"
           alt="Telegram screen"
           width={300}
-          height={600}
+          height={590}
           className={styles.heroImage}
           priority
         />
@@ -40,9 +41,9 @@ export default function Hero() {
               <br />{t("role")}
             </h2>
             <p>{t("description")}</p>
-            <p>
+            <p >
               {t("caseLinkPrefix")}{" "}
-              <a href="">{t("caseLinkText")}</a>
+              <Link href="/askbefore" className={styles.caseLink}>{t("caseLinkText")}</Link>
             </p>
           </div>
 
