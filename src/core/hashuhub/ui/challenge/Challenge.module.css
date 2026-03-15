@@ -1,7 +1,7 @@
 .section {
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 16px;
   max-width: 100%;
 }
 
@@ -78,7 +78,7 @@
 
 .bottomText {
   font-family: var(--font-manrope);
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.6;
   color: #333;
   margin: 0;
@@ -102,7 +102,7 @@
 
 .complicationText {
   font-family: var(--font-manrope);
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.6;
   color: #333;
   margin: 0;
@@ -128,9 +128,9 @@
 
 .warningText {
   font-family: var(--font-manrope);
-  font-size: 18px;
-  line-height: 1.6;
-  color: #333;
+  font-size: 20px;
+  line-height: 28px;
+  color: var(--black);
   margin: 0;
   max-width: 800px;
 }

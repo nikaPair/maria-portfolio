@@ -14,13 +14,13 @@ export default function TeamWork() {
     {
       avatar: "/images/askbefore/ksenya.png",
       description: t("members.ksenya"),
-      link: "https://instagram.com/EsLichtne",
+      link: "https://t.me/EsLichtne",
       linkText: "EsLichtne",
     },
     {
       avatar: "/images/askbefore/aynur.png",
       description: t("members.aynur"),
-      link: "https://instagram.com/product_designer_BA",
+      link: "https://t.me/product_designer_BA",
       linkText: "product_designer_BA",
     },
   ];

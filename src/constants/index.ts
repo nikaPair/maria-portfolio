@@ -162,7 +162,7 @@ export const UI_SHOTS_MOBILE: UIShot[] = [
 ];
 
 export const SOCIAL_LINKS = {
-  telegram: "https://t.me/lyubimova_dsgn",
+  telegram: "https://t.me/lubimova_dsgn",
 };
 
 export const LOCALE_STORAGE_KEY = "siteLocale";

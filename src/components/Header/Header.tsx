@@ -94,7 +94,7 @@ export default function Header() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            t.me/lyubimova_dsgn
+            t.me/lubimova_dsgn
           </a>
 
           {/* Mobile menu button */}

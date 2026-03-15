@@ -56,7 +56,7 @@ export default function AboutProduct() {
           <div className={styles.minerImagePlaceholder}>
             <div className={styles.placeholderImg}>
               <Image
-                src="/images/asic.png"
+                src="/images/hashuhub/context.png"
                 alt="ASIC Miner"
                 width={304}
                 height={304}

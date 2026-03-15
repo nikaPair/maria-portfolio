@@ -31,8 +31,8 @@ function ProfileHeader() {
       <Image
         src="/images/portrait.png"
         alt="portrait"
-        width={280}
-        height={280}
+        width={201}
+        height={232}
         className={styles.portrait}
       />
       <div className={styles.nameContainer}>

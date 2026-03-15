@@ -31,8 +31,11 @@
   margin-left: auto;
   margin-top: 4px;
   gap: 20px;
-   
-  p{
+  position: relative;
+  @media screen and (max-width: 750px) {
+    padding: 50px 30px 30px 30px;
+  }
+  p {
     max-width: 560px;
   }
 }
@@ -43,12 +46,24 @@
   font-size: 44px;
   font-weight: 700;
 }
+.heroTextDate {
+  position: absolute;
+  right: 51px;
+  top: 40px;
+  color: var(--fg-secondary);
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
 
+  @media screen and (max-width: 750px) {
+    left: 30px;
+    top: 20px;
+  }
+}
 .heroText p {
   font-size: 16px;
   font-weight: 500;
   margin: 0;
-   
 }
 
 .heroBottom {
@@ -58,7 +73,7 @@
 }
 
 .caseLink {
-  color: #2563EB;
+  color: #2563eb;
 }
 
 /* Stats Card */
@@ -66,7 +81,7 @@
   width: 592px;
   height: 205px;
   margin: 16px 0 0 0;
-  background-color: #F8F9FF;
+  background-color: #f8f9ff;
   border-radius: 32px;
   display: flex;
   align-items: center;
@@ -105,7 +120,7 @@
   justify-content: center;
   gap: 20px;
   margin-top: 16px;
-  background: #FFF6F9;
+  background: #fff6f9;
 }
 
 .cvEmoji {
@@ -152,7 +167,6 @@
 
   .heroText {
     gap: 16px;
-    padding: 30px;
   }
 
   .heroText h2 {

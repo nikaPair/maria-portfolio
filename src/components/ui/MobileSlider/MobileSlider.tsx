@@ -26,10 +26,10 @@ export default function MobileSlider({
     const diff = endX - startX;
 
     if (diff > 50 && currentIndex > 0) {
-      setCurrentIndex(currentIndex - 1);
+      setCurrentIndex(currentIndex => currentIndex - 1);
     }
     if (diff < -50 && currentIndex < slides.length - 1) {
-      setCurrentIndex(currentIndex + 1);
+      setCurrentIndex(currentIndex => currentIndex + 1);
     }
   };
 

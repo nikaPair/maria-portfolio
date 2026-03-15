@@ -28,12 +28,10 @@
   margin: 0;
 }
 
-/* Grid Layout (Desktop) */
 .grid {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  margin-top: 16px;
 }
 
 .slideWrapper {
@@ -123,7 +121,7 @@
 
 .problemsTitle {
   font-family: var(--font-manrope);
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
   color: var(--black);
   margin: 0;

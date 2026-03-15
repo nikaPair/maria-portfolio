@@ -4,14 +4,16 @@ import { useEffect, useRef } from "react";
 import Image from "next/image";
 import { animate } from "motion";
 import { useTranslations } from "next-intl";
-import { SOCIAL_LINKS } from "@/constants";
 import styles from "./Hero.module.css";
 import { Link } from "@/i18n/routing";
 
 export default function Hero() {
   const heroRef = useRef<HTMLElement>(null);
   const t = useTranslations("hero");
-
+  const date = new Date().toLocaleDateString("en-EN", {
+    month: "long",
+    year: "numeric",
+  });
   useEffect(() => {
     if (heroRef.current) {
       animate(
@@ -36,14 +38,18 @@ export default function Hero() {
 
         <div className={styles.heroTextContainer}>
           <div className={styles.heroText}>
+            <p className={styles.heroTextDate}>{date}</p>
             <h2>
               {t("greeting")}
-              <br />{t("role")}
+              <br />
+              {t("role")}
             </h2>
             <p>{t("description")}</p>
-            <p >
+            <p>
               {t("caseLinkPrefix")}{" "}
-              <Link href="/askbefore" className={styles.caseLink}>{t("caseLinkText")}</Link>
+              <Link href="/askbefore" className={styles.caseLink}>
+                {t("caseLinkText")}
+              </Link>
             </p>
           </div>
 
@@ -80,12 +86,10 @@ function CVCard() {
 
   return (
     <div className={styles.cvContainer}>
-      <Image
+      <img
         className={styles.cvEmoji}
         src="/images/emoji.png"
         alt="emoji"
-        width={44}
-        height={44}
       />
       <a className={styles.cvButton} href={t("resumePath")} download>
         <Image
