@@ -36,12 +36,12 @@ export default function AboutProduct() {
         <div className={styles.infoCol}>
           <span className={styles.infoLabel}>{t("site")}</span>
           <a
-            href="https://askbefore.com"
+            href="https://askbefore.eu"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.infoLink}
           >
-            askbefore.com
+            askbefore.eu
           </a>
         </div>
         <div className={styles.infoCol}>

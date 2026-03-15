@@ -21,7 +21,7 @@ export default function AboutProduct() {
         <div className={styles.infoCol}>
           <span className={styles.infoLabel}>{t("site")}</span>
           <a
-            href="https://dessst.ru"
+            href="https://app.dessst.ru"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.infoLink}
