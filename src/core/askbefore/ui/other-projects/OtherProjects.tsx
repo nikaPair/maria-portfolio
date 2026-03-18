@@ -127,11 +127,10 @@ export default function OtherProjects() {
           aria-label="Previous slide"
         >
           <Image
-            src="/icons/chevron-right.svg"
+            src="/icons/arrow-left.svg"
             alt=""
-            width={20}
-            height={20}
-            style={{ transform: "rotate(180deg)" }}
+            width={44}
+            height={44}
           />
         </button>
         <button
@@ -139,7 +138,12 @@ export default function OtherProjects() {
           onClick={nextSlide}
           aria-label="Next slide"
         >
-          <Image src="/icons/chevron-right.svg" alt="" width={20} height={20} />
+          <Image
+            src="/icons/chevron-right.svg"
+            alt=""
+            width={44}
+            height={44}
+          />
         </button>
       </div>
     </section>

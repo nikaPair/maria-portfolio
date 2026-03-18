@@ -14,8 +14,8 @@ export default function Aside({ list }: { list: string[] }) {
       <div className={styles.aside__container}>
         <Link href="/" className={styles.aside__link}>
           <Image
-            src="/icons/arrow-left.svg"
-            alt="arrow-left"
+            src="/icons/arrow.svg"
+            alt="arrow"
             width={20}
             height={20}
           />

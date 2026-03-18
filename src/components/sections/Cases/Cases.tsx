@@ -8,11 +8,19 @@ import { useTranslations } from "next-intl";
 import styles from "./Cases.module.css";
 import { Link } from "@/i18n/routing";
 
-export default function Cases() {
+type CasesProps = {
+  variant?: "home" | "casesPage";
+};
+
+export default function Cases({ variant = "home" }: CasesProps) {
   const titleRef = useRef<HTMLDivElement>(null);
   const contentRefs = useRef<(HTMLDivElement | null)[]>([]);
   const imageRefs = useRef<(HTMLElement | null)[]>([]);
   const t = useTranslations("cases");
+  const sectionClassName =
+    variant === "casesPage"
+      ? `${styles.cases} ${styles.casesPage}`
+      : styles.cases;
 
   useEffect(() => {
     // Title animation
@@ -50,7 +58,7 @@ export default function Cases() {
   }, []);
 
   return (
-    <section className={styles.cases} id="cases">
+    <section className={sectionClassName} id="cases">
       <div className={styles.container}>
         <hgroup className={styles.casesTitle} ref={titleRef}>
           <h2>{t("title")}</h2>

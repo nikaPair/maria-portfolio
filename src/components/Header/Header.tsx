@@ -23,10 +23,9 @@ export default function Header() {
   const t = useTranslations("nav");
 
   const NAV_ITEMS = [
+    { href: "/" as const, label: t("home") },
     { href: "/about" as const, label: t("about") },
-    { href: "/#cases" as const, label: t("cases") },
-    { href: "/#pet-projects" as const, label: t("petProjects") },
-    { href: "/#ui-shots" as const, label: t("uiShots") },
+    { href: "/cases" as const, label: t("cases") },
   ];
 
   const currentLang: Language =

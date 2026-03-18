@@ -4,6 +4,7 @@
         "description": "UX/UI Designer Maria Lubimova's portfolio. 3 years in product design: design systems, UX Research, prototyping."
     },
     "nav": {
+        "home": "Home",
         "about": "About me",
         "cases": "Cases",
         "petProjects": "Pet projects",

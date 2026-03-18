@@ -1,5 +1,8 @@
 .header {
   padding: 0;
+  position: sticky;
+  top: 16px;
+  z-index: 100;
 }
 
 @media screen and (max-width: 1200px) {

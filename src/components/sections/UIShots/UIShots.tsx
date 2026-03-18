@@ -35,7 +35,7 @@ export default function UIShots() {
         <p>{t("subtitle")}</p>
       </header>
 
-      {/* Desktop grid - 11 images */}
+      {/* Desktop grid - 9 images */}
       <div className={styles.desktopGrid} ref={gridRef}>
         {/* Row 1: 2 images */}
         <div className={styles.row}>
@@ -94,29 +94,7 @@ export default function UIShots() {
           </div>
         </div>
 
-        {/* Row 4: 2 images */}
-        <div className={styles.row}>
-          <div className={styles.shot}>
-            <Image
-              src={UI_SHOTS_DESKTOP[5].src}
-              alt={UI_SHOTS_DESKTOP[5].alt}
-              width={590}
-              height={400}
-              className={styles.shotImage}
-            />
-          </div>
-          <div className={styles.shot}>
-            <Image
-              src={UI_SHOTS_DESKTOP[6].src}
-              alt={UI_SHOTS_DESKTOP[6].alt}
-              width={590}
-              height={400}
-              className={styles.shotImage}
-            />
-          </div>
-        </div>
-
-        {/* Row 5: 3 images */}
+        {/* Row 4: 3 images */}
         <div className={styles.rowThree}>
           <div className={styles.shot}>
             <Image
@@ -147,7 +125,7 @@ export default function UIShots() {
           </div>
         </div>
 
-        {/* Row 6: 1 image */}
+        {/* Row 5: 1 image */}
         <div className={styles.row}>
           <div className={styles.shotFull}>
             <Image

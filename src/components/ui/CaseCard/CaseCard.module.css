@@ -57,7 +57,7 @@
 .location {
   font-size: 14px;
   font-weight: 500;
-  margin: 0 0 24px 0;
+  margin: 0 0 16px 0;
   letter-spacing: -0.01em;
   color: var(--fg-secondary);
 }
@@ -65,9 +65,9 @@
 /* Description */
 .description {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.5;
-  margin: 0;
+  margin: 0 0 33px 0;
   letter-spacing: -0.01em;
   color: var(--black);
 }
@@ -84,7 +84,7 @@
 
 .tags li {
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   padding: 13px 18px;
   background-color: var(--white);
   border-radius: 999px;

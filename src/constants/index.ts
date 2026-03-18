@@ -1,13 +1,13 @@
 import { Language, NavItem, CaseData, PetProjectData, UIShot } from "@/types";
 
 export const LANGUAGES: Language[] = [
-  { code: "ru", label: "Rus", flag: "/icons/ru.svg" },
+  { code: "ru", label: "RU", flag: "/icons/ru.svg" },
   { code: "en", label: "EN", flag: "/icons/en.svg" },
 ];
 
 export const NAV_ITEMS: NavItem[] = [
   { href: "/about", label: "Обо мне" },
-  { href: "/#cases", label: "Кейсы" },
+  { href: "/cases", label: "Кейсы" },
   { href: "/#pet-projects", label: "Пет-проекты" },
   { href: "/#ui-shots", label: "UI шоты" },
 ];

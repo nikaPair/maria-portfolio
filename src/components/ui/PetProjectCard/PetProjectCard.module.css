@@ -29,11 +29,13 @@
 /* First card - pink/blue gradient */
 .first {
   background: #f8f9ff;
+  align-items: center;
 }
 
 /* Second card - orange/warm gradient */
 .second {
   background: var(--orange-50);
+  align-items: center;
 }
 
 /* Phone container */
@@ -60,6 +62,7 @@
   color: var(--black);
   margin: 0;
   line-height: 1.4;
+  max-width: 333px;
 }
 
 /* Horizontal layout for laptop/desktop project */
@@ -87,6 +90,7 @@
   line-height: 1.4;
   text-align: left;
   max-width: 27%;
+  max-width: 333px;
   @media screen and (max-width: 950px) {
     max-width: 100%;
   }

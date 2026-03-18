@@ -121,6 +121,33 @@ export default function OtherProjects() {
           </div>
         </div>
 
+        <button
+          type="button"
+          className={`${styles.navButton} ${styles.navButtonPrev}`}
+          onClick={prevSlide}
+          aria-label="Previous slide"
+        >
+          <Image
+            src="/icons/arrow-left.svg"
+            alt=""
+            width={44}
+            height={44}
+          />
+        </button>
+        <button
+          type="button"
+          className={`${styles.navButton} ${styles.navButtonNext}`}
+          onClick={nextSlide}
+          aria-label="Next slide"
+        >
+          <Image
+            src="/icons/chevron-right.svg"
+            alt=""
+            width={44}
+            height={44}
+          />
+        </button>
+
       </div>
     </section>
   );

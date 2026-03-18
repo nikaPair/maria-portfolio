@@ -9,7 +9,7 @@
   align-items: flex-start;
   gap: 24px;
   position: sticky;
-  top: 60px;
+  top: 92px; /* header: top 16px + margin 16px + height 60px */
 }
 .aside__link {
   font-size: 14px;
