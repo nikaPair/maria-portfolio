@@ -91,7 +91,11 @@ function CVCard() {
         src="/images/emoji.png"
         alt="emoji"
       />
-      <a className={styles.cvButton} href={t("resumePath")} download>
+      <a
+        className={styles.cvButton}
+        href={t("resumePath")}
+        download={t("resumeDownloadName")}
+      >
         <Image
           src="/images/tablet/download.svg"
           alt="download"

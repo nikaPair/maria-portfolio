@@ -23,7 +23,8 @@
         "yearsDigital": "8 лет",
         "inDigital": "в digital",
         "resumeFile": "резюме.pdf",
-        "resumePath": "/Резюме.pdf"
+        "resumeDownloadName": "Резюме-Любимова.pdf",
+        "resumePath": "/Резюме-Любимова.pdf"
     },
     "cases": {
         "title": "Кейсы",

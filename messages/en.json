@@ -23,7 +23,8 @@
         "yearsDigital": "7 years",
         "inDigital": "in digital",
         "resumeFile": "resume.pdf",
-        "resumePath": "/resume.pdf"
+        "resumeDownloadName": "CV-Lubimova.pdf",
+        "resumePath": "/CV-Lubimova.pdf"
     },
     "cases": {
         "title": "Cases",
