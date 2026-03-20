@@ -13,11 +13,20 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
+    metadataBase: new URL("https://lubimova.site"),
     title: "Portfolio - Maria Lubimova | Product UX/UI Designer",
     description:
         "Portfolio of UX/UI designer Maria Lubimova. 3 years in product design: design systems, UX Research, prototyping.",
     icons: {
         icon: "/images/avatar.png",
+    },
+    openGraph: {
+        images: [
+            {
+                url: "/opengraph-image.jpg",
+                alt: "Maria Lubimova",
+            },
+        ],
     },
 };
 
