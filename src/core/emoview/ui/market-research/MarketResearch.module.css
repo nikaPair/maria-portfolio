@@ -12,9 +12,9 @@
 
 .title {
     font-family: var(--font-manrope);
-    font-size: 32px;
-    line-height: 40px;
-    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 500;
     color: var(--black);
     margin: 0;
 }
@@ -84,7 +84,9 @@
 .bipolarTrackerBox {
     background-color: #FFF8F1;
     border-radius: 40px;
-    padding: 64px;
+    padding: 40px;
+    width: 100%;
+    max-width: 790px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -95,7 +97,7 @@
 .bipolarLeft {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 20px;
     flex: 1;
     max-width: 600px;
 }
@@ -114,16 +116,17 @@
 
 .bipolarTitle {
     font-family: var(--font-manrope);
-    font-size: 24px;
+    font-size: 14px;
     font-weight: 500;
-    line-height: 32px;
+    line-height: 20px;
     color: var(--black);
     margin: 0;
+    max-width: 170px;
 }
 
 .bipolarText {
     font-family: var(--font-manrope);
-    font-size: 18px;
+    font-size: 16px;
     line-height: 28px;
     color: #1A1A1A;
     margin: 0;
@@ -132,7 +135,7 @@
 .bipolarTexts {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 12px;
 }
 
 .bipolarRight {
@@ -143,9 +146,8 @@
 }
 
 .phoneImage {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
+    width: 153px;
+    height: 280px;
     object-fit: contain;
 }
 
@@ -181,11 +183,6 @@
 
     .content {
         gap: 24px;
-    }
-
-    .title {
-        font-size: 24px;
-        line-height: 32px;
     }
 
     .competitorsBox {

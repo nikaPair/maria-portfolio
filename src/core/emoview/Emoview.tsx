@@ -9,7 +9,7 @@ import DevelopmentStart from "./ui/development-start/DevelopmentStart";
 import Solution from "./ui/solution/Solution";
 import VisualStrategy from "./ui/visual-strategy/VisualStrategy";
 import Perspectives from "./ui/perspectives/Perspectives";
-import OtherProjects from "./ui/other-projects/OtherProjects";
+import { OtherProjectsSection } from "@/shared/ui/other-projects";
 import { useTranslations } from "next-intl";
 
 export default function Emoview() {
@@ -35,7 +35,7 @@ export default function Emoview() {
                     <Solution />
                     <VisualStrategy />
                     <Perspectives />
-                    <OtherProjects />
+                    <OtherProjectsSection page="emoview" />
                 </div>
             </div>
             <Footer />

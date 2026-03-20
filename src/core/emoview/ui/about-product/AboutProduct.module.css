@@ -56,15 +56,17 @@
 /* Context Block */
 .contextBlock {
     display: flex;
-    gap: 32px;
+    gap: 16px;
     align-items: stretch;
 }
 
 .contextContent {
     flex: 1;
+    width: 100%;
+    max-width: 471px;
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 16px;
 }
 
 .contextTitle {
@@ -87,8 +89,8 @@
 
 /* Image */
 .imageCard {
-    width: 380px;
-    height: auto;
+    width: 304px;
+    height: 368px;
     flex-shrink: 0;
     display: flex;
     align-items: flex-end;
@@ -98,8 +100,8 @@
 }
 
 .image {
-    width: 100%;
-    height: auto;
+    width: 304px;
+    height: 368px;
     object-fit: contain;
     display: block;
 }
@@ -112,6 +114,15 @@
 
     .imageCard {
         width: 100%;
+        max-width: 304px;
+        height: auto;
+        aspect-ratio: 304 / 368;
         align-items: center;
+    }
+
+    .image {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 304 / 368;
     }
 }

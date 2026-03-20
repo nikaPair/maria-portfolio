@@ -36,20 +36,20 @@
 .visualGrid {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 16px;
     margin-top: 16px;
 }
 
 .rowTwoCols {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 32px;
+    grid-gap: 16px;
 }
 
 .rowUneven {
     display: grid;
     grid-template-columns: 2fr 3fr;
-    grid-gap: 32px;
+    grid-gap: 16px;
 }
 
 .rowSingle {

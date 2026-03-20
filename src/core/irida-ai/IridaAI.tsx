@@ -9,7 +9,7 @@ import Research from "./ui/research/Research";
 import Solution from "./ui/solution/Solution";
 import VisualStrategy from "./ui/visual-strategy/VisualStrategy";
 import Impact from "./ui/impact/Impact";
-import OtherProjects from "./ui/other-projects/OtherProjects";
+import { OtherProjectsSection } from "@/shared/ui/other-projects";
 
 export default function IridaAI() {
   const t = useTranslations("irida.sidebarItems");
@@ -32,7 +32,7 @@ export default function IridaAI() {
           <Solution />
           <VisualStrategy />
           <Impact />
-          <OtherProjects />
+          <OtherProjectsSection page="irida-ai" />
         </div>
       </div>
       <Footer />

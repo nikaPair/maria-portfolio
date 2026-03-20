@@ -10,7 +10,7 @@ import ArchitectureAndScenarios from "./ui/architecture-and-scenarios/Architectu
 import DesignSystem from "./ui/design-system/DesignSystem";
 import TeamWork from "./ui/team-work/TeamWork";
 import Result from "./ui/result/Result";
-import OtherProjects from "./ui/other-projects/OtherProjects";
+import { OtherProjectsSection } from "@/shared/ui/other-projects";
 import Footer from "@/components/Footer/Footer";
 
 export default function AskBefore() {
@@ -38,7 +38,7 @@ export default function AskBefore() {
           <DesignSystem />
           <TeamWork />
           <Result />
-          <OtherProjects />
+          <OtherProjectsSection page="askbefore" />
         </div>
       </div>
       <Footer />

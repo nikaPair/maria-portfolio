@@ -4,7 +4,7 @@ import Aside from "@/core/askbefore/ui/aside/aside";
 import styles from "./Metropolitan.module.css";
 import Footer from "@/components/Footer/Footer";
 import AboutProduct from "./ui/about-product/AboutProduct";
-import OtherProjects from "./ui/other-projects/OtherProjects";
+import { OtherProjectsSection } from "@/shared/ui/other-projects";
 
 export default function Metropolitan() {
     const list: string[] = [];
@@ -15,7 +15,7 @@ export default function Metropolitan() {
                 <Aside list={list} />
                 <div className={styles.content}>
                     <AboutProduct />
-                    <OtherProjects />
+                    <OtherProjectsSection page="metropolitan" />
                 </div>
             </div>
             <Footer />

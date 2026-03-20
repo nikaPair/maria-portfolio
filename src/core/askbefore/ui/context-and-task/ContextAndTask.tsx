@@ -61,7 +61,7 @@ export default function ContextAndTask() {
                   src={slide.image}
                   alt={slide.caption}
                   width={400}
-                  height={250}
+                  height={180}
                   className={styles.image}
                 />
               </div>
@@ -80,7 +80,7 @@ export default function ContextAndTask() {
                       src={slide.image}
                       alt={slide.caption}
                       width={400}
-                      height={250}
+                      height={180}
                       className={styles.image}
                     />
                   </div>

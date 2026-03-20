@@ -48,8 +48,8 @@ export default function AboutProduct() {
                     <Image
                         src="/images/emoview/idea.png"
                         alt="eMoods Bipolar Mood Tracker"
-                        width={760}
-                        height={760}
+                        width={304}
+                        height={368}
                         className={styles.image}
                     />
                 </div>

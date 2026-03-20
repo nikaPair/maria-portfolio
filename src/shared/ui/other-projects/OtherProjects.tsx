@@ -1,53 +1,36 @@
 "use client";
-import React, { useState, useRef, useEffect } from "react";
+
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
+import type { OtherProjectSlide } from "@/shared/lib/other-projects";
 import styles from "./OtherProjects.module.css";
 
-export default function OtherProjects() {
+const BG_CLASS: Record<OtherProjectSlide["bgColor"], string> = {
+  orange: styles.orange,
+  blue: styles.blue,
+  pink: styles.pink,
+};
+
+export type OtherProjectsProps = {
+  slides: OtherProjectSlide[];
+};
+
+export function OtherProjects({ slides }: OtherProjectsProps) {
   const tCommon = useTranslations("common");
-  const tPetProjects = useTranslations("petProjects.items");
-
-  const otherProjects = [
-    {
-      id: 1,
-      name: "Irida-AI",
-      description: tPetProjects("iridaAi.description"),
-      image: "/images/chat.png",
-      href: "/irida-ai",
-      bgColor: "orange",
-    },
-    {
-      id: 2,
-      name: "Emoview",
-      description: tPetProjects("emoview.description"),
-      image: "/images/bar.png",
-      href: "/emoview",
-      bgColor: "blue",
-    },
-    {
-      id: 3,
-      name: "HashuHub",
-      description: tPetProjects("hashuhub.description"),
-      image: "/images/asic.png",
-      href: "/hashuhub",
-      bgColor: "purple",
-    },
-  ];
-
   const [currentSlide, setCurrentSlide] = useState(0);
   const touchStartX = useRef(0);
   const touchEndX = useRef(0);
 
+  const slideCount = slides.length;
+
   const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % otherProjects.length);
+    setCurrentSlide((prev) => (prev + 1) % slideCount);
   };
 
   const prevSlide = () => {
-    setCurrentSlide(
-      (prev) => (prev - 1 + otherProjects.length) % otherProjects.length,
-    );
+    setCurrentSlide((prev) => (prev - 1 + slideCount) % slideCount);
   };
 
   const handleTouchStart = (e: React.TouchEvent) => {
@@ -72,18 +55,24 @@ export default function OtherProjects() {
   };
 
   useEffect(() => {
+    if (slideCount === 0) {
+      return;
+    }
     const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % otherProjects.length);
+      setCurrentSlide((prev) => (prev + 1) % slideCount);
     }, 3000);
 
     return () => clearInterval(timer);
-  }, [otherProjects.length]);
+  }, [slideCount]);
+
+  if (slideCount === 0) {
+    return null;
+  }
 
   return (
     <section className={styles.section}>
       <h4 className={styles.title}>{tCommon("others")}</h4>
 
-      {/* Slider */}
       <div className={styles.sliderWrapper}>
         <div
           className={styles.slider}
@@ -95,12 +84,11 @@ export default function OtherProjects() {
             className={styles.sliderTrack}
             style={{ transform: `translateX(-${currentSlide * 100}%)` }}
           >
-            {otherProjects.map((project) => (
+            {slides.map((project) => (
               <Link
-                // @ts-ignore
                 key={project.id}
                 href={project.href}
-                className={`${styles.slide} ${styles[project.bgColor]}`}
+                className={`${styles.slide} ${BG_CLASS[project.bgColor]}`}
               >
                 <h5 className={styles.projectName}>{project.name}</h5>
                 <div className={styles.imageWrapper}>
@@ -120,8 +108,8 @@ export default function OtherProjects() {
           </div>
         </div>
 
-        {/* Navigation */}
         <button
+          type="button"
           className={`${styles.navButton} ${styles.navButtonPrev}`}
           onClick={prevSlide}
           aria-label="Previous slide"
@@ -134,6 +122,7 @@ export default function OtherProjects() {
           />
         </button>
         <button
+          type="button"
           className={`${styles.navButton} ${styles.navButtonNext}`}
           onClick={nextSlide}
           aria-label="Next slide"

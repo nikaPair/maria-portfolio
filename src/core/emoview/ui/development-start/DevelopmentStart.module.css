@@ -7,16 +7,16 @@
 .content {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 0;
 }
 
 .title {
     font-family: var(--font-manrope);
-    font-size: 32px;
-    line-height: 40px;
-    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
     color: var(--black);
-    margin: 0;
+    margin: 0 0 16px;
 }
 
 .text {
@@ -24,7 +24,7 @@
     font-size: 18px;
     line-height: 28px;
     color: var(--black);
-    margin: 0;
+    margin: 0 0 24px;
 }
 
 .insightsBox {
@@ -35,14 +35,14 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
-    margin-top: 16px;
+    margin-top: 0;
 }
 
 .insightsTitle {
     font-family: var(--font-manrope);
     font-size: 24px;
     font-weight: 500;
-    line-height: 32px;
+    line-height: 28px;
     color: var(--black);
     margin: 0;
 }
@@ -58,8 +58,8 @@
 
 .insightsItem {
     font-family: var(--font-manrope);
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 16px;
+    line-height: 24px;
     color: #1A1A1A;
     position: relative;
     padding-left: 24px;
@@ -71,7 +71,7 @@
     left: 0;
     top: 0;
     font-size: 24px;
-    line-height: 28px;
+    line-height: 24px;
     color: var(--black);
 }
 
@@ -87,12 +87,7 @@
 
 
     .content {
-        gap: 24px;
-    }
-
-    .title {
-        font-size: 24px;
-        line-height: 32px;
+        gap: 0;
     }
 
     .text {

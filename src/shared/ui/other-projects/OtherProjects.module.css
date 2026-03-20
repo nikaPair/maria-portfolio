@@ -6,13 +6,14 @@
 }
 
 .title {
+  font-family: var(--font-manrope);
   font-size: 24px;
-  font-weight: 700;
   line-height: 32px;
+  font-weight: 700;
   color: var(--black);
+  margin: 0;
 }
 
-/* Slider */
 .sliderWrapper {
   position: relative;
   width: 100%;
@@ -29,7 +30,6 @@
   transition: transform 0.4s ease;
 }
 
-/* Desktop: название и описание слева, картинка справа */
 .slide {
   min-width: 100%;
   width: 100%;
@@ -41,14 +41,13 @@
     "name image"
     "desc image";
   gap: 40px;
-  padding: 40px;
+  padding: 40px 0 40px 40px;
   border-radius: 24px;
   text-decoration: none;
   box-sizing: border-box;
   min-height: 400px;
 }
 
-/* Tablet: заголовок сверху, картинка посередине, описание снизу */
 @media screen and (max-width: 900px) {
   .slide {
     grid-template-columns: 1fr;
@@ -63,7 +62,6 @@
   }
 }
 
-/* Mobile: без заголовка, картинка сверху, описание снизу */
 @media screen and (max-width: 480px) {
   .slide {
     grid-template-areas:
@@ -75,7 +73,6 @@
   }
 }
 
-/* Background Colors */
 .orange {
   background: var(--orange-50);
 }
@@ -84,13 +81,13 @@
   background: var(--blue-50);
 }
 
-.purple {
-  background: #f3e8ff;
+.pink {
+  background: var(--pink-50);
 }
 
-/* Project Name */
 .projectName {
   grid-area: name;
+  font-family: var(--font-manrope);
   font-size: 28px;
   font-weight: 500;
   color: var(--black);
@@ -104,9 +101,9 @@
   }
 }
 
-/* Project Description */
 .projectDescription {
   grid-area: desc;
+  font-family: var(--font-manrope);
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -122,7 +119,6 @@
   }
 }
 
-/* Image */
 .imageWrapper {
   grid-area: image;
   height: 330px;
@@ -156,7 +152,6 @@
   }
 }
 
-/* Navigation Buttons */
 .navButton {
   position: absolute;
   top: 50%;

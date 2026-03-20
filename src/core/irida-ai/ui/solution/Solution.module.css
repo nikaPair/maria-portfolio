@@ -32,7 +32,7 @@
 .content {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 16px;
 }
 
 .subtitle {
@@ -109,7 +109,7 @@
 .cardsGrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 24px;
+  gap: 16px;
 }
 
 .card {
@@ -166,7 +166,7 @@
   align-items: center;
   text-align: center;
   gap: 16px;
-  margin-top: 16px;
+  margin-top: 0;
 }
 
 .iconWrapper {

@@ -37,9 +37,9 @@
 
 .cardTitle {
     font-family: var(--font-manrope);
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 400;
-    line-height: 32px;
+    line-height: 28px;
     color: var(--black);
     margin: 0;
     max-width: 320px;
@@ -47,8 +47,8 @@
 
 .cardText {
     font-family: var(--font-manrope);
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 16px;
+    line-height: 24px;
     color: #1A1A1A;
     margin: 0;
 }
@@ -61,13 +61,13 @@
 .desktopGrid {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 16px;
 }
 
 .topRow {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-gap: 40px;
+    grid-gap: 16px;
 }
 
 .imageCardDark {
@@ -209,15 +209,5 @@
         padding: 32px 24px;
         border-radius: 24px;
         gap: 16px;
-    }
-
-    .cardTitle {
-        font-size: 20px;
-        line-height: 28px;
-    }
-
-    .cardText {
-        font-size: 16px;
-        line-height: 24px;
     }
 }

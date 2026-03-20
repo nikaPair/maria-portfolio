@@ -11,10 +11,12 @@ export default function Perspectives() {
     return (
         <section id={tSidebar("perspectives")} className={styles.section}>
             <div className={styles.content}>
-                <h3 className={styles.title}>{t("title")}</h3>
-                <p className={styles.text}>
-                    {t("text1")}
-                </p>
+                <div className={styles.intro}>
+                    <h3 className={styles.title}>{t("title")}</h3>
+                    <p className={styles.text}>
+                        {t("text1")}
+                    </p>
+                </div>
 
                 <div className={styles.highlightBox}>
                     <div className={styles.highlightContent}>

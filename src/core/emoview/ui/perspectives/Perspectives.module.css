@@ -10,10 +10,16 @@
     gap: 32px;
 }
 
+.intro {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
 .title {
     font-family: var(--font-manrope);
-    font-size: 32px;
-    line-height: 48px;
+    font-size: 24px;
+    line-height: 32px;
     font-weight: 700;
     color: var(--black);
     margin: 0;
@@ -21,8 +27,8 @@
 
 .text {
     font-family: var(--font-manrope);
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 16px;
+    line-height: 24px;
     color: #1A1A1A;
     margin: 0;
 }
@@ -78,7 +84,7 @@
 .listTitle {
     font-family: var(--font-manrope);
     font-size: 20px;
-    line-height: 32px;
+    line-height: 28px;
     font-weight: 400;
     color: var(--black);
     margin: 0;
@@ -87,16 +93,25 @@
 .listMenu {
     margin: 0;
     padding: 0 0 0 24px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+    list-style-type: disc;
+    list-style-position: outside;
 }
 
 .listItem {
     font-family: var(--font-manrope);
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
     color: #1A1A1A;
+    list-style: disc;
+}
+
+.listItem:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.listItem::marker {
+    color: #1a1a1a;
 }
 
 /* Tablet */
@@ -116,16 +131,6 @@
 
     .content {
         gap: 24px;
-    }
-
-    .title {
-        font-size: 24px;
-        line-height: 32px;
-    }
-
-    .text {
-        font-size: 16px;
-        line-height: 24px;
     }
 
     .highlightBox {

@@ -10,7 +10,7 @@ import Process from "./ui/process/Process";
 import OriginalDesign from "./ui/original-design/OriginalDesign";
 import Solution from "./ui/solution/Solution";
 import Impact from "./ui/impact/Impact";
-import OtherProjects from "./ui/other-projects/OtherProjects";
+import { OtherProjectsSection } from "@/shared/ui/other-projects";
 
 export default function HashuHub() {
   const t = useTranslations("hashuhub.sidebarItems");
@@ -35,7 +35,7 @@ export default function HashuHub() {
           <OriginalDesign />
           <Solution />
           <Impact />
-          <OtherProjects />
+          <OtherProjectsSection page="hashuhub" />
         </div>
       </div>
       <Footer />

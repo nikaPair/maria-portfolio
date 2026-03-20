@@ -39,13 +39,13 @@
 .desktopGrid {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 16px;
 }
 
 .topRow {
     display: grid;
     grid-template-columns: 242fr 414fr;
-    gap: 24px;
+    gap: 16px;
 }
 
 .topCard {
