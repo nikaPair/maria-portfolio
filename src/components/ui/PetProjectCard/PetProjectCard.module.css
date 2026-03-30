@@ -58,7 +58,7 @@
 .description {
   text-align: center;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   color: var(--black);
   margin: 0;
   line-height: 1.4;
@@ -83,7 +83,7 @@
 
 .horizontalDescription {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   color: var(--black);
   margin: 0 0 0 0;
   padding: 24px 0;

@@ -135,6 +135,7 @@
   padding-left: 20px;
   li {
     list-style: disc;
+    font-weight: 500;
   }
 }
 

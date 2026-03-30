@@ -37,7 +37,11 @@ export default function CaseCard({
   // Get translated fields
   const position = t(`items.${slug}.position`);
   const location = t(`items.${slug}.location`);
-  const description = t(`items.${slug}.description`);
+  const descriptionKey =
+    slug === "askbefore"
+      ? "items.askbefore.caseCardDescription"
+      : `items.${slug}.description`;
+  const description = t(descriptionKey);
 
   return (
     <li className={styles.caseCard}>
