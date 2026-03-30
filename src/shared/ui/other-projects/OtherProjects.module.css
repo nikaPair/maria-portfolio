@@ -9,7 +9,7 @@
   font-family: var(--font-manrope);
   font-size: 24px;
   line-height: 32px;
-  font-weight: 700;
+   font-weight: 600;
   color: var(--black);
   margin: 0;
 }
@@ -85,10 +85,26 @@
   background: var(--pink-50);
 }
 
+.hashuhubSlide {
+  background: #F5F4FF;
+}
+
+.hashuhubSlide .projectImageLarge {
+  object-position: left;
+  object-fit: cover;
+  width: 450px;
+}
+
+.askbeforeSlide .projectImageLarge {
+  object-position: left;
+  object-fit: cover;
+  width: 450px;
+}
+
 .projectName {
   grid-area: name;
   font-family: var(--font-manrope);
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 500;
   color: var(--black);
   margin: 0;
@@ -135,7 +151,18 @@
   object-fit: contain;
 }
 
+.projectImageLarge {
+  width: 400px;
+  height: 360px;
+  max-width: none;
+  object-position: right;
+}
+
 @media screen and (max-width: 900px) {
+  .projectImageLarge {
+    max-width: 100%;
+  }
+
   .projectImage {
     max-height: 330px;
     height: 100%;
@@ -167,6 +194,17 @@
   align-items: center;
   justify-content: center;
   z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+
+.sliderWrapper:hover .navButton,
+.sliderWrapper:focus-within .navButton {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .navButtonPrev {

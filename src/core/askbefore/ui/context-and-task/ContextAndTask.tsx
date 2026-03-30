@@ -46,7 +46,7 @@ export default function ContextAndTask() {
       </div>
 
       <div className={styles.block}>
-        <div>
+        <div className={styles.portalSection}>
           <h3 className={styles.subtitle}>{t("subtitle")}</h3>
           <p className={styles.text}>{t("text")}</p>
         </div>

@@ -22,10 +22,12 @@ export default function MarketResearch() {
     return (
         <section id={tSidebar("market")} className={styles.section}>
             <div className={styles.content}>
-                <h3 className={styles.title}>{t("title")}</h3>
-                <p className={styles.text}>
-                    {t("text1")}
-                </p>
+                <div className={styles.titleBlock}>
+                    <h3 className={styles.title}>{t("title")}</h3>
+                    <p className={styles.text}>
+                        {t("text1")}
+                    </p>
+                </div>
 
                 <div className={styles.competitorsBox}>
                     <div className={styles.competitorsList}>

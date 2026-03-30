@@ -43,7 +43,7 @@ export function useOtherProjectSlides(
             id: 3,
             name: "AskBefore",
             description: tCases("askbefore.description"),
-            image: "/images/hashuhub/askbefore.png",
+            image: "/images/askbefore_slider.png",
             href: "/askbefore",
           }),
         ];
@@ -67,7 +67,7 @@ export function useOtherProjectSlides(
             id: 3,
             name: "HashuHub",
             description: tPetProjects("hashuhub.description"),
-            image: "/images/emoview-slider.png",
+            image: "/images/asic.png",
             href: "/hashuhub",
           }),
         ];
@@ -84,7 +84,7 @@ export function useOtherProjectSlides(
             id: 2,
             name: "AskBefore",
             description: tCases("askbefore.description"),
-            image: "/images/hashuhub/askbefore.png",
+            image: "/images/askbefore_slider.png",
             href: "/askbefore",
           }),
           slide({
@@ -108,7 +108,7 @@ export function useOtherProjectSlides(
             id: 2,
             name: "AskBefore",
             description: tCases("askbefore.description"),
-            image: "/images/hashuhub/askbefore.png",
+            image: "/images/askbefore_slider.png",
             href: "/askbefore",
           }),
           slide({
@@ -132,7 +132,7 @@ export function useOtherProjectSlides(
             id: 2,
             name: "AskBefore",
             description: tCases("askbefore.description"),
-            image: "/images/hashuhub/askbefore.png",
+            image: "/images/askbefore_slider.png",
             href: "/askbefore",
           }),
           slide({

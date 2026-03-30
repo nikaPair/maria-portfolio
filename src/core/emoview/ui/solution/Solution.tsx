@@ -57,15 +57,17 @@ export default function Solution() {
     return (
         <section id={tSidebar("solution")} className={styles.section}>
             <div className={styles.content}>
-                <h3 className={styles.title}>{t("title")}</h3>
+                <div className={styles.solutionHeaderAndGrid}>
+                    <h3 className={styles.title}>{t("title")}</h3>
 
-                <div className={styles.grid}>
-                    {solutions.map((item, index) => (
-                        <div key={index} className={styles.card}>
-                            <h4 className={styles.cardTitle}>{item.title}</h4>
-                            <p className={styles.cardText}>{item.text}</p>
-                        </div>
-                    ))}
+                    <div className={styles.grid}>
+                        {solutions.map((item, index) => (
+                            <div key={index} className={styles.card}>
+                                <h4 className={styles.cardTitle}>{item.title}</h4>
+                                <p className={styles.cardText}>{item.text}</p>
+                            </div>
+                        ))}
+                    </div>
                 </div>
 
                 <div className={styles.visualContainer}>

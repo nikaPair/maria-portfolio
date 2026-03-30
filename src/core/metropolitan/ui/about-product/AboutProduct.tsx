@@ -49,10 +49,10 @@ export default function AboutProduct() {
 
       <div className={styles.imageBlock}>
         <Image
-          src="/images/home_metropolitan_desktop-hero.png"
+          src="/images/metropolitan/image 286.png"
           alt="Metropolitan screen"
-          width={800}
-          height={450}
+          width={488}
+          height={280}
           className={styles.mainImage}
         />
       </div>

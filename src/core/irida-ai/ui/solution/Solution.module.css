@@ -15,7 +15,7 @@
   font-family: var(--font-manrope);
   font-size: 24px;
   line-height: 32px;
-  font-weight: 700;
+   font-weight: 600;
   color: var(--black);
   margin: 0;
 }
@@ -41,7 +41,7 @@
   font-weight: 500;
   color: var(--black);
   margin: 0;
-  margin-top: 24px;
+  margin-top: 0px;
 }
 
 .functionBlock {
@@ -54,7 +54,7 @@
 .functionTitle {
   font-family: var(--font-manrope);
   font-size: 24px;
-  font-weight: 700;
+   font-weight: 600;
   color: var(--black);
   margin: 0;
 }

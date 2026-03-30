@@ -115,8 +115,8 @@
 }
 
 .subtitle {
-  font-size: 24px;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 600;
   color: var(--black);
   margin: 0;
 }

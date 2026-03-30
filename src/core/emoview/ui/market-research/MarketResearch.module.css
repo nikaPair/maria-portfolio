@@ -10,6 +10,12 @@
     gap: 32px;
 }
 
+.titleBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
 .title {
     font-family: var(--font-manrope);
     font-size: 24px;
@@ -126,8 +132,8 @@
 
 .bipolarText {
     font-family: var(--font-manrope);
-    font-size: 16px;
-    line-height: 28px;
+    font-size: 15px;
+    line-height: 24px;
     color: #1A1A1A;
     margin: 0;
 }

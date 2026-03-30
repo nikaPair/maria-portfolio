@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import Image from "next/image";
 import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
@@ -12,6 +12,10 @@ const BG_CLASS: Record<OtherProjectSlide["bgColor"], string> = {
   blue: styles.blue,
   pink: styles.pink,
 };
+
+const LARGE_IMAGE_HREFS = new Set(["/askbefore", "/hashuhub"]);
+const HASHUHUB_HREF = "/hashuhub";
+const ASKBEFORE_HREF = "/askbefore";
 
 export type OtherProjectsProps = {
   slides: OtherProjectSlide[];
@@ -54,17 +58,6 @@ export function OtherProjects({ slides }: OtherProjectsProps) {
     }
   };
 
-  useEffect(() => {
-    if (slideCount === 0) {
-      return;
-    }
-    const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % slideCount);
-    }, 3000);
-
-    return () => clearInterval(timer);
-  }, [slideCount]);
-
   if (slideCount === 0) {
     return null;
   }
@@ -88,7 +81,9 @@ export function OtherProjects({ slides }: OtherProjectsProps) {
               <Link
                 key={project.id}
                 href={project.href}
-                className={`${styles.slide} ${BG_CLASS[project.bgColor]}`}
+                className={`${styles.slide} ${BG_CLASS[project.bgColor]} ${
+                  project.href === HASHUHUB_HREF ? styles.hashuhubSlide : ""
+                } ${project.href === ASKBEFORE_HREF ? styles.askbeforeSlide : ""}`}
               >
                 <h5 className={styles.projectName}>{project.name}</h5>
                 <div className={styles.imageWrapper}>
@@ -97,7 +92,11 @@ export function OtherProjects({ slides }: OtherProjectsProps) {
                     alt={project.name}
                     width={400}
                     height={500}
-                    className={styles.projectImage}
+                    className={`${styles.projectImage} ${
+                      LARGE_IMAGE_HREFS.has(project.href)
+                        ? styles.projectImageLarge
+                        : ""
+                    }`}
                   />
                 </div>
                 <p className={styles.projectDescription}>

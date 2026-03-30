@@ -27,11 +27,12 @@ export default function TeamWork() {
 
   return (
     <section id={navT("teamWork")} className={styles.section}>
-      <h4 className={styles.title}>{t("title")}</h4>
-
-      <p className={styles.description}>
-        {t("description")}
-      </p>
+      <div className={styles.textBlock}>
+        <h4 className={styles.title}>{t("title")}</h4>
+        <p className={styles.description}>
+          {t("description")}
+        </p>
+      </div>
 
       {/* Team Cards */}
       <div className={styles.cardsWrapper}>

@@ -1,14 +1,21 @@
 .section {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 32px;
+}
+
+.textBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .title {
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 32px;
   color: var(--black);
+  margin: 0;
 }
 
 .description {
@@ -17,6 +24,7 @@
   line-height: 24px;
   color: var(--black);
   max-width: 700px;
+  margin: 0;
 }
 
 /* Cards */

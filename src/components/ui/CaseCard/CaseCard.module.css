@@ -47,7 +47,7 @@
 /* Position title */
 .position {
   font-size: 24px;
-  font-weight: 700;
+   font-weight: 600;
   margin: 0 0 8px 0;
    
   color: var(--black);
