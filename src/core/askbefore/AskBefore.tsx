@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import { useTranslations } from "next-intl";
 import Aside from "./ui/aside/aside";
 import styles from "./askbefore.module.css";
 import AboutProduct from "./ui/about-product/AboutProduct";
@@ -9,18 +10,20 @@ import ArchitectureAndScenarios from "./ui/architecture-and-scenarios/Architectu
 import DesignSystem from "./ui/design-system/DesignSystem";
 import TeamWork from "./ui/team-work/TeamWork";
 import Result from "./ui/result/Result";
-import OtherProjects from "./ui/other-projects/OtherProjects";
+import { OtherProjectsSection } from "@/shared/ui/other-projects";
 import Footer from "@/components/Footer/Footer";
 
 export default function AskBefore() {
+  const t = useTranslations("askBefore.sidebarItems");
+
   const list = [
-    "О продукте",
-    "Контекст и задача",
-    "Исследование",
-    "Архитектура и сценарии",
-    "Дизайн-система",
-    "Работа с командой",
-    "Результат",
+    t("about"),
+    t("context"),
+    t("research"),
+    t("architecture"),
+    t("designSystem"),
+    t("teamWork"),
+    t("result"),
   ];
 
   return (
@@ -35,7 +38,7 @@ export default function AskBefore() {
           <DesignSystem />
           <TeamWork />
           <Result />
-          <OtherProjects />
+          <OtherProjectsSection page="askbefore" />
         </div>
       </div>
       <Footer />

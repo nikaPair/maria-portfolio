@@ -1,25 +1,28 @@
 "use client";
 import React, { useState, useRef } from "react";
-import styles from "./Solution.module.css";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
-
-const cards = [
-  {
-    id: 1,
-    image: "/images/irida/111.png",
-    alt: "Быстрый режим",
-  },
-  {
-    id: 2,
-    image: "/images/irida/222.png",
-    alt: "Расширенный режим",
-  },
-];
+import styles from "./Solution.module.css";
 
 export default function Solution() {
+  const t = useTranslations("irida.solution");
+  const navT = useTranslations("irida.sidebarItems");
   const [currentSlide, setCurrentSlide] = useState(0);
   const touchStartX = useRef(0);
   const touchEndX = useRef(0);
+
+  const cards = [
+    {
+      id: 1,
+      image: "/images/irida/111.png",
+      alt: t("scenarios.0"),
+    },
+    {
+      id: 2,
+      image: "/images/irida/222.png",
+      alt: t("scenarios.1"),
+    },
+  ];
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % cards.length);
@@ -51,17 +54,16 @@ export default function Solution() {
   };
 
   return (
-    <section id="Решение" className={styles.section}>
+    <section id={navT("solution")} className={styles.section}>
       <div className={styles.header}>
-        <h4 className={styles.title}>Решение</h4>
+        <h4 className={styles.title}>{t("title")}</h4>
         <p className={styles.description}>
-          DxGPT часто нужен в моменте, на приеме или между пациентами. В таких
-          сценариях врач работает с телефоном, поэтому я выбрала подход mobile first.
+          {t("description")}
         </p>
       </div>
 
       <div className={styles.content}>
-        <p className={styles.subtitle}>2 основных сценария использования:</p>
+        <p className={styles.subtitle}>{t("subtitle")}</p>
 
         {/* Desktop Grid */}
         <div className={styles.cardsGrid}>
@@ -112,33 +114,29 @@ export default function Solution() {
             <span className={styles.emoji}>🤖</span>
           </div>
           <h5 className={styles.infoTitle}>
-            В расширенном режиме работы сервиса пользователь не пишет промпт вручную. 
-            Он заполняет анкету, а система сама формирует запрос к модели.
+            {t("infoTitle")}
           </h5>
           <p className={styles.infoText}>
-            Для изменения результата и отправки нового промта достаточно отредактировать 
-            уже заполненную анкету.
+            {t("infoText")}
           </p>
         </div>
 
         <div className={styles.functionBlock}>
-          <h4 className={styles.functionTitle}>Общая функция</h4>
+          <h4 className={styles.functionTitle}>{t("functionTitle")}</h4>
           <p className={styles.functionDescription}>
-            Независимо от выбранного режима у пользователя есть возможность задать уточняющие вопросы
-            к одной гипотезе. Для этого нужно перейти по нажатию на заголовок гипотезы и откроется экран с
-            готовыми вопросами; они же и являются промптами для модели.
+            {t("functionDescription")}
           </p>
-          
+
           <div className={styles.functionImageCard}>
             <Image
               src="/images/irida/func.png"
-              alt="Уточняющие вопросы к гипотезе"
+              alt={t("functionTitle")}
               width={800}
               height={492}
               className={styles.functionImage}
             />
           </div>
-          <p className={styles.functionCaption}>Ответы генерируются сразу, без переходов между экранами.</p>
+          <p className={styles.functionCaption}>{t("functionCaption")}</p>
         </div>
       </div>
     </section>

@@ -1,7 +1,7 @@
 .section {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 16px;
   max-width: 100%;
 }
 
@@ -9,7 +9,7 @@
   font-family: var(--font-manrope);
   font-size: 24px;
   line-height: 32px;
-  font-weight: 700;
+   font-weight: 600;
   color: var(--black);
   margin: 0;
 }
@@ -33,31 +33,33 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
+  gap: 16px;
+  margin-top: 16px;
 }
 
 /* Card Styles */
 .card {
   background-color: var(--bg-secondary);
-  border-radius: 24px;
-  padding: 32px;
+  border-radius: 40px;
+  padding: 40px;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 0;
   position: relative;
 }
 
 .stepNumber {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
   background-color: var(--blue-500);
   color: var(--white);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 700;
-  font-size: 16px;
+  font-weight: 400;
+  font-size: 12px;
+  margin-bottom: 16px;
 }
 
 .cardText {
@@ -65,8 +67,8 @@
   font-size: 16px;
   line-height: 1.5;
   color: var(--black);
-  margin: 0;
-  font-weight: 500;
+  margin: 0 0 24px 0;
+  font-weight: 400;
 }
 
 .imageWrapper {
@@ -107,7 +109,7 @@
   min-width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 0;
   background-color: var(--bg-secondary);
   border-radius: 24px;
   padding: 24px;

@@ -7,14 +7,14 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 24px;
+  gap: 32px;
   position: sticky;
-  top: 60px;
+  top: 132px;
 }
 .aside__link {
   font-size: 14px;
   line-height: 20px;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--black);
   display: flex;
   align-items: center;
@@ -36,7 +36,7 @@
 .aside__list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
   width: 100%;
   @media screen and (max-width: 1100px) {
     display: none;
@@ -45,7 +45,7 @@
 .aside__list__item {
   font-size: 14px;
   line-height: 20px;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--black);
   transition: all 0.3s ease;
   &:hover {

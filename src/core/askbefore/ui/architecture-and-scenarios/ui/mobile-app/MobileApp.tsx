@@ -1,6 +1,7 @@
 "use client";
-import { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import styles from "./MobileApp.module.css";
 
 const mobileImages = [
@@ -11,6 +12,7 @@ const mobileImages = [
 ];
 
 export default function MobileApp() {
+  const t = useTranslations("askBefore.architectureAndScenarios.mobileApp");
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
   const touchStartX = useRef(0);
@@ -65,10 +67,9 @@ export default function MobileApp() {
     <div className={styles.wrapper}>
       {/* Mobile App Section */}
       <div className={styles.section}>
-        <h5 className={styles.subtitle}>Mobile App</h5>
+        <h5 className={styles.subtitle}>{t("subtitle")}</h5>
         <p className={styles.description}>
-          Также мы сделали адаптации веб-версии под нативные гайдлайны iOS и
-          Android, чтобы сервис был удобен на мобильных устройствах.
+          {t("description")}
         </p>
       </div>
 
@@ -90,7 +91,7 @@ export default function MobileApp() {
                   <Image
                     key={imgIndex}
                     src={image}
-                    alt={`Mobile App экран ${groupIndex * 2 + imgIndex + 1}`}
+                    alt={t("slideAlt")}
                     width={387}
                     height={400}
                     className={styles.slideImage}

@@ -1,0 +1,549 @@
+{
+    "metadata": {
+        "title": "Portfolio - Maria Lubimova | Product UX/UI Designer",
+        "description": "UX/UI Designer Maria Lubimova's portfolio. 3 years in product design: design systems, UX Research, prototyping."
+    },
+    "nav": {
+        "home": "Home",
+        "about": "About me",
+        "cases": "Cases",
+        "petProjects": "Pet projects",
+        "uiShots": "UI shots",
+        "back": "Back"
+    },
+    "hero": {
+        "pageTitle": "Portfolio - Maria Lubimova | Product UX/UI Designer",
+        "greeting": "Hi, I'm Maria",
+        "role": "— Product UX/UI Designer",
+        "description": "I work at the Berlin medtech startup AskBefore as a senior designer. Together with the team, I am building an international cross-platform product with significant ambitions in the European IT market, and it is successfully realizing them.",
+        "caseLinkPrefix": "Case study on working at AskBefore",
+        "caseLinkText": "via the link",
+        "yearsDesign": "3 years",
+        "inDesign": "in design",
+        "yearsDigital": "7 years",
+        "inDigital": "in digital",
+        "resumeFile": "resume.pdf",
+        "resumeDownloadName": "CV-Lubimova.pdf",
+        "resumePath": "/CV-Lubimova.pdf"
+    },
+    "cases": {
+        "title": "Cases",
+        "subtitle": "Where and what I worked on.",
+        "ndaBadge": "Details at the interview",
+        "items": {
+            "askbefore": {
+                "position": "Product Designer",
+                "location": "Berlin, Germany • 2024 to 2026",
+                "description": "Worked on all aspects of the product under the lead's guidance: supported the design system, developed screens for new functionalities, conducted interviews and usability tests. Supervised the work of two designers."
+            },
+            "dessst": {
+                "position": "Product Designer",
+                "location": "Moscow, Russia • 2023 to 2024",
+                "description": "Developed an educational platform for a school of product designers as part of a team. Worked under the founder's guidance and was responsible for two major sections: Educational Practices and Intensives."
+            },
+            "metropolitan": {
+                "position": "UX/UI Designer",
+                "location": "Dubai, UAE • 2022 to 2023",
+                "description": "Responsible for developing the design system, transitioned the stack to a modern methodology in Figma, and completed project tasks for creating digital products for developer companies and internal departments of the agency."
+            }
+        }
+    },
+    "petProjects": {
+        "title": "Pet projects",
+        "subtitle": "I design for the soul and can showcase without restrictions.",
+        "items": {
+            "emoview": {
+                "description": "Professional mental health tracker for people with bipolar disorder and borderline personality disorder."
+            },
+            "iridaAi": {
+                "description": "Medical AI assistant based on the technical foundation of the non-profit project DxGPT."
+            },
+            "hashuhub": {
+                "description": "Unified platform for monitoring ASIC miner performance."
+            }
+        }
+    },
+    "uiShots": {
+        "title": "UI shots",
+        "subtitle": "Visuals from cases and pet projects"
+    },
+    "about": {
+        "name": "Maria Lubimova",
+        "tagline": "I build my career around business values and a deep dive into product design.",
+        "biography": "I came to design from digital marketing, where I learned how to work with user attention and web analytics. This experience gave me an understanding of online business growth and helped me achieve strong results in advertising.",
+        "biographyContinued": "Over time, I began to spend more time on client online platforms, analyzing and improving them in Figma. Colleagues started consulting me more often on design issues and its impact on sales. I began assisting the design team at my digital agency, and then decided to embark on my journey in UX/UI design, which I continue today in product design.",
+        "workApproachTitle": "Approach to Work",
+        "workApproachText": "I adopt the priorities of development and business around ROI. I strive for my design solutions to be beneficial and to do so consistently. To achieve this, I dive deeply into metrics, listen carefully to users, and align my steps with front-end developers, managers, and stakeholders.",
+        "uxText": "I trust statistics and minimize subjective views on the interface. I enjoy moderated interviews, session analytics, and BPMN notation for process modeling.",
+        "uiText": "I love to find visual synonyms for the company's brand, continuing its ideas and mood. I work with design systems, supporting and creating them from scratch.",
+        "contactCta": "I'd be happy to connect"
+    },
+    "petProjectCard": {
+        "screenshotAlt": "Project screenshot"
+    },
+    "askBefore": {
+        "sidebarItems": {
+            "about": "About the Product",
+            "context": "Context and Task",
+            "research": "Research",
+            "architecture": "Architecture and Scenarios",
+            "designSystem": "Design System",
+            "teamWork": "Working with the Team",
+            "result": "Result"
+        },
+        "aboutProduct": {
+            "site": "Website",
+            "product": "Product",
+            "productValue": "MedTech",
+            "geography": "Geography",
+            "geographyValue": "Berlin, Germany",
+            "description": "AskBefore is a service for safely sharing STD test results. Users can send their partner a verified health status in the form of a digital valentine. All data is protected by end-to-end encryption based on blockchain.",
+            "marketingTitle": "Marketing Websites",
+            "marketingText": "The company has B2C and B2B segments:",
+            "b2cDescription": "B2C refers to users who come to the product to exchange medical data with a partner;",
+            "b2bDescription": "B2B refers to partner clinics that post offers for laboratory medical research on the platform.",
+            "marketingConclusion": "Each audience has a separate website developed for them.",
+            "userSiteCaption": "Website for B2C users",
+            "clinicSiteCaption": "Website for clinics"
+        },
+        "contextAndTask": {
+            "title": "Context and task",
+            "description": "I joined the team at an early stage when we started sketching the basic scenario, and its refinement became my responsibility. I was also tasked with creating four major sections of the product from scratch and handing them over for development. I began by working on the core functionality, also known as the Member Portal.",
+            "subtitle": "Member Portal",
+            "text": "The main user scenario includes uploading test results, visual design, and generating a QR code for secure partner access to the exchange page.",
+            "slides": {
+                "upload": "Uploading analyses",
+                "visual": "Selecting a cover",
+                "qr": "Sharing page",
+                "exchange": "Preview",
+                "notifications": "Notifications",
+                "result": "Result"
+            }
+        },
+        "research": {
+            "title": "Research",
+            "description1": "Intimate health is an important and sensitive topic, especially in the context of closeness. Conversations about a partner's health are often postponed or avoided due to fear of crossing boundaries, offending the person, or ruining the atmosphere.",
+            "description2": "To gain deeper insight into the issue, I conducted interviews with people who had already exchanged medical certificates. This helped to understand their motivations, fears, usage context, and current ways of addressing the issue.",
+            "highlightText": "For the interviews, I opted out of paid recruiting and used alternative methods to find respondents. This allowed me to survey over 20 interested users and identify the main fears of the audience.",
+            "insightsTitle": "Insights",
+            "insightsList": [
+                "The main pain point is the state of uncertainty: it is unknown whether the certificate has been viewed, when it happened, and if the partner is ready for changes.",
+                "Users fear losing control over their information, including the possibility of the certificate being forwarded to third parties via messaging apps;",
+                "Users avoid direct requests and try to soften the situation by playing around the topic through romantic context, flirting, emojis, and informal communication;",
+                "Before making a request, users carefully think through their wording, dialogue scenarios, and discuss the issue with friends to reduce anxiety and the risk of conflict;",
+                "The request for a certificate is formed against the backdrop of the partner's reputation, past negative experiences, and the user's basic awareness of risks;",
+                "A strong fear arises from the possibility of being misunderstood or provoking a negative reaction from the partner."
+            ]
+        },
+        "architectureAndScenarios": {
+            "title": "Architecture and scenarios",
+            "description1": "As a result of the research, I designed the \"As-Is process flow\" to capture the current user journey. Next, during the brainstorming process, we identified what solutions needed to be created at the core of the product to address the critical pain points.",
+            "description2": "I used BPMN to visualize processes and synchronize with development. The notation helped structure the service logic and withstood three iterations of scaling the business model.",
+            "highlightText": "The result of my work was used to transfer layouts to development, communicate with lawyers, and data protection specialists.",
+            "imageCaption": "Part of the BPMN map",
+            "businessPositioning": {
+                "subtitle": "Changing Business Positioning",
+                "description1": "As the product evolved, the focus of brand positioning shifted. Initially, it was built around support, closeness, and romance, but over time it evolved into a service focused on health and data security.",
+                "description2": "The landing page, as the main entry point, was rebuilt in accordance with this shift: the emphasis, tone of communication, and visual trust markers changed."
+            },
+            "clinicsPortal": {
+                "subtitle": "Clinics Portal",
+                "description": "The Clinic Portal is the second most important after the Member Portal. We created it to provide the Member Portal with the necessary data and automate the process.",
+                "restricted": "Limited for public viewing"
+            },
+            "influencersPortal": {
+                "title": "Additional",
+                "subtitle": "Influencers Portal",
+                "description": "AskBefore has a collaboration program with bloggers and influencers. For them, we developed the Influencers Portal, where statistics on attracted users are displayed. Through it, partners can track their income, withdraw funds, and monitor their top-up history.",
+                "restricted": "Limited for public viewing"
+            },
+            "mobileApp": {
+                "subtitle": "Mobile App",
+                "description": "We also adapted the web version to the native guidelines of iOS and Android to ensure the service is convenient on mobile devices.",
+                "slideAlt": "Mobile app screen"
+            }
+        },
+        "designSystem": {
+            "title": "Design System",
+            "highlightTitle": "Together with the team, I systematized disparate UI components and built a scalable design system.",
+            "highlightText": "Together with the team, I systematized disparate UI components and built a scalable design system."
+        },
+        "teamWork": {
+            "title": "Working with the team",
+            "description": "I supervised two designers and assigned tasks based on each person's strengths.",
+            "members": {
+                "ksenya": "Ksenia has experience in frontend development and possesses strong systemic thinking. In the startup, she worked on the clinic portal, as complex interfaces and lengthy scenarios required detailed UX development.",
+                "aynur": "Ainur has excellent aesthetic taste and can concentrate for long periods without losing focus. She worked on visualizing the map and search scenarios, where empathy and UI skills were more required."
+            }
+        },
+        "result": {
+            "title": "Results",
+            "blockTitle": "What I did at AskBefore",
+            "achievements": [
+                "Designed and handed over a six-product ecosystem to development;",
+                "Built a layout transfer scheme for the team using BPMN and specifications;",
+                "Obtained valuable data from interviews and tests that are regularly used in the company;",
+                "Developed a design system that is pleasant and easy to work with."
+            ],
+            "challengeTitle": "A key challenge for me was localizing the product. I studied the legal requirements and cultural nuances of different countries to align the design with them.",
+            "challengeText": "I learned to manage trust, understood legal risks, and took care of product growth. It was a substantial amount of work that helped me grow as a professional."
+        }
+    },
+    "emoview": {
+        "sidebarItems": {
+            "idea": "How the idea came about",
+            "market": "What I found on the market",
+            "development": "Beginning of development",
+            "solution": "Solution",
+            "visualStrategy": "Visual strategy",
+            "perspectives": "Project prospects"
+        },
+        "aboutProduct": {
+            "description": "Emoview is a medical tracker for mental health. It is designed as a tool to help people with affective disorders regularly record their symptoms. The service saves and structures data that can be used in therapy and in working with a doctor.",
+            "contextTitle": "How the idea came about",
+            "contextText1": "My friend works as a clinical psychologist at the NGO \"Partnership of Equals.\" He has been diagnosed with bipolar disorder and borderline personality disorder, which gives him a perspective on treatment from two positions: as a psychologist and as a client.",
+            "contextText2": "One day he told me about the eMoods app that he uses to track his condition. He shared that it is not very convenient to make entries in it, but he hasn't found a replacement.",
+            "contextText3": "I started searching with professional enthusiasm for an alternative to the eMoods app for my friend."
+        },
+        "marketResearch": {
+            "title": "What I found on the market",
+            "description": "Most psychological state trackers are designed for healthy people. They are beautiful, gamified, with a positive design, and are completely unsuitable for people with mental illnesses.",
+            "text1": "People with affective disorders live through phases of depression and mania. It is critical for them to notice the transition between phases in time because with the change of phase, both mood and physiological reactions, as well as behavior, change. Emotions become sharper, and reactions more intense.",
+            "text2": "Most trackers only record emotions and general mood ratings, which is insufficient for determining the phase. Behavioral signals need to be tracked, and users should be given a language to describe clinical symptoms, not just emotions. Simple trackers do not offer this and therefore do not meet the real needs of people with mental disorders.",
+            "text3": "Most trackers only record emotions and general mood ratings, and this is not enough to determine the phase.",
+            "bipolarTitle": "Bipolar mood tracker",
+            "bipolarText1": "I diligently searched for direct Russian-speaking competitors to eMoods and found only one. It is limited to tracking emotions but has a medical positioning. Unlike eMoods, the app requires a very expensive subscription and offers fewer features.",
+            "bipolarText2": "It turns out that people are choosing between the inconvenient eMoods, the expensive Bipolar Mood Tracker, and minimally useful emotion trackers."
+        },
+        "developmentStart": {
+            "title": "Beginning of development",
+            "description": "I conducted in-depth interviews with three respondents who have been keeping observation diaries for over a year. I clarified what they record, at what moments in life they skip entries, what they show to their doctor, and what annoys them about the interface.",
+            "text": "I conducted in-depth interviews with three respondents who have been keeping observation diaries for over a year. I clarified what they record, at what moments in life they skip entries, what they show to their doctor, and what annoys them about the interface.",
+            "insightsTitle": "Insights from the interviews",
+            "insightsList": [
+                "Users get tired of long questionnaires and stop filling them out on difficult days. Filling out the questionnaire should take a maximum of 5-7 minutes;",
+                "It is important to point out trends rather than just showing statistics on graphs. This is necessary to notice cycles in advance before a full episode develops;",
+                "People find it difficult to assess their condition in words; they need prompts and directions;",
+                "A quick export of statistics for the doctor is needed because time is limited during appointments."
+            ],
+            "insights": [
+                "Users get tired of long questionnaires and stop filling them out on difficult days. Filling out the questionnaire should take a maximum of 5-7 minutes;",
+                "It is important to point out trends rather than just showing statistics on graphs. This is necessary to notice cycles in advance before a full episode develops;",
+                "People find it difficult to assess their condition in words; they need prompts and directions;",
+                "A quick export of statistics for the doctor is needed because time is limited during appointments."
+            ]
+        },
+        "solution": {
+            "title": "Solution",
+            "items": {
+                "clinical": {
+                    "title": "I preserved the clinical core",
+                    "text": "I kept the key metrics and structure of entries that eMoods is valued for."
+                },
+                "input": {
+                    "title": "I simplified data entry",
+                    "text": "I broke the questionnaire into short steps so that recording takes 2-3 minutes."
+                },
+                "tips": {
+                    "title": "I added prompts",
+                    "text": "I introduced cards describing the bodily and emotional manifestations of symptoms to make it easier for users to determine their state."
+                },
+                "integrity": {
+                    "title": "I considered data honesty",
+                    "text": "I limited the editing of past entries to ensure the diary remains a reliable source for the doctor."
+                }
+            },
+            "cards": [
+                {
+                    "title": "I preserved the clinical core",
+                    "text": "I kept the key metrics and structure of entries that eMoods is valued for."
+                },
+                {
+                    "title": "I simplified data entry",
+                    "text": "I broke the questionnaire into short steps so that recording takes 2-3 minutes."
+                },
+                {
+                    "title": "I added prompts",
+                    "text": "I introduced cards describing the bodily and emotional manifestations of symptoms to make it easier for users to determine their state."
+                },
+                {
+                    "title": "I considered data honesty",
+                    "text": "I limited the editing of past entries to ensure the diary remains a reliable source for the doctor."
+                }
+            ]
+        },
+        "visualStrategy": {
+            "title": "Visual strategy",
+            "text1": "eMoods uses overloaded tables and a dry interface, while regular trackers overdo it with positive messages. I sought balance and thought about the main goal: aiding in mental health treatment. Thus, I arrived at a cool palette, using radio buttons instead of severity sliders, and italic fonts for medication dosages to reference medication packaging.",
+            "text2": "I want the user to feel supported while also taking the tracker seriously, as it is primarily a part of their treatment, not just self-discovery."
+        },
+        "perspectives": {
+            "title": "Project prospects",
+            "text1": "During the development, I received positive feedback from two clinical experts and quite a few requests to implement the app.",
+            "highlightText": "I have good relationships with several frontend developers, and one of them expressed interest in implementing Emoview.",
+            "listTitle": "Thus, the project has several development scenarios:",
+            "listItems": [
+                "I can implement an MVP as a joint project with a developer, test it in real conditions, and add it to both portfolios as a case with working code;",
+                "Propose a design project to the American company eMoods as the only available service with a similar goal and tasks;",
+                "Use the project as a training exercise for my own development skills."
+            ],
+            "list": [
+                "I can implement an MVP as a joint project with a developer, test it in real conditions, and add it to both portfolios as a case with working code;",
+                "Propose a design project to the American company eMoods as the only available service with a similar goal and tasks;",
+                "Use the project as a training exercise for my own development skills."
+            ],
+            "conclusion": "Regardless of which path is chosen, my new desire will remain unchanged: there should be more quality medical products in the field of mental health in the world. And it doesn't matter who creates them; what matters is that they help people and are accessible.",
+            "text2": "Regardless of which path is chosen, my new desire will remain unchanged: there should be more quality medical products in the field of mental health in the world. And it doesn't matter who creates them; what matters is that they help people and are accessible."
+        }
+    },
+    "dessst": {
+        "site": "Website",
+        "product": "Product",
+        "geography": "Geography",
+        "geographyValue": "Moscow, Russia",
+        "description": "Dessst is an educational platform and online product UX/UI design school based on a proprietary LMS (Learning Management System), featuring a design simulator for practicing skills and intensives for an in-depth study of specialized topics.",
+        "restrictionsTitle": "Restrictions",
+        "restrictionsText": "There are many offerings and high competition in the EdTech market. The Dessst platform is built on proprietary educational mechanics, which serve as the school's competitive advantage. For these reasons, I cannot publicly share the Dessst case study, but I am ready to discuss the project during an interview.",
+        "imageCaption": "Main screen of the Design Simulator section"
+    },
+    "hashuhub": {
+        "sidebarItems": {
+            "context": "Context",
+            "challenge": "Challenge",
+            "strategy": "Strategy",
+            "originalDesign": "Original Design",
+            "solution": "Solution",
+            "impact": "Project Prospects"
+        },
+        "aboutProduct": {
+            "description1": "The HashuHub project is based on my three years of experience mining BTC and ETH using ASIC miners. I maintained my own mining farm, consulted, and helped friends set up their farms. I also had to disassemble miners, clean boards, observe repairs in service centers, and handle maintenance.",
+            "description2": "When working with ASICs, the main data source and control element are administrative panels. Due to weak design, they are rarely used, which leads to late failure detection and major financial losses.",
+            "contextTitle": "Context",
+            "contextText1": "In a broad sense, ASIC means a specialized computer that performs one single task. Therefore, an ASIC miner is a device that mines cryptocurrency and is not capable of anything else.",
+            "contextText2": "New-generation ASIC miners have protection systems and a large number of sensors, but private miners rarely have the funds for the newest models. This was the main reason why I designed HashuHub."
+        },
+        "challenge": {
+            "title": "Challenge",
+            "subtitle": "There are 2 key systems in the mining business:",
+            "poolTitle": "Mining pool",
+            "poolText": "A service where miners combine computing power to mine cryptocurrency and split the reward proportionally to their contribution.",
+            "miningPoolTitle": "Mining pool",
+            "miningPoolText": "A service where miners combine computing power to mine cryptocurrency and split the reward proportionally to their contribution.",
+            "adminTitle": "Administrative panel",
+            "adminText": "A web interface for configuring, monitoring, and managing a miner, where the user controls the device's operation and parameters.",
+            "adminPanelTitle": "Administrative panel",
+            "adminPanelText": "A web interface for configuring, monitoring, and managing a miner, where the user controls the device's operation and parameters.",
+            "bottomText": "In practice, miner owners almost always look only at the pool, because revenue and hash rate are clear and directly tied to profit. The administrative panel is opened less often because its data is presented in complex tables that are hard to read and interpret. As a result, the technical condition of the machines remains unattended.",
+            "complicationTitle": "Complication",
+            "complicationText": "ASICs do not tolerate careless maintenance well. They operate at high temperatures, so dust, dry thermal paste, and worn thermal pads accelerate component degradation. At the same time, the device may still appear to work normally and show maximum hash rate until the last moment. Problems remain invisible in the pool until the hash rate starts to fall.",
+            "warningText": "When the hash rate drops, the breakdown has already happened and the equipment requires technical intervention. Repairing one miner can take several weeks and be expensive, so it is critical for the business to notice deviations in advance."
+        },
+        "process": {
+            "title": "Strategy",
+            "text": "I want to give the owner a simple and understandable picture of the farm's condition: if the temperature rises, the interface explains the risks and suggests actions; if the hash rate falls, the panel points to possible causes. Technicians get separate access to logs and other internal data."
+        },
+        "strategy": {
+            "title": "Strategy",
+            "text": "I want to give the owner a simple and understandable picture of the farm's condition: if the temperature rises, the interface explains the risks and suggests actions; if the hash rate falls, the panel points to possible causes. Technicians get separate access to logs and other internal data."
+        },
+        "originalDesign": {
+            "title": "Original Design",
+            "text1": "One of the main leaders in miner manufacturing is MicroBT. During the Bitcoin MENA conference, the company introduced new generations of machines with breakthrough performance and continues to push the technical limits of mining power.",
+            "text2": "I took the Whatsminer interface, an ASIC model by MicroBT, as the starting point and treated it as an industry standard. It is overloaded with tables, weakly structured, and offers almost no visual feedback. Key metrics are lost among secondary data, making it difficult even for technicians to quickly assess the equipment's state. On mobile devices, the interface becomes inconvenient and slow.",
+            "description1": "One of the main leaders in miner manufacturing is MicroBT. During the Bitcoin MENA conference, the company introduced new generations of machines with breakthrough performance and continues to push the technical limits of mining power.",
+            "description2": "I took the Whatsminer interface, an ASIC model by MicroBT, as the starting point and treated it as an industry standard. It is overloaded with tables, weakly structured, and offers almost no visual feedback. Key metrics are lost among secondary data, making it difficult even for technicians to quickly assess the equipment's state. On mobile devices, the interface becomes inconvenient and slow.",
+            "cards": [
+                "Main dashboard with device statuses, metrics, and events",
+                "Overview of system characteristics, memory, and network parameters",
+                "Mining pool connection and worker configuration settings",
+                "System logs section for technical diagnostics",
+                "System time synchronization through NTP servers",
+                "Authorization screen with administrator login and password"
+            ]
+        },
+        "solution": {
+            "title": "Solution",
+            "description": "It was important for me to make monitoring understandable at first glance. For this, I simplified access to key indicators, strengthened the visual hierarchy, and adapted the interface for working from those devices that are actually used in the field. The solution is based on functional separation, larger interaction zones, and better information grouping.",
+            "slides": {
+                "dashboard": "Dashboard",
+                "auth": "Authorization",
+                "status": "System status",
+                "pool": "Pool configuration",
+                "logs": "Logs"
+            }
+        },
+        "impact": {
+            "title": "Project prospects",
+            "text": "I plan to localize the project into Chinese and English, send it for evaluation to colleagues from Web3, and propose it to MicroBT."
+        }
+    },
+    "iridaAi": {
+        "sidebarItems": {
+            "idea": "How the idea came about",
+            "research": "Research and insights",
+            "solution": "Solution",
+            "visualStrategy": "Visual strategy",
+            "perspectives": "Project prospects"
+        },
+        "aboutProduct": {
+            "description": "Irida AI is my rework of the DxGPT project, a volunteer AI assistant for preliminary medical diagnosis.",
+            "contextTitle": "How the idea came about",
+            "contextText1": "I learned about the DxGPT project from a doctor friend who uses the service in his practice and sometimes recommends it to patients. Out of curiosity, I tested DxGPT and saw that the model offers really well-founded hypotheses that help understand health conditions.",
+            "contextText2": "I constantly stumbled over the interface when working with DxGPT. Its use case violates established interaction patterns with AI services, it lacks a convenient mobile version, and it hides the prompt text. I wanted to rework DxGPT from scratch, follow the design process, and create a more convenient and beautiful version."
+        },
+        "research": {
+            "title": "Research and insights",
+            "description": "Conversations with two doctors, my experience with DxGPT, and an analysis of existing AI services helped me. To start, I highlighted DxGPT's weakest points and began the redesign.",
+            "slides": {
+                "result": "DxGPT: generation result",
+                "input": "DxGPT: prompt input",
+                "refine": "DxGPT: refining the answer"
+            },
+            "problemsTitle": "Problems",
+            "problemsList": [
+                "The DxGPT flow differs drastically from other AI services and violates the established interaction experience;",
+                "All features are on the same level, which breaks usage scenarios and hides the valuable advanced mode;",
+                "The visual style of elements may not correspond to their function, an error in the basic semantics of the interface;",
+                "Verbose element naming turns into textual noise that the user struggles to perceive;",
+                "You cannot use the advanced mode upon entry; it becomes available after entering the first prompt."
+            ]
+        },
+        "solution": {
+            "title": "Solution",
+            "description": "DxGPT is often needed in the moment, during an appointment or between patients. In such scenarios, the doctor works with a phone, so I chose a mobile-first approach.",
+            "subtitle": "2 main usage scenarios:",
+            "cards": {
+                "quick": "Quick mode",
+                "advanced": "Advanced mode"
+            },
+            "infoTitle": "In the service's advanced mode, the user does not write the prompt manually. They fill out a questionnaire, and the system itself forms the request to the model.",
+            "infoText": "To change the result and send a new prompt, it is enough to edit the already filled questionnaire.",
+            "functionTitle": "General function",
+            "functionDescription": "Regardless of the selected mode, the user has the opportunity to ask clarifying questions about a single hypothesis. To do this, click on the hypothesis title, and a screen with ready-made questions will open; these are also the prompts for the model.",
+            "functionCaption": "Answers are generated immediately, without transitioning between screens."
+        },
+        "visualStrategy": {
+            "title": "Visual strategy",
+            "description": "Most medical services use a cold palette, which makes the interface often perceived as clinical and closed. In Irida, this could complicate perception for users without a medical background and cause anxiety about their health. I wanted to soften the service's theme with color, and I chose a warm orange as an accent.",
+            "slides": {
+                "welcome": "Irida welcome screen",
+                "case": "Describe the case",
+                "details": "Clarify details",
+                "advancedInput": "Advanced mode — input",
+                "advancedLoading": "Advanced mode — loading",
+                "advancedResult": "Advanced mode — result",
+                "advancedContinue": "Advanced mode — continue"
+            },
+            "desktop": {
+                "welcome": "Irida welcome screen",
+                "onboarding": "Onboarding — Describe the case and Clarify details",
+                "advanced": "Advanced operating mode"
+            },
+            "footnote": "I built the visual language on the aesthetics of AI products like Arc Search, Perplexity, and Amie, which set a trend for light and empathetic design. I tried to adopt their approach to working with volume and light, using a gradient for dynamics and soft shadows for depth."
+        },
+        "perspectives": {
+            "title": "Project prospects",
+            "description": "DxGPT is created and supported by volunteers, so upon completion of development, I want to donate the Irida design project.",
+            "text": "If the DxGPT team likes the redesign, I am ready to join temporarily and refine the project to fit the product's needs."
+        }
+    },
+    "irida": {
+        "sidebarItems": {
+            "idea": "How the idea came about",
+            "research": "Research and insights",
+            "solution": "Solution",
+            "visualStrategy": "Visual strategy",
+            "impact": "Project prospects"
+        },
+        "aboutProduct": {
+            "description": "Irida AI is my rework of the DxGPT project, a volunteer AI assistant for preliminary medical diagnosis.",
+            "contextTitle": "How the idea came about",
+            "contextText1": "I learned about the DxGPT project from a doctor friend who uses the service in his practice and sometimes recommends it to patients. Out of curiosity, I tested DxGPT and saw that the model offers really well-founded hypotheses that help understand health conditions.",
+            "contextText2": "I constantly stumbled over the interface when working with DxGPT. Its use case violates established interaction patterns with AI services, it lacks a convenient mobile version, and it hides the prompt text. I wanted to rework DxGPT from scratch, follow the design process, and create a more convenient and beautiful version."
+        },
+        "research": {
+            "title": "Research and insights",
+            "description": "Conversations with two doctors, my experience with DxGPT, and an analysis of existing AI services helped me. To start, I highlighted DxGPT's weakest points and began the redesign.",
+            "slides": [
+                "DxGPT: generation result",
+                "DxGPT: prompt input",
+                "DxGPT: refining the answer"
+            ],
+            "problemsTitle": "Problems",
+            "problems": [
+                "The DxGPT flow differs drastically from other AI services and violates the established interaction experience;",
+                "All features are on the same level, which breaks usage scenarios and hides the valuable advanced mode;",
+                "The visual style of elements may not correspond to their function, an error in the basic semantics of the interface;",
+                "Verbose element naming turns into textual noise that the user struggles to perceive;",
+                "You cannot use the advanced mode upon entry; it becomes available after entering the first prompt."
+            ]
+        },
+        "solution": {
+            "title": "Solution",
+            "description": "DxGPT is often needed in the moment, during an appointment or between patients. In such scenarios, the doctor works with a phone, so I chose a mobile-first approach.",
+            "subtitle": "2 main usage scenarios:",
+            "scenarios": [
+                "Quick mode",
+                "Advanced mode"
+            ],
+            "cards": {
+                "quick": "Quick mode",
+                "advanced": "Advanced mode"
+            },
+            "infoTitle": "In the service's advanced mode, the user does not write the prompt manually. They fill out a questionnaire, and the system itself forms the request to the model.",
+            "infoText": "To change the result and send a new prompt, it is enough to edit the already filled questionnaire.",
+            "functionTitle": "General function",
+            "functionDescription": "Regardless of the selected mode, the user has the opportunity to ask clarifying questions about a single hypothesis. To do this, click on the hypothesis title, and a screen with ready-made questions will open; these are also the prompts for the model.",
+            "functionCaption": "Answers are generated immediately, without transitioning between screens."
+        },
+        "visualStrategy": {
+            "title": "Visual strategy",
+            "description": "Most medical services use a cold palette, which makes the interface often perceived as clinical and closed. In Irida, this could complicate perception for users without a medical background and cause anxiety about their health. I wanted to soften the service's theme with color, and I chose a warm orange as an accent.",
+            "slides": {
+                "welcome": "Irida welcome screen",
+                "case": "Describe the case",
+                "details": "Clarify details",
+                "advancedInput": "Advanced mode — input",
+                "advancedLoading": "Advanced mode — loading",
+                "advancedResult": "Advanced mode — result",
+                "advancedContinue": "Advanced mode — continue"
+            },
+            "desktop": {
+                "welcome": "Irida welcome screen",
+                "onboarding": "Onboarding — Describe the case and Clarify details",
+                "advanced": "Advanced operating mode"
+            },
+            "footnote": "I built the visual language on the aesthetics of AI products like Arc Search, Perplexity, and Amie, which set a trend for light and empathetic design. I tried to adopt their approach to working with volume and light, using a gradient for dynamics and soft shadows for depth."
+        },
+        "impact": {
+            "title": "Project prospects",
+            "description": "DxGPT is created and supported by volunteers, so upon completion of development, I want to donate the Irida design project.",
+            "text": "If the DxGPT team likes the redesign, I am ready to join temporarily and refine the project to fit the product's needs."
+        },
+        "perspectives": {
+            "title": "Project prospects",
+            "description": "DxGPT is created and supported by volunteers, so upon completion of development, I want to donate the Irida design project.",
+            "text": "If the DxGPT team likes the redesign, I am ready to join temporarily and refine the project to fit the product's needs."
+        }
+    },
+    "metropolitan": {
+        "site": "Website",
+        "product": "Product",
+        "geography": "Geography",
+        "geographyValue": "Dubai, UAE",
+        "description": "Metropolitan Premium Properties is a large residential and commercial real estate agency in the UAE and Austria. My main task was designing digital products for development companies and the agency's internal departments.",
+        "restrictionsTitle": "Restrictions",
+        "restrictionsText": "I worked on this project over 3 years ago and, unfortunately, I do not have the source files, working files, or metrics left on hand. I cannot provide comprehensive information about the case study, but I can verbally talk about my experience during an interview.",
+        "imageCaption": "Real estate search screen",
+        "aboutProduct": {
+            "description": "Metropolitan Premium Properties is a large residential and commercial real estate agency in the UAE and Austria. My main task was designing digital products for development companies and the agency's internal departments.",
+            "restrictionsTitle": "Restrictions",
+            "restrictionsText": "I worked on this project over 3 years ago and, unfortunately, I do not have the source files, working files, or metrics left on hand. I cannot provide comprehensive information about the case study, but I can verbally talk about my experience during an interview.",
+            "imageCaption": "Real estate search screen"
+        }
+    },
+    "common": {
+        "others": "Other projects",
+        "back": "Back"
+    }
+}

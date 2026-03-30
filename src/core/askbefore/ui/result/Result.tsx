@@ -1,21 +1,28 @@
+"use client";
+
+import React from "react";
+import { useTranslations } from "next-intl";
 import styles from "./Result.module.css";
 
-const achievements = [
-  "Спроектировала и передала в разработку экосистему из шести продуктов;",
-  "Выстроила для команды схему передачи макетов с использованием BPMN и спецификаций;",
-  "Получила ценные данные с интервью и тестирований, которыми регулярно пользуются в компании;",
-  "Разработала дизайн-систему, с которой приятно и легко работать.",
-];
-
 export default function Result() {
+  const t = useTranslations("askBefore.result");
+  const navT = useTranslations("askBefore.sidebarItems");
+
+  const achievements = [
+    t("achievements.0"),
+    t("achievements.1"),
+    t("achievements.2"),
+    t("achievements.3"),
+  ];
+
   return (
-    <section id="Результат" className={styles.section}>
-      <h4 className={styles.title}>Результат</h4>
+    <section id={navT("result")} className={styles.section}>
+      <h4 className={styles.title}>{t("title")}</h4>
 
       {/* Achievements Block */}
       <div className={styles.achievementsBlock}>
         <span className={styles.icon}>🏆</span>
-        <h5 className={styles.blockTitle}>Что я сделала в AskBefore</h5>
+        <h5 className={styles.blockTitle}>{t("blockTitle")}</h5>
         <ul className={styles.list}>
           {achievements.map((item, index) => (
             <li key={index} className={styles.listItem}>
@@ -29,14 +36,10 @@ export default function Result() {
       <div className={styles.challengeBlock}>
         <span className={styles.icon}>🧗</span>
         <h5 className={styles.challengeTitle}>
-          Ключевым вызовом для меня стала локализация продукта. Я изучала
-          требования законодательств и культурные особенности разных стран,
-          чтобы согласовать с ними дизайн.
+          {t("challengeTitle")}
         </h5>
         <p className={styles.challengeText}>
-          Я научилась управлять доверием, узнала о юридических рисках и
-          позаботилась о росте продукта. Это была объемная работа, которая
-          помогла мне вырасти как профессионалу.
+          {t("challengeText")}
         </p>
       </div>
     </section>

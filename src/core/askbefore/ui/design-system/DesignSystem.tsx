@@ -1,4 +1,8 @@
+"use client";
+
+import React from "react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import styles from "./DesignSystem.module.css";
 
 const systemCards = [
@@ -35,20 +39,21 @@ const systemCards = [
 ];
 
 export default function DesignSystem() {
+  const t = useTranslations("askBefore.designSystem");
+  const navT = useTranslations("askBefore.sidebarItems");
+
   return (
-    <section id="Дизайн-система" className={styles.section}>
-      <h4 className={styles.title}>Дизайн-система</h4>
+    <section id={navT("designSystem")} className={styles.section}>
+      <h4 className={styles.title}>{t("title")}</h4>
 
       {/* Highlight Block */}
       <div className={styles.highlightBlock}>
         <span className={styles.icon}>🏆</span>
         <h4 className={styles.highlightTitle}>
-          Совместно с командой я систематизировала разрозненные UI-компоненты и
-          выстроила масштабируемую дизайн-систему.
+          {t("highlightTitle")}
         </h4>
         <p className={styles.highlightText}>
-          Это ускорило сборку макетов для веб-платформы и мобильного приложения
-          и заложило крепкую основу для масштабирования продукта.
+          {t("highlightText")}
         </p>
       </div>
 

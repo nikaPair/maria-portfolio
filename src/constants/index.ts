@@ -1,15 +1,15 @@
 import { Language, NavItem, CaseData, PetProjectData, UIShot } from "@/types";
 
 export const LANGUAGES: Language[] = [
-  { code: "ru", label: "Rus", flag: "/images/flag-rus.png" },
-  { code: "en", label: "EN", flag: "/images/flag-eng.png" },
+  { code: "ru", label: "RU", flag: "/icons/ru.svg" },
+  { code: "en", label: "EN", flag: "/icons/en.svg" },
 ];
 
 export const NAV_ITEMS: NavItem[] = [
-  { href: "/#cases", label: "Кейсы" },
-  { href: "/#pet-projects", label: "Пет-проекты" },
-  { href: "/#ui-shots", label: "UI shots" },
   { href: "/about", label: "Обо мне" },
+  { href: "/cases", label: "Кейсы" },
+  { href: "/#pet-projects", label: "Пет-проекты" },
+  { href: "/#ui-shots", label: "UI шоты" },
 ];
 
 export const CASES_DATA: CaseData[] = [
@@ -72,6 +72,7 @@ export const CASES_DATA: CaseData[] = [
 export const PET_PROJECTS_DATA: PetProjectData[] = [
   {
     id: 1,
+    slug: "emoview",
     logo: "/images/logo-emoview.png",
     name: "Emoview",
     image: "/images/bar.png",
@@ -81,6 +82,7 @@ export const PET_PROJECTS_DATA: PetProjectData[] = [
   },
   {
     id: 2,
+    slug: "irida-ai",
     logo: "/images/logo-irida.png",
     name: "Irida AI",
     image: "/images/chat.png",
@@ -90,6 +92,7 @@ export const PET_PROJECTS_DATA: PetProjectData[] = [
   },
   {
     id: 3,
+    slug: "hashuhub",
     logo: "/images/logo-hushHub.png",
     name: "HushHub",
     image: "/images/asic.png",
@@ -159,7 +162,7 @@ export const UI_SHOTS_MOBILE: UIShot[] = [
 ];
 
 export const SOCIAL_LINKS = {
-  telegram: "https://t.me/lyubimova_dsgn",
+  telegram: "https://t.me/lubimova_dsgn",
 };
 
 export const LOCALE_STORAGE_KEY = "siteLocale";

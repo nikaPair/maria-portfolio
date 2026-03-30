@@ -1,19 +1,22 @@
+"use client";
+
+import React from "react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import styles from "./InfluencersPortal.module.css";
 
 export default function InfluencersPortal() {
+  const t = useTranslations("askBefore.architectureAndScenarios.influencersPortal");
+
   return (
     <div className={styles.wrapper}>
-      <h5 className={styles.title}>Дополнительно</h5>
+      <h5 className={styles.title}>{t("title")}</h5>
 
       {/* Influencers Portal Section */}
       <div className={styles.portalSection}>
-        <h6 className={styles.subtitle}>Influencers Portal</h6>
+        <h6 className={styles.subtitle}>{t("subtitle")}</h6>
         <p className={styles.description}>
-          AskBefore имеет программу сотрудничества с блогерами и инфлюенсерами.
-          Для них мы разработали Influencers Portal, где отображается статистика
-          привлеченных пользователей. Через него партнеры могут отслеживать свой
-          доход, выводить средства и отслеживать историю пополнений.
+          {t("description")}
         </p>
       </div>
 
@@ -21,14 +24,14 @@ export default function InfluencersPortal() {
       <div className={styles.imageWrapper}>
         <Image
           src="/images/askbefore/influencers.png"
-          alt="Influencers Portal"
+          alt={t("subtitle")}
           width={800}
           height={500}
           className={styles.image}
         />
       </div>
       <p className={styles.restrictedCaption}>
-        Ограничено для публичного просмотра
+        {t("restricted")}
       </p>
     </div>
   );

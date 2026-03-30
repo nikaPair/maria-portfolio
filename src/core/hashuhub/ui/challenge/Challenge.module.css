@@ -1,7 +1,7 @@
 .section {
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 16px;
   max-width: 100%;
 }
 
@@ -15,7 +15,7 @@
   font-family: var(--font-manrope);
   font-size: 24px;
   line-height: 32px;
-  font-weight: 700;
+   font-weight: 600;
   color: var(--black);
   margin: 0;
 }
@@ -59,7 +59,7 @@
 .columnTitle {
   font-family: var(--font-manrope);
   font-size: 20px;
-  font-weight: 700;
+   font-weight: 600;
   color: #333;
   margin: 0;
 }
@@ -78,10 +78,10 @@
 
 .bottomText {
   font-family: var(--font-manrope);
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.6;
   color: #333;
-  margin: 0;
+  margin: 0 0 24px 0;
 }
 
 /* Complication Section */
@@ -95,14 +95,14 @@
   font-family: var(--font-manrope);
   font-size: 20px;
   line-height: 32px;
-  font-weight: 700;
+  font-weight: 500;
   color: var(--black);
   margin: 0;
 }
 
 .complicationText {
   font-family: var(--font-manrope);
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.6;
   color: #333;
   margin: 0;
@@ -128,9 +128,9 @@
 
 .warningText {
   font-family: var(--font-manrope);
-  font-size: 18px;
-  line-height: 1.6;
-  color: #333;
+  font-size: 20px;
+  line-height: 28px;
+  color: var(--black);
   margin: 0;
   max-width: 800px;
 }

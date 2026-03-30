@@ -1,31 +1,32 @@
+"use client";
+
+import React from "react";
+import { useTranslations } from "next-intl";
 import styles from "./Research.module.css";
 
-const insights = [
-  "Главная боль — это состояние неопределенности: неизвестно, просмотрена ли справка, когда это произошло и готов ли партнер к изменениям.",
-  "Пользователи опасаются потери контроля над информацией, включая возможность пересылки справки третьим лицам в мессенджерах;",
-  "Пользователи избегают прямого запроса и стараются смягчить ситуацию, обыгрывая тему через романтический контекст, флирт, эмодзи и неформальное общение;",
-  "Перед запросом пользователи заранее продумывают формулировки, сценарии диалога и обсуждают вопрос с друзьями, чтобы снизить тревожность и риск конфликта;",
-  "Запрос справки формируется на фоне репутации партнера, прошлого негативного опыта и базовой осведомленности пользователя о рисках;",
-  "Сильный страх вызывает вероятность быть неправильно понятым или спровоцировать негативную реакцию партнера;",
-];
-
 export default function Research() {
+  const t = useTranslations("askBefore.research");
+  const navT = useTranslations("askBefore.sidebarItems");
+
+  const insights = [
+    t("insightsList.0"),
+    t("insightsList.1"),
+    t("insightsList.2"),
+    t("insightsList.3"),
+    t("insightsList.4"),
+    t("insightsList.5"),
+  ];
+
   return (
-    <section id="Исследование" className={styles.section}>
-      <h4 className={styles.title}>Исследование</h4>
+    <section id={navT("research")} className={styles.section}>
+      <h4 className={styles.title}>{t("title")}</h4>
 
       <div className={styles.descriptionBlock}>
         <p className={styles.description}>
-          Интимное здоровье является важной и чувствительной темой, особенно в
-          контексте близости. При этом разговор о здоровье партнера часто
-          откладывается или избегается из-за страха нарушить границы, обидеть
-          человека или испортить атмосферу.
+          {t("description1")}
         </p>
         <p className={styles.description}>
-          Чтобы глубже разобраться в проблеме, я провела интервью с людьми,
-          которые уже обменивались медицинскими справками. Это позволило понять
-          их мотивацию, страхи, контекст использования и текущие способы решения
-          задачи.
+          {t("description2")}
         </p>
       </div>
 
@@ -33,16 +34,13 @@ export default function Research() {
       <div className={styles.highlightBlock}>
         <span className={styles.rocketIcon}>🚀</span>
         <p className={styles.highlightText}>
-          Для интервью я отказалась от платного рекрутинга и использовала
-          альтернативные методы поиска респондентов. Это позволило опросить
-          более 20 заинтересованных пользователей и выявить главные страхи
-          аудитории.
+          {t("highlightText")}
         </p>
       </div>
 
       {/* Insights Block */}
       <div className={styles.insightsBlock}>
-        <h5 className={styles.insightsTitle}>Инсайты</h5>
+        <h5 className={styles.insightsTitle}>{t("insightsTitle")}</h5>
         <ul className={styles.insightsList}>
           {insights.map((insight, index) => (
             <li key={index} className={styles.insightItem}>

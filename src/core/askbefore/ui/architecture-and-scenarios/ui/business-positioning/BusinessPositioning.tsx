@@ -1,6 +1,7 @@
 "use client";
-import { useState, useRef } from "react";
+import React, { useState, useRef } from "react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import styles from "./BusinessPositioning.module.css";
 
 const businessSlides = [
@@ -19,6 +20,7 @@ const businessSlides = [
 ];
 
 export default function BusinessPositioning() {
+  const t = useTranslations("askBefore.architectureAndScenarios.businessPositioning");
   const [currentSlide, setCurrentSlide] = useState(0);
   const touchStartX = useRef(0);
   const touchEndX = useRef(0);
@@ -58,18 +60,13 @@ export default function BusinessPositioning() {
     <div className={styles.wrapper}>
       {/* Business Positioning Section */}
       <div className={styles.businessSection}>
-        <h5 className={styles.subtitle}>Изменение бизнес-позиционирования</h5>
+        <h5 className={styles.subtitle}>{t("subtitle")}</h5>
         <div className={styles.descriptionBlock}>
           <p className={styles.description}>
-            По мере развития продукта фокус бренд-позиционирования сместился.
-            Изначально он строился вокруг поддержки, близости и романтики, но со
-            временем эволюционировал в сервис, ориентированный на здоровье и
-            безопасность данных.
+            {t("description1")}
           </p>
           <p className={styles.description}>
-            Лендинг, как основная точка входа, был пересобран в соответствии с
-            этим сдвигом: изменились акценты, тон коммуникации и визуальные
-            маркеры доверия.
+            {t("description2")}
           </p>
         </div>
       </div>
@@ -90,7 +87,7 @@ export default function BusinessPositioning() {
               <div key={index} className={styles.slide}>
                 <Image
                   src={slide.image}
-                  alt={`Слайд ${index + 1}`}
+                  alt={`Slide ${index + 1}`}
                   width={800}
                   height={500}
                   className={styles.slideImage}

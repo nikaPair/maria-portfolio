@@ -13,6 +13,7 @@
 
 .heroImage {
   object-fit: contain;
+  height: 100%;
 }
 
 .heroTextContainer {
@@ -22,7 +23,7 @@
 .heroText {
   background-color: var(--bg-secondary);
   border-radius: 32px;
-  padding: 56px 56px 100px 56px;
+  padding: 56px 56px;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -30,21 +31,39 @@
   margin-left: auto;
   margin-top: 4px;
   gap: 20px;
-  letter-spacing: 0;
+  position: relative;
+  @media screen and (max-width: 750px) {
+    padding: 50px 30px 30px 30px;
+  }
+  p {
+    max-width: 560px;
+  }
 }
 
 .heroText h2 {
   margin: 0 0 8px 0;
   color: var(--black);
   font-size: 44px;
-  font-weight: 700;
+   font-weight: 600;
 }
+.heroTextDate {
+  position: absolute;
+  right: 51px;
+  top: 40px;
+  color: var(--fg-secondary);
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
 
+  @media screen and (max-width: 750px) {
+    left: 30px;
+    top: 20px;
+  }
+}
 .heroText p {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   margin: 0;
-  letter-spacing: 0;
 }
 
 .heroBottom {
@@ -53,12 +72,16 @@
   gap: 16px;
 }
 
+.caseLink {
+  color: #2563eb;
+}
+
 /* Stats Card */
 .countersContainer {
   width: 592px;
-  height: 200px;
+  height: 205px;
   margin: 16px 0 0 0;
-  background-color: var(--bg-secondary);
+  background-color: #f8f9ff;
   border-radius: 32px;
   display: flex;
   align-items: center;
@@ -78,6 +101,7 @@
 
 .counter span {
   font-size: 16px;
+  font-weight: 500;
 }
 
 .divider {
@@ -102,7 +126,7 @@
 
 .cvEmoji {
   width: 44px;
-  height: 44px;
+  height: 52px;
 }
 
 .cvButton {
@@ -114,7 +138,7 @@
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 14px;
   border-radius: 999px;
   transition: background-color 0.3s ease-in-out;
@@ -144,7 +168,6 @@
 
   .heroText {
     gap: 16px;
-    padding: 30px;
   }
 
   .heroText h2 {

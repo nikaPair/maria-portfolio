@@ -1,40 +1,23 @@
 "use client";
 import React, { useState, useRef } from "react";
-import styles from "./Solution.module.css";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
-
-const slides = [
-  {
-    id: 1,
-    caption: "Dashboard",
-    image: "/images/hashuhub/11.png",
-  },
-  {
-    id: 2,
-    caption: "Авторизация",
-    image: "/images/hashuhub/22.png",
-  },
-  {
-    id: 3,
-    caption: "Системный статус",
-    image: "/images/hashuhub/33.png",
-  },
-  {
-    id: 4,
-    caption: "Конфигурация пула",
-    image: "/images/hashuhub/44.png",
-  },
-  {
-    id: 5,
-    caption: "Логи",
-    image: "/images/hashuhub/55.png",
-  },
-];
+import styles from "./Solution.module.css";
 
 export default function Solution() {
+  const t = useTranslations("hashuhub.solution");
+  const navT = useTranslations("hashuhub.sidebarItems");
   const [currentSlide, setCurrentSlide] = useState(0);
   const touchStartX = useRef(0);
   const touchEndX = useRef(0);
+
+  const slides = [
+    { id: 1, image: "/images/hashuhub/11.png" },
+    { id: 2, image: "/images/hashuhub/22.png" },
+    { id: 3, image: "/images/hashuhub/33.png" },
+    { id: 4, image: "/images/hashuhub/44.png" },
+    { id: 5, image: "/images/hashuhub/55.png" },
+  ];
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
@@ -66,14 +49,10 @@ export default function Solution() {
   };
 
   return (
-    <section id="Решение" className={styles.section}>
-      <h4 className={styles.title}>Решение</h4>
+    <section id={navT("solution")} className={styles.section}>
+      <h4 className={styles.title}>{t("title")}</h4>
       <p className={styles.description}>
-        Мне было важно сделать мониторинг понятным с первого взгляда. Для этого
-        я упростила доступ к ключевым показателям, усилила визуальную иерархию и
-        адаптировала интерфейс под работу с тем устройствами. В основе работы
-        лежит разделение функционала, увеличение зон взаимодействия и
-        группировка информации.
+        {t("description")}
       </p>
 
       {/* Desktop Grid */}
@@ -83,7 +62,7 @@ export default function Solution() {
             <div className={styles.imageContainer}>
               <Image
                 src={slide.image}
-                alt={slide.caption}
+                alt={`Solution screen ${slide.id}`}
                 width={1000}
                 height={600}
                 className={styles.image}
@@ -110,7 +89,7 @@ export default function Solution() {
                 <div className={styles.imageContainer}>
                   <Image
                     src={slide.image}
-                    alt={slide.caption}
+                    alt={`Solution screen ${slide.id}`}
                     width={1000}
                     height={600}
                     className={styles.image}

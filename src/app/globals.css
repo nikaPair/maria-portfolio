@@ -6,6 +6,7 @@
   list-style: none;
   -webkit-user-drag: none;
   -webkit-touch-callout: none;
+  letter-spacing: 2%;
 }
 
 :root {
@@ -55,14 +56,14 @@ h2 {
   margin: 0 0 8px 0;
   color: var(--black);
   font-size: 44px;
-  font-weight: 700;
+   font-weight: 600;
 }
 
 p {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   margin: 0;
-  letter-spacing: 0;
+   
 }
 
 b {
@@ -78,7 +79,3 @@ a {
   color: inherit;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}

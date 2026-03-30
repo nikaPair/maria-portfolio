@@ -1,91 +1,95 @@
 "use client";
 
+import React from "react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 import styles from "./AboutProduct.module.css";
-import Link from "next/link";
-
-const slides = [
-  {
-    image: "/images/askbefore/1.png",
-    caption: "Сайт для пользователей",
-  },
-  {
-    image: "/images/askbefore/2.png",
-    caption: "Сайт для клиник",
-  },
-];
 
 export default function AboutProduct() {
+  const t = useTranslations("askBefore.aboutProduct");
+  const navT = useTranslations("askBefore.sidebarItems");
+
+  const slides = [
+    {
+      image: "/images/askbefore/1.png",
+      caption: t("userSiteCaption"),
+    },
+    {
+      image: "/images/askbefore/2.png",
+      caption: t("clinicSiteCaption"),
+    },
+  ];
+
   return (
-    <section id="О продукте" className={styles.section}>
-      {/* Header */}
-      <div className={styles.header}>
-        <Image
-          src="/images/askbefore.svg"
-          alt="AskBefore"
-          width={180}
-          height={32}
-          className={styles.logo}
-        />
-        <div className={styles.tags}>
-          <div className={styles.tag}>
-            <span className={styles.tagLabel}>Сайт</span>
-            <Link
-              href={"https://askbefore.eu"}
-              target="_blank"
-              className={styles.tagValue}
-            >
-              askbefore.eu
-            </Link>
-          </div>
-          <div className={styles.tag}>
-            <span className={styles.tagLabel}>Продукт</span>
-            <span className={styles.tagValue}>MedTech стартап</span>
-          </div>
-          <div className={styles.tag}>
-            <span className={styles.tagLabel}>География</span>
-            <span className={styles.tagValue}>Берлин, Германия</span>
-          </div>
+    <section id={navT("about")} className={styles.section}>
+      <Image
+        src="/images/askbefore.svg"
+        alt="AskBefore logo"
+        width={133}
+        height={24}
+        className={styles.logo}
+      />
+
+      <div className={styles.infoGrid}>
+        <div className={styles.infoCol}>
+          <span className={styles.infoLabel}>{t("site")}</span>
+          <a
+            href="https://askbefore.eu"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.infoLink}
+          >
+            askbefore.eu
+          </a>
+        </div>
+        <div className={styles.infoCol}>
+          <span className={styles.infoLabel}>{t("product")}</span>
+          <span className={styles.infoValue}>{t("productValue")}</span>
+        </div>
+        <div className={styles.infoCol}>
+          <span className={styles.infoLabel}>{t("geography")}</span>
+          <span className={styles.infoValue}>{t("geographyValue")}</span>
         </div>
       </div>
 
-      {/* Description */}
       <p className={styles.description}>
-        AskBefore — это сервис для безопасного обмена результатами тестов на
-        ИППП. Пользователь может отправить партнеру подтверждённый статус
-        здоровья в формате цифровой валентинки. Все данные при этом защищены
-        сквозным шифрованием на базе блокчейн.
+        {t("description")}
       </p>
 
-      {/* Marketing Websites */}
-      <div className={styles.marketingSection}>
-        <h3 className={styles.subtitle}>Marketing Websites</h3>
-        <p className={styles.text}>У компании есть B2C и B2B направления:</p>
-        <ul className={styles.list}>
-          <li className={styles.listItem}>
-            B2C это пользователи, которые приходят в продукт за обменом
-            медицинскими данными с партнером;
-          </li>
-          <li className={styles.listItem}>
-            B2B это клиники-партнеры, которые размещают на платформе предложение
-            о лабораторных медицинских исследованиях.
-          </li>
-        </ul>
-        <p className={styles.text}>
-          Для каждой из аудиторий разработан отдельный сайт.
-        </p>
+      <div className={styles.marketingBlock}>
+        <h3 className={styles.subtitle}>{t("marketingTitle")}</h3>
+        <div className={styles.marketingContent}>
+          <p className={styles.text}>{t("marketingText")}</p>
+          <ul className={styles.list}>
+            <li>{t("b2cDescription")}</li>
+            <li>{t("b2bDescription")}</li>
+          </ul>
+        </div>
       </div>
 
-      {/* Single Image */}
-      <div className={styles.imageWrapper}>
-        <Image
-          src="/images/askbefore/1.png"
-          alt="Сайт для пользователей"
-          width={800}
-          height={500}
-          className={styles.image}
-        />
-        <p className={styles.caption}>Сайт для пользователей</p>
+      <div className={styles.sliderBlock}>
+        <Swiper
+          spaceBetween={16}
+          slidesPerView={1}
+          className={styles.swiper}
+        >
+          {slides.map((slide, index) => (
+            <SwiperSlide key={index}>
+              <div className={styles.slideItem}>
+                <Image
+                  src={slide.image}
+                  alt={slide.caption}
+                  width={800}
+                  height={450}
+                  className={styles.mainImage}
+                />
+                <p className={styles.imageCaption}>{slide.caption}</p>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </section>
   );

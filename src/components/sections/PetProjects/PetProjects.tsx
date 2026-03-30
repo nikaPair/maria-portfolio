@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import { animate, inView } from "motion";
 import PetProjectCard from "@/components/ui/PetProjectCard";
 import { PET_PROJECTS_DATA } from "@/constants";
+import { useTranslations } from "next-intl";
 import styles from "./PetProjects.module.css";
 
 const ANIMATIONS = {
@@ -14,7 +15,8 @@ const ANIMATIONS = {
 
 export default function PetProjects() {
   const titleRef = useRef<HTMLDivElement>(null);
-  const projectRefs = useRef<(HTMLLIElement | null)[]>([]);
+  const projectRefs = useRef<(HTMLAnchorElement | null)[]>([]);
+  const t = useTranslations("petProjects");
 
   useEffect(() => {
     // Title animation
@@ -52,8 +54,8 @@ export default function PetProjects() {
     <section className={styles.petProjects} id="pet-projects">
       <div className={styles.container}>
         <header className={styles.sectionHeader} ref={titleRef}>
-          <h2>Pet-проекты</h2>
-          <p>Проектирую для души и могу показывать без ограничений</p>
+          <h2>{t("title")}</h2>
+          <p>{t("subtitle")}</p>
         </header>
 
         <div className={styles.projectsGrid}>

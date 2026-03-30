@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import { NavItem } from "@/types";
 import styles from "./Navigation.module.css";
 
@@ -18,7 +18,7 @@ export default function Navigation({
       <ul className={styles.navList}>
         {items.map((item) => (
           <li key={item.href} className={styles.navItem}>
-            <Link href={item.href} onClick={onItemClick}>
+            <Link href={item.href as any} onClick={onItemClick}>
               {item.label}
             </Link>
           </li>

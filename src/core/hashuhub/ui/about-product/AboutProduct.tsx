@@ -1,18 +1,23 @@
 "use client";
 
+import React from "react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import styles from "./AboutProduct.module.css";
 
 export default function AboutProduct() {
+  const t = useTranslations("hashuhub.aboutProduct");
+  const navT = useTranslations("hashuhub.sidebarItems");
+
   return (
-    <section id="Контекст" className={styles.section}>
+    <section id={navT("context")} className={styles.section}>
       <div className={styles.topBlock}>
         {/* Header */}
         <div className={styles.header}>
           <div className={styles.logoWrapper}>
             <div className={styles.logoIcon}>
               <Image
-                src="/images/hashuhub/logo.svg"
+                src="/images/logo-hushHub.png"
                 alt="HashuHub Logo"
                 width={40}
                 height={40}
@@ -26,17 +31,10 @@ export default function AboutProduct() {
         {/* Description Text */}
         <div className={styles.textBlock}>
           <p className={styles.description}>
-            Проект HashuHub основан на моем трехлетнем опыте добычи BTC и ETH на
-            ASIC-майнерах. Я обслуживала свою майнинг-ферму, консультировала и
-            помогала ставить фермы друзьям. Мне также приходилось разбирать
-            майнеры, чистить платы, наблюдать за ремонтом в сервис-центрах и
-            заниматься техническим обслуживанием.
+            {t("description1")}
           </p>
           <p className={styles.description}>
-            В работе с асиками основным источником данных и главным элементом
-            управления являются административные панели. Из-за слабого дизайна
-            ими редко пользуются, что ведет к позднему обнаружению сбоев и
-            крупным финансовым потерям.
+            {t("description2")}
           </p>
         </div>
       </div>
@@ -44,30 +42,22 @@ export default function AboutProduct() {
       {/* Context Block */}
       <div className={styles.contextBlock}>
         <div className={styles.contextContent}>
-          <h4 className={styles.contextTitle}>Контекст</h4>
+          <h4 className={styles.contextTitle}>{t("contextTitle")}</h4>
           <p className={styles.contextText}>
-            В широком смысле ASIC означает специализированный компьютер, который
-            выполняет одну-единственную задачу. Следовательно, ASIC-майнер — это
-            устройство, которое добывает криптовалюту и больше ни на что не
-            способно.
+            {t("contextText1")}
           </p>
           <p className={styles.contextText}>
-            ASIC-майнеры нового поколения имеют системы предохранения и большое
-            количество датчиков, но редко у какого частного майнера есть
-            средства на машины последних моделей. Это является главным
-            обстоятельством, почему я спроектировала HashuHub.
+            {t("contextText2")}
           </p>
         </div>
 
         {/* Miner Image Card */}
         <div className={styles.imageCard}>
           <div className={styles.minerImagePlaceholder}>
-            {/* Since we don't have the exact image asset yet, using a placeholder path */}
-            {/* User should replace /images/hashuhub/miner.png with the actual file */}
             <div className={styles.placeholderImg}>
               <Image
                 src="/images/hashuhub/context.png"
-                alt="AvalonMiner"
+                alt="ASIC Miner"
                 width={304}
                 height={304}
                 className={styles.minerImage}

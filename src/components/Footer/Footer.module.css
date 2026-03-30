@@ -1,9 +1,11 @@
 .footer {
   background-color: #1a1b1d;
-  padding: 40px 20px;
+  padding: 16px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+  bottom: 0;
+  width: 100%;
 }
 
 .telegramLink {
@@ -13,7 +15,7 @@
   color: var(--white);
   text-decoration: none;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   transition: opacity 0.3s ease;
 }
 

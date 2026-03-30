@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { CaseData } from "@/types";
+import { useTranslations } from "next-intl";
 import styles from "./CaseCard.module.css";
 
 interface CaseCardProps {
@@ -15,25 +16,28 @@ export default function CaseCard({
   imageRef,
   colorVariant,
 }: CaseCardProps) {
+  const t = useTranslations("cases");
   const colorVariantClass = colorVariant
     ? {
-        blue: styles.imageContainerBlue,
-        orange: styles.imageContainerOrange,
-        pink: styles.imageContainerPink,
-      }[colorVariant]
+      blue: styles.imageContainerBlue,
+      orange: styles.imageContainerOrange,
+      pink: styles.imageContainerPink,
+    }[colorVariant]
     : "";
   const {
-    position,
-    location,
+    slug,
     logo,
     logoWidth,
     logoHeight,
     company,
-    description,
     tags,
     image,
-    isNDA,
   } = data;
+
+  // Get translated fields
+  const position = t(`items.${slug}.position`);
+  const location = t(`items.${slug}.location`);
+  const description = t(`items.${slug}.description`);
 
   return (
     <li className={styles.caseCard}>
@@ -46,9 +50,7 @@ export default function CaseCard({
             width={logoWidth}
             height={logoHeight}
           />
-          {isNDA && (
-            <span className={styles.ndaBadge}>Детали на собеседовании</span>
-          )}
+          
         </div>
 
         <h3 className={styles.position}>{position}</h3>

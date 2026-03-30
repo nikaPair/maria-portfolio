@@ -39,7 +39,7 @@
 
 .ndaBadge {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--fg-secondary);
   letter-spacing: 0.02em;
 }
@@ -47,9 +47,9 @@
 /* Position title */
 .position {
   font-size: 24px;
-  font-weight: 700;
+   font-weight: 600;
   margin: 0 0 8px 0;
-  letter-spacing: 0;
+   
   color: var(--black);
 }
 
@@ -57,7 +57,7 @@
 .location {
   font-size: 14px;
   font-weight: 500;
-  margin: 0 0 24px 0;
+  margin: 0 0 16px 0;
   letter-spacing: -0.01em;
   color: var(--fg-secondary);
 }
@@ -67,7 +67,7 @@
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
-  margin: 0;
+  margin: 0 0 33px 0;
   letter-spacing: -0.01em;
   color: var(--black);
 }

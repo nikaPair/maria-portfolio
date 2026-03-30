@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import Image from "next/image";
 import { animate, inView } from "motion";
 import MobileSlider from "@/components/ui/MobileSlider";
+import { useTranslations } from "next-intl";
 import {
   UI_SHOTS_DESKTOP,
   UI_SHOTS_TABLET,
@@ -13,6 +14,7 @@ import styles from "./UIShots.module.css";
 
 export default function UIShots() {
   const gridRef = useRef<HTMLDivElement>(null);
+  const t = useTranslations("uiShots");
 
   useEffect(() => {
     if (gridRef.current) {
@@ -29,11 +31,11 @@ export default function UIShots() {
   return (
     <section className={styles.uiShots} id="ui-shots">
       <header className={styles.sectionHeader}>
-        <h2>UI шоты</h2>
-        <p>Визуал с кейсов и pet-проектов</p>
+        <h2>{t("title")}</h2>
+        <p>{t("subtitle")}</p>
       </header>
 
-      {/* Desktop grid - 11 images */}
+      {/* Desktop grid - 9 images */}
       <div className={styles.desktopGrid} ref={gridRef}>
         {/* Row 1: 2 images */}
         <div className={styles.row}>
@@ -92,29 +94,7 @@ export default function UIShots() {
           </div>
         </div>
 
-        {/* Row 4: 2 images */}
-        <div className={styles.row}>
-          <div className={styles.shot}>
-            <Image
-              src={UI_SHOTS_DESKTOP[5].src}
-              alt={UI_SHOTS_DESKTOP[5].alt}
-              width={590}
-              height={400}
-              className={styles.shotImage}
-            />
-          </div>
-          <div className={styles.shot}>
-            <Image
-              src={UI_SHOTS_DESKTOP[6].src}
-              alt={UI_SHOTS_DESKTOP[6].alt}
-              width={590}
-              height={400}
-              className={styles.shotImage}
-            />
-          </div>
-        </div>
-
-        {/* Row 5: 3 images */}
+        {/* Row 4: 3 images */}
         <div className={styles.rowThree}>
           <div className={styles.shot}>
             <Image
@@ -145,7 +125,7 @@ export default function UIShots() {
           </div>
         </div>
 
-        {/* Row 6: 1 image */}
+        {/* Row 5: 1 image */}
         <div className={styles.row}>
           <div className={styles.shotFull}>
             <Image

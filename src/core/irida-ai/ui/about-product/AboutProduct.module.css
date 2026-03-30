@@ -1,7 +1,7 @@
 .section {
   display: flex;
   flex-direction: column;
-  gap: 80px;
+  gap: 46px;
   max-width: 100%;
 }
 
@@ -35,7 +35,7 @@
 .title {
   font-family: var(--font-manrope);
   font-size: 32px;
-  font-weight: 700;
+   font-weight: 600;
   margin: 0;
   color: var(--black);
   line-height: 40px;
@@ -64,14 +64,14 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 16px;
 }
 
 .contextTitle {
   font-family: var(--font-manrope);
   font-size: 24px;
   line-height: 32px;
-  font-weight: 700;
+   font-weight: 600;
   color: var(--black);
   margin: 0;
 }
@@ -99,7 +99,6 @@
   position: relative;
   padding: 0;
   overflow: hidden;
-  padding: 40px 0 0 0;
 }
 
 .imageContainer {

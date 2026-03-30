@@ -6,7 +6,7 @@
 
 .title {
   font-size: 24px;
-  font-weight: 700;
+   font-weight: 600;
   line-height: 32px;
   color: var(--black);
 }
@@ -20,7 +20,7 @@
 
 .description {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 24px;
   color: var(--black);
   max-width: 700px;
@@ -34,8 +34,9 @@
   gap: 16px;
   padding: 32px;
   background: var(--orange-50);
-  border-radius: 24px;
+  border-radius: 40px;
   text-align: center;
+  margin-top: 16px;
 }
 
 .starIcon {
@@ -44,7 +45,7 @@
 
 .highlightText {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.5;
   color: var(--black);
   max-width: 700px;
@@ -70,7 +71,7 @@
 
 .imageCaption {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--fg-secondary);
   text-align: center;
 }

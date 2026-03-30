@@ -1,0 +1,43 @@
+.mainWrapper {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.emoview {
+    padding-top: 56px;
+    display: flex;
+    margin: 0 auto;
+    max-width: 1200px;
+    gap: 32px;
+
+    @media screen and (max-width: 1250px) {
+        padding: 56px 40px 0px 40px;
+    }
+
+    @media screen and (max-width: 1100px) {
+        padding-top: 40px;
+        flex-direction: column;
+        max-width: 790px;
+        justify-content: center;
+        align-items: start;
+        gap: 40px;
+    }
+
+    @media screen and (max-width: 800px) {
+        padding: 56px 20px 0px 20px;
+    }
+
+    @media screen and (max-width: 375px) {
+        padding-top: 32px;
+    }
+}
+
+.emoview__content {
+    display: flex;
+    flex-direction: column;
+    gap: 104px;
+    flex: 1;
+    width: 100%;
+    max-width: 790px;
+    padding-bottom: 104px;
+}

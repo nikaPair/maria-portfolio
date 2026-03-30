@@ -1,0 +1,142 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.logo {
+  margin-bottom: 40px;
+  width: auto;
+  height: 32px;
+  align-self: flex-start;
+  object-position: left;
+}
+
+.infoGrid {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  margin-bottom: 20px;
+  justify-content: start;
+}
+
+.infoCol {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.infoLabel {
+  font-family: var(--font-manrope);
+  font-size: 16px;
+  color: #858585;
+}
+
+.infoValue {
+  font-family: var(--font-manrope);
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--black);
+}
+
+.infoLink {
+  font-family: var(--font-manrope);
+  font-size: 18px;
+  font-weight: 400;
+  color: #2f5df1;
+  text-decoration: none;
+}
+
+.description {
+  font-family: var(--font-manrope);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #1a1a1a;
+  margin: 0;
+  margin-bottom: 64px;
+}
+
+.restrictionsBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.subtitle {
+  font-family: var(--font-manrope);
+  font-size: 20px;
+  line-height: 28px;
+   font-weight: 600;
+  color: var(--black);
+  margin: 0;
+}
+
+.restrictionsBlock .description {
+  margin-bottom: 0;
+}
+
+.imageBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  background-color: #f8f9fa;
+  border-radius: 40px;
+  padding: 75px 151px;
+}
+
+.mainImage {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.imageCaption {
+  font-family: var(--font-manrope);
+  font-size: 14px;
+  color: #858585;
+  margin: 0;
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    height: 24px;
+    margin-bottom: 32px;
+  }
+
+  .infoGrid {
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 32px;
+  }
+
+  .infoCol {
+    gap: 8px;
+  }
+
+  .description {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 32px;
+  }
+
+  .restrictionsBlock {
+    margin-bottom: 40px;
+    gap: 16px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .imageBlock {
+    padding: 32px 16px;
+    border-radius: 24px;
+    gap: 16px;
+  }
+}

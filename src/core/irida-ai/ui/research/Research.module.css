@@ -15,7 +15,7 @@
   font-family: var(--font-manrope);
   font-size: 24px;
   line-height: 32px;
-  font-weight: 700;
+   font-weight: 600;
   color: var(--black);
   margin: 0;
 }
@@ -28,12 +28,10 @@
   margin: 0;
 }
 
-/* Grid Layout (Desktop) */
 .grid {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  margin-top: 16px;
 }
 
 .slideWrapper {
@@ -97,7 +95,7 @@
   color: var(--fg-secondary);
   text-align: center;
   margin-top: 16px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .problemsBlock {
@@ -123,8 +121,8 @@
 
 .problemsTitle {
   font-family: var(--font-manrope);
-  font-size: 24px;
-  font-weight: 700;
+  font-size: 20px;
+   font-weight: 600;
   color: var(--black);
   margin: 0;
 }
@@ -138,7 +136,7 @@
 .problemsList li {
   font-family: var(--font-manrope);
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 24px;
   color: var(--black);
   padding-left: 24px;
