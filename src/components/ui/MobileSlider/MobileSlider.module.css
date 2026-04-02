@@ -62,5 +62,6 @@
 @media screen and (max-width: 750px) {
   .slider {
     display: flex;
+    padding-top: 0;
   }
 }

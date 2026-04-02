@@ -132,6 +132,8 @@
 @media screen and (max-width: 900px) {
   .projectDescription {
     max-width: 100%;
+    align-self: start;
+    line-height: 1.35;
   }
 }
 
@@ -161,11 +163,41 @@
 @media screen and (max-width: 900px) {
   .projectImageLarge {
     max-width: 100%;
+    object-position: center;
+    object-fit: contain;
+  }
+
+  .hashuhubSlide .projectImageLarge,
+  .askbeforeSlide .projectImageLarge {
+    width: 100%;
+    object-position: center;
+    object-fit: contain;
   }
 
   .projectImage {
     max-height: 330px;
     height: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hashuhubSlide {
+    padding-right: 0;
+  }
+
+  .hashuhubSlide .projectDescription {
+    padding-right: 24px;
+  }
+
+  .hashuhubSlide .imageWrapper {
+    justify-content: flex-end;
+  }
+
+  .hashuhubSlide .projectImageLarge,
+  .askbeforeSlide .projectImageLarge {
+    object-position: left;
+    width: 244px;
+    object-fit: cover;
   }
 }
 
@@ -176,6 +208,12 @@
 
   .imageWrapper img {
     height: 100%;
+  }
+
+  .hashuhubSlide .projectImageLarge,
+  .askbeforeSlide .projectImageLarge {
+    height: 280px;
+    width: 366px;
   }
 }
 
